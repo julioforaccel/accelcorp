@@ -1,6 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/* Positioning Quiz Rows */
+.selector-td {
+  padding-bottom:5px;
+}
+
+.multichoice_row p {
+  position:relative;
+  top:5px;
+}
+
 /* Block S2 */
 /*#block-views-resource-datasheet-block-4 {
   position:relative;
