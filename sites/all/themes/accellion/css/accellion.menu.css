@@ -27,7 +27,8 @@
 /* 	LEVEL ONE  */
 ul.dropdown       { 
   position: relative;  
-  z-index: 100;
+  /*z-index: 100;*/
+  z-index: 1000;
   /*height: 75px;*/
 }
 ul.dropdown li    { 
@@ -166,13 +167,62 @@ ul.dropdown li.menu-no-hover:hover{background-image: none;}
   color: white;
   text-shadow: 1px 1px 1px #1B415C;
   background: url('/sites/all/themes/accellion/images/trial-button.png') no-repeat 100% 50%;
+}
 
 .menu-free-trial a{ 
   font-weight: bold; 
 background: url('/sites/default/files/main-nav-ft-h.png') repeat-x 100% 100%;
 }
+
+
+/* Hover Effect Translated Trial Button */
+
+
+#trial-fr a { 
+  color: #1B415C; 
+  font-weight: bold;
+  background: url('/sites/all/themes/accellion/images/trial-button-fr.png') no-repeat 100% 50%;
+}
+
+#trial-fr a:visited { 
+  color: #1B415C; 
+  font-weight: bold;
+  background: url('/sites/all/themes/accellion/images/trial-button-fr.png') no-repeat 100% 50%;
+}
+
+#trial-fr a:hover{ 
+  color: white;
+  text-shadow: 1px 1px 1px #1B415C;
+  background: url('/sites/all/themes/accellion/images/trial-button-fr.png') no-repeat 100% 50%;
+}
+
+
+#trial-de a { 
+  color: #1B415C; 
+  font-weight: bold;
+  background: url('/sites/all/themes/accellion/images/trial-button-de.png') no-repeat 100% 50%;
+}
+
+#trial-de a:visited { 
+  color: #1B415C; 
+  font-weight: bold;
+  background: url('/sites/all/themes/accellion/images/trial-button-de.png') no-repeat 100% 50%;
+}
+
+#trial-de a:hover{ 
+  color: white;
+  text-shadow: 1px 1px 1px #1B415C;
+  background: url('/sites/all/themes/accellion/images/trial-button-de.png') no-repeat 100% 50%;
+}
+
+
+
+
+
 #toplink-phone{ 
   font-weight: normal; 
   text-decoration: none;
   cursor: none;
 }
+
+

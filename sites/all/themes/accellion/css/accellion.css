@@ -2,6 +2,142 @@
 /* CSS Document */
 
 
+
+/* NEW HEADER FOR INTERNATIONALIZATION */
+/* =================================== */
+
+/* Worldwide Megamenu: This is not a block, but a Drupal Menu */
+ul.worldwide {
+  list-style-type:none;
+}
+
+ul.monde {
+  list-style-type:none;
+}
+
+ul.welweit {
+  list-style-type:none;
+}
+
+
+.worldwide a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.worldwide a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#worldwide-link {
+  color: #FFFFFF !important;
+  font-size: 11px;	
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:74px;
+	bottom:35px;
+
+}
+
+.qtip.qtip-light.qtip-active {
+  /*top:30px !important;*/
+  top:27px !important;
+}
+
+.qtip.wrapper {
+  position:relative;
+  bottom:40px;
+}
+
+.qtip-contentWrapper {
+  border: 2px solid #BCBEC0 !important;
+  margin-bottom:-20px;
+}
+
+.megamenu_worldwide {
+
+}
+
+.megamenu_worldwide ul {
+  list-style-type:none;
+  margin:0;
+  margin-top:20px;
+  padding:0;
+}
+
+.megamenu_worldwide_link a:link,
+.megamenu_worldwide_link a:visited {
+  /*color:#333333;
+  font-family:Helvetica;
+  font-size:14px;*/
+  color: #363636;
+  font-family: Arial,Tahoma,Verdana;
+  font-size: 11px;
+line-height: 19px;
+  background: #ffffff;
+  position:relative;
+  bottom:20px;
+  visibility:visible !important;
+}
+
+.megamenu_worldwide_link a:hover,
+.megamenu_worldwide_link a:active {
+  /*color:#00467F;
+  font-family:Helvetica;
+  font-size:14px;*/
+  color: #649cd2;
+  font-family: Arial,Tahoma,Verdana;
+  font-size: 11px;
+line-height: 19px;
+  background: #ffffff;
+  position:relative;
+  bottom:20px;
+  visibility:visible !important;
+}
+
+
+/* END NEW HEADER FOR INTERNATIONALIZATION */
+/* ======================================= */
+
+
+/* START: FOOTER ELEMENTS AFTER CONVERTED TO BLOCKS */
+/* ================================================ */
+
+.new-footer-logo {
+  width: 180px;
+  margin-right:8px;
+}
+
+.new-footer-menu1 {
+  width: 180px;
+  margin-right:8px;
+}
+
+.new-footer-menu2 {
+  width: 180px;
+  margin-right:8px;
+}
+
+.new-footer-menu3 {
+  width: 180px;
+  margin-right:8px;
+}
+
+.new-footer-menu4 {
+  width: 180px;
+}
+
+
+/* END: FOOTER ELEMENTS AFTER CONVERTED TO BLOCKS */
+/* ============================================== */
+
+
+
 /* Positioning Quiz Rows */
 .selector-td {
   padding-bottom:5px;
@@ -71,12 +207,11 @@
 	/*height: 30px;*/
 }
 
-#Accellion_Header {
+/*#Accellion_Header {
  height: 75px;
  color: rgb(255, 255, 255); height: 75px;
- background: url("/sites/all/themes/accellion/images/bg-pattern-t-acc.png") repeat-x scroll center top rgb(0, 0, 0);
 
-}
+}*/
 
 #free-trial {
 	margin-left:600px;
@@ -180,13 +315,17 @@ sftp://michael.jankowski:@www-drup.accellion.com/%2Fhome/httpd/corp/sites/all/th
 
 #top-links {
 /*    padding-right: 0px;
-padding-bottom: 10px;
-margin-right: -7px;*/
-    width: 350px;
+	padding-bottom: 10px;
+	margin-right: -7px;*/
+    /*width: 350px;*/
+    width: 480px;
     float: right;
-  position:relative;
-  left:85px;
-  top:2px;
+  	position:relative;
+  	/*left:85px;*/
+  	left:5px;
+  	top:2px;
+
+
 }
 #top-links a:link, #top-links a:visited, #top-links a:active {
     color: #ffffff;
@@ -196,6 +335,21 @@ margin-right: -7px;*/
     color: #FB1;
     text-decoration: none;
 }
+
+
+/* Translated Topnav Positioning */
+
+#top-links-fr {
+  	position:relative;
+	left:19px;
+}
+
+#top-links-de {
+  	position:relative;
+	left:11px;
+}
+
+
 
 #footer .block .content ul li a:hover{ text-decoration: none;}
 
@@ -456,9 +610,9 @@ text-decoration: none;
 }
 
 
-#top-links {
+/*#top-links {
 	width:400px;
-}
+}*/
 
 #top-right {
     margin-left: 520px;

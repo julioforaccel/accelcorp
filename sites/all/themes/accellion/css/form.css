@@ -53,11 +53,20 @@ form .form-submit:hover{
 /**
  * Search form
  */
-form#search-block-form{
+
+/*form#search-block-form{
   float:right;
   overflow:hidden;
   margin:-40px 15px 10px 0px;
+}*/
+
+form#search-block-form {
+  position:relative;
+  top:0px;
+  left:0px;
+  z-index:999;
 }
+
 
 form#search-block-form .form-text{
   border: medium none;
