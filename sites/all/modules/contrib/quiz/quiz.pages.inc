@@ -550,7 +550,7 @@ function theme_quiz_take_summary($variables) {
       }
       drupal_set_message($msg, 'warning');
     }
-    $output .= '<div id="quiz_score_possible">' . t('Thank you for testing your Mobile IQ') . '</div>' . "\n";
+    //$output .= '<div id="quiz_score_possible">' . t('Thank you for testing your Mobile IQ') . '</div>' . "\n";
     $output .= '<div id="quiz_score_percent">' . t('This is How Your Organization Ranks on Mobile Data Security Awareness:') . '</div>' . "\n";
   }
   if (isset($summary['passfail'])) {

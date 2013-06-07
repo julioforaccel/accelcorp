@@ -36,13 +36,15 @@ form .description {
 form .form-submit{
   border: 0 none;
   border-radius:5px;
-  color: #D4D4D4;
+  /*color: #D4D4D4;*/
+  color:#1B415C;
   cursor: pointer;
   font-size: 11px;
   padding: 5px 10px;
   text-align: center;
   text-transform: uppercase;
-  background:#111111;
+  /*background:#111111;*/
+  background:#FFBB11;
   margin:0 5px 0 0;
 }
 
