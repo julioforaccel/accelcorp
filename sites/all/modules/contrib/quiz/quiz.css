@@ -152,7 +152,8 @@ div.quiz-score-submit {
 }
 
 input#edit-op, input#edit-back {
-  background: 0 none;
+  /*background: 0 none;*/
+  background-color:#CCCCCC;
   border: 0 none;
   color: #666699;
 }
@@ -328,4 +329,5 @@ input.q-skip-button:hover, input#edit-back:hover {
 .mark-doubtful .toggle.off div {
   left: 48px;
 }
+
 

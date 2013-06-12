@@ -551,7 +551,7 @@ function theme_quiz_take_summary($variables) {
       drupal_set_message($msg, 'warning');
     }
     //$output .= '<div id="quiz_score_possible">' . t('Thank you for testing your Mobile IQ') . '</div>' . "\n";
-    $output .= '<div id="quiz_score_percent">' . t('This is How Your Organization Ranks on Mobile Data Security Awareness:') . '</div>' . "\n";
+    $output .= '<div id="quiz_score_percent">' . t('This is How Your Organization Ranks on Mobile Data Security Awareness') . '</div>' . "\n";
   }
   if (isset($summary['passfail'])) {
     $output .= '<div id="quiz_summary">' . $summary['passfail'] . '</div>' . "\n";
@@ -699,11 +699,11 @@ function theme_quiz_view_stats($variables) {
       'data' => _quiz_format_duration($node->time_limit),
     );
   }
-  //$stats[] = array(
-    //'title' => t('Backwards navigation'),
-    //'data' => $node->backwards_navigation ? t('Allowed') : t('Forbidden'),
-  //);
-  // Format and output the data
+  $stats[] = array(
+    'title' => t('Backwards navigation'),
+    'data' => $node->backwards_navigation ? t('Allowed') : t('Forbidden'),
+  );
+  //Format and output the data
   //$out = '<table id="quiz-view-table">' . "\n";
   //foreach ($stats as $stat) {
     //$out .= '<tr><td class="quiz-view-table-title"><strong>' . $stat['title'] . ':</strong></td><td class="quiz-view-table-data"><em>' . $stat['data'] . '</em></td></tr>' . "\n";
@@ -711,3 +711,4 @@ function theme_quiz_view_stats($variables) {
   //$out .= '</table>' . "\n";
   //return $out;
 }
+

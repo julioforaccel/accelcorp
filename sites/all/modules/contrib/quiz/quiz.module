@@ -1054,7 +1054,7 @@ function quiz_start_quiz_button_form($form, &$form_state, $node) {
   $form['#action'] = url("node/$node->nid/take");
   $form['button'] = array(
     '#type' => 'button',
-    '#value' => t('Start quiz'),
+    '#value' => t('Start the Quiz'),
   );
   return $form;
 }
@@ -4361,3 +4361,4 @@ function _quiz_is_empty_html($html) {
 function _quiz_is_last_question() {
   return count($_SESSION['quiz_' . intval(arg(1))]['quiz_questions']) < 2;
 }
+

@@ -2,6 +2,85 @@
  * @file
  * Form styling
  */
+
+
+/** quiz formating **/
+
+#quiz-start-quiz-button-form {
+  position:relative;
+  left:100px;
+  padding-bottom:150px;
+
+  position:relative;
+  bottom:85px;
+
+}
+
+#quiz-start-quiz-button-form .form-submit{
+  border: 0 none;
+  border-radius:5px;
+  /*color: #D4D4D4;*/
+  color: #1B415C;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  /*background:#111111;*/
+  background:#FFBB11;
+  margin:0 5px 0 0;
+
+  position:relative;
+  bottom:85px;
+
+}
+
+#quiz-start-quiz-button-form .form-submit:hover{
+  color:#FFFFFF;
+}
+
+#quiz_progress {
+  padding: 0px 100px 0px 100px;
+  position:relative;
+  bottom:100px;
+}
+
+#quiz-question-answering-form {
+  padding: 0px 100px 50px 100px;
+  position:relative;
+  bottom:100px;
+}
+
+#quiz_score_percent {
+  padding: 0px 100px 0px 100px;
+  position:relative;
+  bottom:100px;
+}
+
+#quiz_summary {
+  padding: 0px 100px 50px 100px;
+  position:relative;
+  bottom:120px;
+}
+
+
+#banner-subhead-quiz {
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 0px;
+  position: relative;
+  width: 940px;
+  height:312px;
+  bottom:31px;
+z-index: -99;
+}
+
+
+/** end quiz formating **/
+
+
+
+
 form {
   
 }
