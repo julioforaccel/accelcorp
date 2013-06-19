@@ -4,6 +4,7 @@
 
 //$url = 'https://proserv.accellion.net/pdns/eval/eval.php';
 include_once 'debugmode.php';
+$arrCompetitors = array('Allard Software','Artesia Digital Media Group','Aspera Software','Attachmore','Aurora Enterprise','AxWay','Beehive','B-Hub','Biscom Inc.','Bittorrent','Box Inc.','Catalyst','Cemaphore','CertifiedMail','Certified Mail','Cleo','ClipStream','Core Technology Corporation','Coviant Software','Cyber-Ark','DigiDelivery','Document 1Box','DropLoad','Entrust','eRoom.net','Fileflow','FileMarshal','Files2U','Foldermail','Fujitsu SEKYUAPAKKEJI competitor','Fujitsu Software - Japan','GDX Japan','Gigabyte Express','GlobalScape','Group Logic Inc.','Harbor HFT','HeavyMail','Hitek Software','Hypersend','I(2) Drive','Ignite Tech','InfiMail','Inovis','Intellidyne','Interdubs','Intralinks','Ipswitch','iSoft','iway','Jscape','Just Attach','LeapFile','Lexias','Lotus Notes','M-Box','Megaupload','Messageway','Mimecast','Mimosa Systems','North Plains','Novell','NRI Secure Technologies','NTT Communications - Gtrax','Pipeline Software Inc','PKWare','Planet eStream','PostX','Prado','Primeur','Proginet','Proself','PTAI','Qiata','Radiance Technologies','Rapidshare','Rumpus','Saison Information Systems Co. Ltd','Secure Computing','Seeburger AG - USA','Sendthisfile','sendyourfiles','ShareFile','SharePoint & OCS','signiant','SmartJog','SoftLink','Softlinx','Standard Networks MOVEit dmz','Sterling Commerce','Sterling Commerce - Japan','Thru','Tibco','Trinity Security','Tripod Works','Tumbleweed','Unlimi-Tech Software','Veepee','Wam!Net','Webcargo','WebNative','Workshare','Xiotech','Xythos','YouSendItInc.','Youve Got Files','ZipLip','Zix');
 
 if (empty($_POST["Email"])){	//exit from a bogus post i.e. a scanner
 	header( 'Location: http://www.accellion.com/trial-demo' ) ;
@@ -26,7 +27,11 @@ if (empty($_POST["Email"])){	//exit from a bogus post i.e. a scanner
 	}
      
 //	curl_request_async($url,$params);	//Create license and hosted appid
-	curl_request_async($url,$_POST);	//Create license and hosted appid
+	$company = $_POST["Company"];
+	if (in_array(strtolower(trim($company)), array_map('strtolower', $arrCompetitors)))
+		{}//return 0;
+	else
+		curl_request_async($url,$_POST);	//Create license and hosted appid
 	 
 //Register with Marketo
 
