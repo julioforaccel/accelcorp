@@ -34,8 +34,10 @@ $view = views_get_view('tab_views_whitepaper');
 print $view->preview('default');
 ?></span>
     </div>
-    <div class="grid-child grid-10"><a href="http://www.info.accellion.com/WP-Hi-GartnerMarketscope.html?ms=bottomad0213">
-<img src="/sites/default/files/events/Accellion-Social-Bar-Banner-Gartner.png" border="0"></a>
+    <div class="grid-child grid-10">
+
+<a href="/Mobile-IQ"><img src="/sites/default/files/Mobile-IQ-Test-Accellion.png?ms=bottomad" alt="Test Your Mobile IQ"></a>
+
     </div>
 </div>
 
