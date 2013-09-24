@@ -26,6 +26,32 @@
 }
 
 
+/* Safari, Chrome, IE */
+
+.header-link a:link,
+.header-link a:visited {
+	color:#FFFFFF; 
+	font-size:42px !important; 
+	position:relative; 
+	top:76px; 
+	right:5px;
+	z-index:1000;
+}
+
+.header-link a:hover,
+.header-link a:active {
+	color:#FFFFFF; 
+	font-size:42px !important; 
+	position:relative; 
+	top:76px; 
+	right:5px;
+	text-decoration:none;
+	z-index:1000;
+}
+
+/* Just for Firefox */
+@-moz-document url-prefix() {
+	
 .header-link a:link,
 .header-link a:visited {
 	color:#FFFFFF; 
@@ -45,7 +71,113 @@
 	right:5px;
 	text-decoration:none;
 	z-index:1000;
+}	
+		
 }
+
+
+/* Safari, Chrome, IE */
+
+.header-link-pricing a:link,
+.header-link-pricing a:visited {
+	color:#FFFFFF; 
+	font-size:42px !important; 
+	position:relative; 
+	top:46px; 
+	right:5px;
+	z-index:1000;
+}
+
+.header-link-pricing a:hover,
+.header-link-pricing a:active {
+	color:#FFFFFF; 
+	font-size:42px !important; 
+	position:relative; 
+	top:46px; 
+	right:5px;
+	text-decoration:none;
+	z-index:1000;
+}
+
+/* Just for Firefox */
+@-moz-document url-prefix() {
+	
+.header-link-pricing a:link,
+.header-link-pricing a:visited {
+	color:#FFFFFF; 
+	font-size:42px !important; 
+	position:relative; 
+	top:48px; 
+	right:5px;
+	z-index:1000;
+}
+
+.header-link-pricing a:hover,
+.header-link-pricing a:active {
+	color:#FFFFFF; 
+	font-size:42px !important; 
+	position:relative; 
+	top:48px; 
+	right:5px;
+	text-decoration:none;
+	z-index:1000;
+}	
+		
+}
+
+
+/* Safari, Chrome, IE */
+
+.header-link-experience a:link,
+.header-link-experience a:visited {
+	color:#FFFFFF; 
+	font-size:42px !important; 
+	position:relative; 
+	top:60px; 
+	left:15px;
+	z-index:1000;
+}
+
+.header-link-experience a:hover,
+.header-link-experience a:active {
+	color:#FFFFFF; 
+	font-size:42px !important; 
+	position:relative; 
+	top:60px; 
+	left:15px;
+	text-decoration:none;
+	z-index:1000;
+}
+
+/* Just for Firefox */
+@-moz-document url-prefix() {
+	
+.header-link-experience a:link,
+.header-link-experience a:visited {
+	color:#FFFFFF; 
+	font-size:42px !important; 
+	position:relative; 
+	top:63px; 
+	right:5px;
+	z-index:1000;
+}
+
+.header-link-experience a:hover,
+.header-link-experience a:active {
+	color:#FFFFFF; 
+	font-size:42px !important; 
+	position:relative; 
+	top:63px; 
+	right:5px;
+	text-decoration:none;
+	z-index:1000;
+}	
+		
+}
+
+
+
+
 
 .first-paragraph-background {
 	background-color:#d3d6dc; 
