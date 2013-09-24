@@ -17,6 +17,9 @@
  * @ingroup views_templates
  */
 ?>
+
+<div style="position:relative; bottom:80px;">
+
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?>>
   <?php if (!empty($title)) : ?>
     <!-- Test -->
@@ -107,3 +110,6 @@ font-size: 12px;
 }
 
 </style>
+
+
+</div>

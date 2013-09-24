@@ -206,7 +206,8 @@ z-index: -99;
   padding-bottom: 0px;
   position: relative;
   width: 940px;
-  height:120px;
+  /*height:120px;*/
+  height:153px;
   top: 0px;
 z-index: -99;
 }
@@ -293,12 +294,16 @@ body.with-banner #main{
 .with-sidebar #sidebar {
   background:url('../images/bg-SB-pattern.png') repeat-x center top transparent;
   margin-left: 720px;
-margin-top: 25px;
+  /*margin-top: 25px;*/
+  margin-top: 0px;
   overflow: hidden;
   padding: 10px;
   position: relative;
   width: 200px;
-  height:auto;	
+  height:auto;
+  position:relative;
+  bottom:35px;
+  right:10px;
 }
 
 /**
@@ -877,7 +882,8 @@ font-weight: bold;
   /*background:url('../images/bg-pattern.png') repeat-x center bottom #f5f5f5;*/
   background: #E2E2E2;
   clear:both;
-  height:293px;
+  /*height:293px;*/
+  height:385px;
   margin-top: 0px;
 }
 
@@ -892,3 +898,4 @@ font-weight: bold;
   left: 74px;
   top: 4px;
 }
+

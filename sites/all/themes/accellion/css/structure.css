@@ -84,102 +84,6 @@ body.not-front h1#page-title{
   text-decoration:underline;
 }
 
-/**
- * Footer blocks
- */ 
-#footer .block{
-  /*width:172px;*/
-  float:left;
-  margin:0;
-}
-
-#footer .even{
-  margin:0 20px;
-}
-
-#footer h2 {
-  background: url("../images/double-line-ft.gif") repeat-x scroll center bottom transparent;
-  color: #779ad0;
-  padding-bottom: 10px;
-  font-weight:normal;
-  margin:0;
-  font-family: Arial,Tahoma,Verdana;
-  font-size:16px;
-  line-height:16px;
-}
-
-#footer .block .content {
-  padding:5px 0;
-}
-
-#footer .block .content a{
-  color: #5C5D5E;
-}
-
-#footer .block .content a.active{
-  color:#383838;
-  font-weight:bold;
-}
-
-#footer .block .content ul {
-  margin:0;
-  padding:0;
-}
-
-#footer .block .content ul li{
-  background:url('../images/double-line-ft.gif') repeat-x center bottom transparent;
-  padding:7px 0;
-  /*padding:3px 0;*/
-  list-style:none outside none;
-}
-
-#footer .block .content ul li a{
-  background:url('../images/arrow.gif') no-repeat 0 center transparent;
-  padding-left:8px;
-}
-
-#footer .block .content ul li a:hover{
-  color:#707172;
-}
-
-/**
- * Search block in footer
- */
-#footer .block-search {
-  overflow:hidden;
-}
-
-#region-lower-footer .block{
-  width:572px;
-  float:left;
-  margin:0;
-}
-
-#region-lower-footer .block{
-  width:572px;
-  float:left;
-  margin:0;
-}
-
-/**
- * Table in footer
- */
-#footer .block table{
-  width:100%;
-  border:none;
-  margin:0;
-}
-
-#footer .block table tr.odd,
-#footer .block table tr.even{
-  background:url('../images/double-line.gif') repeat-x center bottom transparent;
-  border:none;
-}
-
-#footer .block table td{
-  padding:7px 0;
-  padding-left:8px;
-}
 
 /**
  * Tabs
@@ -493,3 +397,4 @@ h3#prSubTitle {
 	font-size:14px;
 	font-style:italic;
 }
+
