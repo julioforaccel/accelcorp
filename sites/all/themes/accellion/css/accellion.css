@@ -2,6 +2,36 @@
 /* CSS Document */
 
 
+/* BUTTON PARTNER PORTAL */
+/* ===================== */
+
+.button-partners a {
+color:#1B415C;
+-moz-border-radius: 5px;
+border-radius: 5px;
+background:#ecb80f;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:20px;
+padding-right:20px;
+text-decoration:none;   
+}
+
+.button-partners a:hover {
+color:#FFFFFF;
+-moz-border-radius: 5px;
+border-radius: 5px;
+background:#ecb80f;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:20px;
+padding-right:20px;
+text-decoration:none;   
+}
+
+
+
+
 /* >>> START changes 092013 <<< */
 
 
