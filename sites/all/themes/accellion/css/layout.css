@@ -200,14 +200,15 @@ z-index: -99;
 }
 
 #banner-subhead {
-  background: url("/sites/all/themes/accellion/images/shadow.png") no-repeat scroll center bottom transparent;
+  /*background: url("/sites/all/themes/accellion/images/shadow.png") no-repeat scroll center bottom transparent;*/
   margin: 0 auto;
   overflow: hidden;
   padding-bottom: 0px;
   position: relative;
   width: 940px;
   /*height:120px;*/
-  height:153px;
+  /*height:153px;*/
+  height:164px;
   top: 0px;
 z-index: -99;
 }

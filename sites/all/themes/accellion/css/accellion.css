@@ -1,6 +1,66 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*     100113 NEW PAGE LAYOUT   */
+/* ============================ */
+
+
+
+.paragraph-title {
+  font-size:20px; 
+  margin:5px 0px 15px 0px !important;
+}
+
+.paragraph-text {
+  font-size:15px;
+  line-height:22px;
+}
+
+.mobile-list
+{
+  list-style-image: url('/sites/default/files/icons/mobile-productivity.png');
+}
+
+.mcm-list
+{
+  list-style-image: url('/sites/default/files/icons/mobile-content-management.png');
+}
+
+.onlinefile-list
+{
+  list-style-image: url('/sites/default/files/icons/online-file-sharing.png');
+}
+
+.enterprise-it-list
+{
+  list-style-image: url('/sites/default/files/icons/enterprise-IT.png');
+}
+
+
+.mobile-list-item
+{
+  margin-top:20px;
+  border-bottom: 1px solid #3A536E;
+}
+
+.key-feature a:link,
+.key-feature a:visited {
+  font-size:15px;
+  font-weight:bold;
+  color: #3A536E;
+}
+
+.key-feature a:hover,
+.key-feature a:active {
+  font-size:15px;
+  font-weight:bold;
+  color: #3A536E;
+  text-decoration:none;
+}
+
+
+
+
 
 /* BUTTON PARTNER PORTAL */
 /* ===================== */
@@ -206,15 +266,14 @@ text-decoration:none;
 }
 
 
-
-
-
 .first-paragraph-background {
 	background-color:#d3d6dc; 
-	padding: 1px 245px 1px 15px; 
+	/*padding: 1px 245px 1px 15px;*/
+	padding: 10px 245px 1px 15px;	
 	margin-bottom:20px; 
 	position:relative; 
-	bottom:26px; 
+	/*bottom:26px;*/
+	bottom:6px;	
 	right:20px; 
 	width:681px;	
 }
@@ -224,7 +283,7 @@ text-decoration:none;
 	/*background-color:#f8f8f8;*/
 	padding: 10px 10px 10px 0px; 
 	position:relative; 
-	bottom:46px; 
+	bottom:26px; 
 	right:20px; 
 	width:670px; 
 	/*border-top:1px solid #999999;*/
