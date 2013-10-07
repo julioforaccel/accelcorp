@@ -16,6 +16,7 @@ ul.quicktabs-tabs.quicktabs-style-sky {
   margin: 0;
   padding: 0;
   width: 100%;
+
 }
 
 ul.quicktabs-tabs.quicktabs-style-sky li {
@@ -29,7 +30,7 @@ ul.quicktabs-tabs.quicktabs-style-sky li {
 }
 
 ul.quicktabs-tabs.quicktabs-style-sky li.active {
-  margin: -0.2em 0 0 0;
+  /*margin: -0.2em 0 0 0;*/
 }
 
 ul.quicktabs-tabs.quicktabs-style-sky li a,
@@ -37,47 +38,88 @@ ul.quicktabs-tabs.quicktabs-style-sky li a:visited {
   float: left;
   display: block;
   height: 2.65em;
-  min-height: 2.95em;
+  /*min-height: 2.95em;*/
+  min-height: 2.65em;
   line-height: 2.95em;
-  padding: 0 8px;
+  /*padding: 0 8px;*/
+  padding: 0 39px;
   text-decoration: none;
-  border-right: 1px solid #eee;
-  border-top: 1px solid #eee;
-  font-size: .95em;
+  /*border-right: 1px solid #eee;*/
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  border-color: #000000;
+
+  /*border-top: 1px solid #eee;*/
+  /*font-size: .95em;*/
+  font-size: 15px;
+  font-weight: bold;
   background: #fff url('images/bg-shade-light.png') repeat-x bottom left;
-  color: #777;
+  color: #000000;
   position: relative;
+  bottom:10px;
 }
+
+
+/* STARTS Just for Firefox */
+
+@-moz-document url-prefix() {
+	ul.quicktabs-tabs.quicktabs-style-sky li a,
+	ul.quicktabs-tabs.quicktabs-style-sky li a:visited {
+	  padding: 0 38px;
+	}	
+}
+
+/* ENDS Just for Firefox */
+
+
 
 ul.quicktabs-tabs.quicktabs-style-sky li a:hover,
 ul.quicktabs-tabs.quicktabs-style-sky li.active a:hover {
   text-decoration: none;
-  border-color: #B3B3B3;
-  background: #B3B3B3 url('images/bg-shade-medium.png') repeat-x bottom left;
-  color: #fff;
+  /*border-color: #B3B3B3;*/
+  /*border-color: #fff;*/
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  border-color: #000000;
+
+  /*background: #B3B3B3 url('images/bg-shade-medium.png') repeat-x bottom left;*/
+  background: #fff url('images/bg-shade-medium.png') repeat-x bottom left;
+  color: #000000;
 }
 
 ul.quicktabs-tabs.quicktabs-style-sky li.active a,
 ul.quicktabs-tabs.quicktabs-style-sky li.active a:visited {
-  height: 3.05em;
+  /*height: 3.05em;
   min-height: 3.35em;
-  line-height: 3.35em;
+  line-height: 3.35em;*/
+
+  height: 2.65em;
+  /*min-height: 2.95em;*/
+  min-height: 2.65em;
+  line-height: 2.95em;
+
   font-weight: normal;
-  border: 1px solid #eee;
-  background: #858585 url('images/bg-shade-dark.png') repeat-x bottom left;
-  border-color: #555;
-  color: #fff;
-  font-size: .95em;
-  font-weight: normal;
-  top: -0.025em;
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  border-color: #000000;
+
+  /*background: #858585 url('images/bg-shade-dark.png') repeat-x bottom left;*/
+  background: #fff url('images/bg-shade-dark.png') repeat-x bottom left;
+  color: #000000;
+  /*font-size: .95em;
+  font-weight: normal;*/
+  font-size: 15px;
+  font-weight: bold;
+
+  /*top: -0.025em;*/
 }
 
 ul.quicktabs-tabs.quicktabs-style-sky li:first-child a {
-  border-left: solid 1px #eee;
+  /*border-left: solid 1px #eee;*/
 }
 
 ul.quicktabs-tabs.quicktabs-style-sky li.active a {
-  border-left: solid 1px #777;
+  /*border-left: solid 1px #777;*/
 }
 
 ul.quicktabs-tabs.quicktabs-style-sky li a:focus,
@@ -92,3 +134,4 @@ ul.quicktabs-tabs.quicktabs-style-sky li a:active {
     top: -0.2em;
   }
 }
+

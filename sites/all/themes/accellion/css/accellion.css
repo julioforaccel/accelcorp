@@ -1,6 +1,72 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/* MOBILEIRON MICROSITE */
+/* ==================== */
+
+#quicktabs-tabs_for_enterprise_page {
+  width: 315px;
+}
+
+.mobileiron-man-box {
+width:400px;
+height:200px;
+overflow:scroll;
+padding-left:10px;
+padding-right:10px;
+}
+
+.mobileiron-man-box-no-scroll {
+width:400px;
+height:200px;
+padding-left:10px;
+padding-right:10px;
+}
+
+#quicktabs-container-mobileiron_man {
+  width:419px;
+	position:relative;
+	left:475px;
+	top:303px;
+	border: 2px solid #000000;
+
+}
+
+/* Just for Firefox */
+@-moz-document url-prefix() {
+	#quicktabs-container-mobileiron_man {
+	  width:417px;
+	position:relative;
+	left:475px;
+	top:304px;
+	border: 2px solid #000000;
+}
+}
+
+.quicktabs-tabs.quicktabs-style-sky {
+	position:relative;
+	left:475px;
+	top:310px;
+}
+
+
+
+/****************** STARTS Last cell ******************/
+
+#quicktabs-tab-mobileiron_man-2 {
+  border-right: 2px solid #000000 !important;
+}
+
+
+/****************** ENDS Last cell ******************/
+
+
+
+
+
+
+
 /*     100113 NEW PAGE LAYOUT   */
 /* ============================ */
 
