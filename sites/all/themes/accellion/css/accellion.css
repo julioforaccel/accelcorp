@@ -850,6 +850,38 @@ ul.mainmega1de {
 
 /* megamenu 1 block */
 
+.mega1_bottom {
+  /*margin-left:20px;*/
+  padding-left:10px;
+  padding-right:0px;
+  margin-bottom:0px;
+  position:relative;
+  bottom:20px;
+}
+
+.mega1_bottom ul {
+  list-style-type:none;
+  margin:0;
+  margin-top:10px;
+  /*margin-top:40px;*/
+  padding:0;
+
+}
+
+.mega1_bottom li {
+  line-height: 15px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 .megamenu_mainmega1 {
   /*margin-left:20px;*/
   padding-left:10px;
