@@ -1,69 +1,43 @@
-#block-quicktabs-homepage-content-tabs h2.block-title {
-	display:none;
-}
+
 .quicktabs_main.quicktabs-style-basic{
-  background-color:#f5f5f5;
-border-color:#DCDCDC;
-border-style: solid;
-border-width: 0px 2px 2px 2px;
-padding: 10px;
+  background-color:#fff;
+  border:1px solid #aaa;
+  border-top:none;
+  padding:10px;
   clear:both;
 }
 ul.quicktabs-tabs.quicktabs-style-basic{
-  font:bold 21px Arial, Tahoma, Verdana !important;
+  border-bottom:1px solid #aaa;
+  padding:0 5px 0 0;
+  font:bold 12px/19px Verdana !important;
   font-weight:bold;
-  margin:-450px 0px 0px 0px;
-  background:#e1e1e1;
-text-align: center;
-padding-left: 23px;
-padding-right: 23px;
-padding-bottom: 5px;
-/* matches link padding except for left and right */
-padding-top: 7px;
-
-
+  height:19px;
+  margin:0;
 }
 ul.quicktabs-tabs.quicktabs-style-basic a{
-  font:bold 21px Arial, Tahoma, Verdana !important; 
+  font:bold 12px/19px Verdana !important;
   text-decoration:none;
-background-color: #e1e1e1;
-  color: #555555;
-padding: 7px 35px 5px 0px;
-  background: url("/sites/default/files/home/hometab-right-normal.png") no-repeat scroll right top transparent;
-
+  color:#aaa;
 }
 ul.quicktabs-tabs.quicktabs-style-basic a:hover{
-  color:#2a2a2a;
-background-color: #dcdcdc;
-padding: 7px 35px 5px 0px;
-/*opacity:0.0;
-/*filter:alpha(opacity=0); /* For IE8 and earlier */
+  color:#555;
 }
 ul.quicktabs-tabs.quicktabs-style-basic li{
-display: inline;
-/* matches link padding except for left and right */
-padding: 7px 0px 5px 35px;
-  background-color:#e1e1e1;
-  background: url("/sites/default/files/home/hometab-left-normal.png") no-repeat scroll left top #e1e1e1;
-}
-ul.quicktabs-tabs.quicktabs-style-basic li.first{
- /*  border-left: none; */
+  border:1px solid #e5e5e5;
+  border-bottom:none;
+  padding:2px 5px;
+  margin:0 3px 0 0;
+  position:relative;
 }
 ul.quicktabs-tabs.quicktabs-style-basic li:hover{
-  /* border:1px solid #ccc; 
-  border-bottom:none; */
+  border:1px solid #ccc;
+  border-bottom:none;
 }
 ul.quicktabs-tabs.quicktabs-style-basic li.active{
-  background-color:#f5f5f5;
-  background: url("/sites/default/files/home/hometab-left-active.png") no-repeat scroll left top #f5f5f5;
-/*opacity:0.99;
-/*filter:alpha(opacity=99); /* For IE8 and earlier */
-padding: 7px 0px 6px 0px;
+  border:1px solid #aaa;
+  border-bottom:1px solid #fff;
+  background-color:#fff;
 }
 ul.quicktabs-tabs.quicktabs-style-basic li.active a{
-  color:#014356;
-  background: url("/sites/default/files/home/hometab-right-active.png") no-repeat scroll right top transparent;
-/*opacity:0.99;
-/*filter:alpha(opacity=99); /* For IE8 and earlier */
-padding: 7px 35px 7px;
+  color:#027AC6;
 }

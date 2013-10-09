@@ -27,7 +27,6 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a {
   padding: 0 10px 0 0;
   height: 23px;
   font-weight: normal;
-  font-size:11px;
 }
 ul.quicktabs-tabs.quicktabs-style-navlist li.active {
   background: #F0F8FC;
@@ -35,7 +34,7 @@ ul.quicktabs-tabs.quicktabs-style-navlist li.active {
   border-bottom: 1px solid #BFD0FF;
 }
 ul.quicktabs-tabs.quicktabs-style-navlist li.active a {
-  color: #3A536E;
+  color: #007734;
   font-weight: bold;
 }
 
