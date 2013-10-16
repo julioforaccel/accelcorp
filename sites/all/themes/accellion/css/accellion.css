@@ -1,6 +1,84 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* GIGAOM MICROSITE */
+/* ================ */
+
+#giga-social {
+	position:relative;
+	left:23px;
+	top:600px;
+}
+
+#block-quicktabs-gigaom-microsite {
+	position:relative;
+	left:20px;
+	bottom:80px;
+}
+
+
+#quicktabs-tabs_for_enterprise_page {
+  width: 315px;
+}
+
+.gigaom_microsite-box {
+/*width:400px;*/
+width:382px;
+height:200px;
+overflow:scroll;
+padding-left:10px;
+padding-right:10px;
+}
+
+.gigaom_microsite-box-no-scroll {
+width:382px;
+height:200px;
+padding-left:10px;
+padding-right:10px;
+}
+
+#quicktabs-container-gigaom_microsite {
+    /*width:419px;*/
+    width:404px;
+	position:relative;
+	left:475px;
+	top:303px;
+	border: 2px solid #000000;
+
+}
+
+/* Just for Firefox */
+@-moz-document url-prefix() {
+	#quicktabs-container-gigaom_microsite {
+	/*width:417px;*/
+	width:399px;
+	position:relative;
+	left:475px;
+	top:304px;
+	border: 2px solid #000000;
+}
+}
+
+.quicktabs-tabs.quicktabs-style-sky {
+	position:relative;
+	left:475px;
+	top:310px;
+}
+
+
+
+/****************** STARTS Last cell ******************/
+
+#quicktabs-tab-gigaom_microsite-2 {
+  border-right: 2px solid #000000 !important;
+}
+
+
+/****************** ENDS Last cell ******************/
+
+
+
+
 /* NEW PRICING PAGE */
 /* ================ */
 
