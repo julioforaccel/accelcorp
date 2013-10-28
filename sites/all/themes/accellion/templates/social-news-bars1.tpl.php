@@ -13,32 +13,29 @@
 <?php if ($language->language == 'en'): ?>
 
 <div class="grid-parent">
-    <div class="grid-child grid-30">
-        <span class="grid-30-t"><b>Recent News</b></span>
-        <br><span style="word-wrap: break-word;"><?php
-$view = views_get_view('press_release_view');
-print $view->preview('social_news_pr_block');
-?></span>
-    </div>
-    <div class="grid-child grid-30">
-        <span class="grid-30-t"><b>Customer Case Studies</b></span>
-        <br><span style="word-wrap: break-word;"><?php
-$view = views_get_view('tab_views_ccs');
-print $view->preview('block');
-?></span>
-    </div>
-    <div class="grid-child grid-30">
-        <span class="grid-30-t"><b>Industry Whitepapers</b></span>
-        <br><span style="word-wrap: break-word;"><?php
-$view = views_get_view('tab_views_whitepaper');
-print $view->preview('default');
-?></span>
-    </div>
-    <div class="grid-child grid-10">
+	
 
-<a href="/Mobile-IQ"><img src="/sites/default/files/Mobile-IQ-Test-Accellion.png?ms=bottomad" alt="Test Your Mobile IQ"></a>
+<div class="grid-child new-grid-30 ">
 
-    </div>
+<a href="http://www.info.accellion.com/gartner-marketscope-enterprise-file-synchronization-sharing-report.html?ms=bottombanner"><img src="/sites/default/files/Accellion-Gartner-Marketscope.jpg" alt="Test Your Mobile IQ"></a>
+
+</div>
+
+
+<div class="grid-child new-grid-30 ">
+
+<a href="http://www.info.accellion.com/mobile-content-security-and-productivity-whitepaper.html?ms=bottombanner"><img src="/sites/default/files/Accellion-AIIM-Research.jpg" alt="Test Your Mobile IQ"></a>
+
+</div>
+
+
+<div class="grid-child new-grid-10 ">
+	
+<a href="http://www.info.accellion.com/ismg-mobile-security-strategies-2013-survey-results.html?ms=bottombanner"><img src="/sites/default/files/Accellion-ISMG-Survey.jpg" alt="Test Your Mobile IQ"></a>
+
+</div>
+
+
 </div>
 
 
@@ -470,5 +467,6 @@ print $view->preview('default');
 <div style="clear: both">&nbsp;</div>
 
 </div>
+
 
 

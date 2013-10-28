@@ -153,6 +153,19 @@ line-height:13px;
 color: #000000;
 }
 
+.new-grid-30 {
+  width:313px;
+  height: 106px;
+  /*border-right: solid 1px #ffffff;*/
+  /*padding: 5px 10px 10px 10px;*/
+  font-weight:normal;
+  font-family: Arial,Tahoma,Verdana;
+  font-size:11px;
+line-height:13px;
+color: #000000;
+}
+
+
 
 .grid-30-title {
   font-weight:normal;
