@@ -269,7 +269,7 @@ function quiz_get_user_results($uid) {
     INNER JOIN {users} u ON u.uid = qnrs.uid
     WHERE n.type = :type
       AND u.uid = :uid
-    ORDER BY qnrs.result_id DESC', array(':type' => 'quiz', ':uid' => $uid));
+    ORDER BY qnrs.result_id ASC', array(':type' => 'quiz', ':uid' => $uid));
 
   // Create an array out of the results.
   foreach ($dbresult as $result) {
@@ -362,15 +362,7 @@ function theme_quiz_get_user_results($variables) {
     t('Operation'),
   );
 
-  $per_page = 10;
-  // Initialise the pager
-  $current_page = pager_default_initialize(count($rows), $per_page);
-  // Split your list into page sized chunks
-  $chunks = array_chunk($rows, $per_page, TRUE);
-  // Show the appropriate items from the list
-  $output = theme('table', array('header' => $header, 'rows' => $chunks[$current_page]));
-  // Show the pager
-  $output .= theme('pager', array('quantity',count($rows)));
+  $output = theme('table', array('header' => $header, 'rows' => $rows));
   $output .= '<p><em>' . t('@quizzes that are not evaluated may have a different score and grade once evaluated.', array('@quizzes' => QUIZ_NAME)) . '</em></p>';
   return $output;
 }
@@ -558,8 +550,8 @@ function theme_quiz_take_summary($variables) {
       }
       drupal_set_message($msg, 'warning');
     }
-    $output .= '<div id="quiz_score_possible">' . t('You got %num_correct of %question_count possible points.', array('%num_correct' => $score['numeric_score'], '%question_count' => $score['possible_score'])) . '</div>' . "\n";
-    $output .= '<div id="quiz_score_percent">' . t('Your score: %score %', array('%score' => $score['percentage_score'])) . '</div>' . "\n";
+    //$output .= '<div id="quiz_score_possible">' . t('Thank you for testing your Mobile IQ') . '</div>' . "\n";
+    $output .= '<div id="quiz_score_percent">' . t('This is How Your Organization Ranks on Mobile Data Security Awareness') . '</div>' . "\n";
   }
   if (isset($summary['passfail'])) {
     $output .= '<div id="quiz_summary">' . $summary['passfail'] . '</div>' . "\n";
@@ -666,12 +658,12 @@ function theme_quiz_single_question_node($variables) {
 function theme_quiz_view_stats($variables) {
   $node = $variables['node'];
   // Fetch data
-  $stats = array(
-    array(
-      'title' => t('Questions'),
-      'data' => $node->number_of_questions,
-    ),
-  );
+  //$stats = array(
+    //array(
+      //'title' => t('Questions'),
+      //'data' => $node->number_of_questions,
+    //),
+  //);
   if ($node->show_attempt_stats) {
     $takes = $node->takes == 0 ? t('Unlimited') : $node->takes;
     $stats[] = array(
@@ -679,22 +671,22 @@ function theme_quiz_view_stats($variables) {
       'data' => $takes,
     );
   }
-  if ($node->quiz_always) {
-    $stats[] = array(
-      'title' => t('Available'),
-      'data' => t('Always'),
-    );
-  }
-  else {
-    $stats[] = array(
-      'title' => t('Opens'),
-      'data' => format_date($node->quiz_open, 'short'),
-    );
-    $stats[] = array(
-      'title' => t('Closes'),
-      'data' => format_date($node->quiz_close, 'short'),
-    );
-  }
+  //if ($node->quiz_always) {
+    //$stats[] = array(
+      //'title' => t('Available'),
+      //'data' => t('Always'),
+   // );
+  //}
+  //else {
+    //$stats[] = array(
+      //'title' => t('Opens'),
+      //'data' => format_date($node->quiz_open, 'short'),
+   // );
+    //$stats[] = array(
+      //'title' => t('Closes'),
+      //'data' => format_date($node->quiz_close, 'short'),
+    //);
+  //}
   if (!empty($node->pass_rate)) {
     $stats[] = array(
       'title' => t('Pass rate'),
@@ -711,11 +703,12 @@ function theme_quiz_view_stats($variables) {
     'title' => t('Backwards navigation'),
     'data' => $node->backwards_navigation ? t('Allowed') : t('Forbidden'),
   );
-  // Format and output the data
-  $out = '<table id="quiz-view-table">' . "\n";
-  foreach ($stats as $stat) {
-    $out .= '<tr><td class="quiz-view-table-title"><strong>' . $stat['title'] . ':</strong></td><td class="quiz-view-table-data"><em>' . $stat['data'] . '</em></td></tr>' . "\n";
-  }
-  $out .= '</table>' . "\n";
-  return $out;
+  //Format and output the data
+  //$out = '<table id="quiz-view-table">' . "\n";
+  //foreach ($stats as $stat) {
+    //$out .= '<tr><td class="quiz-view-table-title"><strong>' . $stat['title'] . ':</strong></td><td class="quiz-view-table-data"><em>' . $stat['data'] . '</em></td></tr>' . "\n";
+  //}
+  //$out .= '</table>' . "\n";
+  //return $out;
 }
+
