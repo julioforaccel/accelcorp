@@ -1,6 +1,296 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/* SOTG MICROSITE */
+/* ============== */
+
+#giga-social {
+	position:relative;
+	left:23px;
+	top:600px;
+}
+
+#block-quicktabs-sotg-microsite {
+	position:relative;
+	right:20px;
+	bottom:80px;
+}
+
+
+#quicktabs-tabs_for_enterprise_page {
+  width: 315px;
+}
+
+.sotg_microsite-box {
+/*width:400px;*/
+width:382px;
+height:200px;
+overflow:scroll;
+padding-left:10px;
+padding-right:10px;
+}
+
+.sotg_microsite-box-no-scroll {
+width:354px;
+height:244px;
+padding-left:30px;
+padding-right:30px;
+padding-top:1px;
+position:relative;
+right:5px;
+bottom:30px;
+
+background-color:#FFFFFF;
+
+}
+
+
+/* Just for Firefox */
+
+@-moz-document url-prefix() {
+	.sotg_microsite-box-no-scroll {
+	width:349px;
+	height:244px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:1px;
+	position:relative;
+	right:5px;
+	bottom:30px;
+
+	background-color:#FFFFFF;
+
+	}
+
+}
+
+.sotg-row-1 {
+  height:30px;
+
+}
+
+.sotg-row-2 {
+  height:175px;
+
+}
+
+.sotg-column-11 {
+  text-align:center;
+  font-size:15px;
+
+}
+
+.sotg-column-21, .sotg-column-22 {
+  text-align:center;
+  width:150px;
+}
+
+
+
+.sotg_microsite-box-no-scroll-video {
+width:402px;
+height:245px;
+padding-left:0px;
+padding-right:0px;
+position:relative;
+right:1px;
+bottom:32px;
+}
+
+
+#quicktabs-container-sotg_microsite {
+    /*width:419px;*/
+    width:404px;
+	position:relative;
+	left:475px;
+	top:303px;
+	border: 2px solid #000000;
+	background-color:#000000;
+
+}
+
+/* Just for Firefox */
+@-moz-document url-prefix() {
+	#quicktabs-container-sotg_microsite {
+	/*width:417px;*/
+	width:399px;
+	position:relative;
+	left:475px;
+	top:304px;
+	border: 2px solid #000000;
+	background-color:#000000;
+}
+}
+
+.quicktabs-tabs.quicktabs-style-sky {
+	position:relative;
+	left:475px;
+	top:310px;
+}
+
+
+
+/****************** STARTS Last cell ******************/
+
+#quicktabs-tab-sotg_microsite-2 {
+  border-right: 2px solid #000000 !important;
+}
+
+
+/****************** ENDS Last cell ******************/
+
+
+
+/* sky.css - override */
+/* ================== */
+
+
+/* Quicktabs - Sky theme style
+ * http://drupal.org/project/sky
+ */
+
+.quicktabs_main.quicktabs-style-sky {
+  border: 1px solid #eee;
+  clear: both;
+  padding: 10px 5px 0 5px;
+  position: relative;
+  top: -0.1em;
+  background: #fff;
+}
+
+ul.quicktabs-tabs.quicktabs-style-sky {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+ul.quicktabs-tabs.quicktabs-style-sky li {
+  float: left;
+  font-weight: normal;
+  list-style: none;
+  margin: 0.3em 0 0 0;
+  height: 2.65em;
+  min-height: 2.95em;
+  padding: 0;
+}
+
+ul.quicktabs-tabs.quicktabs-style-sky li.active {
+  /*margin: -0.2em 0 0 0;*/
+}
+
+#quicktabs-sotg_microsite ul.quicktabs-tabs.quicktabs-style-sky li a,
+#quicktabs-sotg_microsite ul.quicktabs-tabs.quicktabs-style-sky li a:visited {
+  float: left;
+  display: block;
+  height: 2.65em;
+  /*min-height: 2.95em;*/
+  min-height: 2.65em;
+  line-height: 2.95em;
+  /*padding: 0 8px;*/
+  /* SOTG padding: 0 39px; */
+  padding: 0 42.5px;
+  text-decoration: none;
+  /*border-right: 1px solid #eee;*/
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  border-color: #000000;
+
+  /*border-top: 1px solid #eee;*/
+  /*font-size: .95em;*/
+  font-size: 15px;
+  font-weight: bold;
+  background: #fff url('/sites/all/themes/accellion/images/bg-shade-light.png') repeat-x bottom left;
+  color: #000000;
+  position: relative;
+  bottom:10px;
+}
+
+
+/* STARTS Just for Firefox */
+
+@-moz-document url-prefix() {
+	#quicktabs-sotg_microsite ul.quicktabs-tabs.quicktabs-style-sky li a,
+	#quicktabs-sotg_microsite ul.quicktabs-tabs.quicktabs-style-sky li a:visited {
+	  /* SOTG padding: 0 38px; */
+	  padding: 0 41px;
+	}	
+}
+
+/* ENDS Just for Firefox */
+
+
+
+#quicktabs-sotg_microsite ul.quicktabs-tabs.quicktabs-style-sky li a:hover,
+#quicktabs-sotg_microsite ul.quicktabs-tabs.quicktabs-style-sky li.active a:hover {
+  text-decoration: none;
+  /*border-color: #B3B3B3;*/
+  /*border-color: #fff;*/
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  border-color: #000000;
+
+  /*background: #B3B3B3 url('images/bg-shade-medium.png') repeat-x bottom left;*/
+  background: #fff url('/sites/all/themes/accellion/images/bg-shade-medium.png') repeat-x bottom left;
+  color: #000000;
+}
+
+#quicktabs-sotg_microsite ul.quicktabs-tabs.quicktabs-style-sky li.active a,
+#quicktabs-sotg_microsite ul.quicktabs-tabs.quicktabs-style-sky li.active a:visited {
+  /*height: 3.05em;
+  min-height: 3.35em;
+  line-height: 3.35em;*/
+
+  height: 2.65em;
+  /*min-height: 2.95em;*/
+  min-height: 2.65em;
+  line-height: 2.95em;
+
+  font-weight: normal;
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  border-color: #000000;
+
+  /*background: #858585 url('images/bg-shade-dark.png') repeat-x bottom left;*/
+  background: #fff url('/sites/all/themes/accellion/images/bg-shade-dark.png') repeat-x bottom left;
+  color: #000000;
+  /*font-size: .95em;
+  font-weight: normal;*/
+  font-size: 15px;
+  font-weight: bold;
+
+  /*top: -0.025em;*/
+}
+
+ul.quicktabs-tabs.quicktabs-style-sky li:first-child a {
+  /*border-left: solid 1px #eee;*/
+}
+
+ul.quicktabs-tabs.quicktabs-style-sky li.active a {
+  /*border-left: solid 1px #777;*/
+}
+
+#quicktabs-sotg_microsite ul.quicktabs-tabs.quicktabs-style-sky li a:focus,
+#quicktabs-sotg_microsite ul.quicktabs-tabs.quicktabs-style-sky li a:active {
+  outline: none;
+  
+}
+
+/* Opera */
+@media all and (min-width: 0px) {
+  body .quicktabs_main.quicktabs-style-sky {
+    top: -0.2em;
+  }
+}
+
+
+
+/* end sky.css override */
+/* ==================== */
+
+
+
 /* GIGAOM MICROSITE */
 /* ================ */
 
