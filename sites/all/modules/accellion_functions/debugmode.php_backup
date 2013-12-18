@@ -25,8 +25,7 @@ function On_Stage_Server(){
 		if (preg_match("|^www1$|",$hostname) || preg_match("|^www2$|",$hostname) || preg_match("|^amethyst$|",$hostname)) {
 			return false;
     } else{
-			return false;
-			//return true;
+			return true;
     }
 }
 ?>
