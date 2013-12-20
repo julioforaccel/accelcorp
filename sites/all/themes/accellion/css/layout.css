@@ -702,21 +702,23 @@ font-weight: bold;
 /* New stuff */
 #upperTriptych {
 	width: 940px;
-	margin:20px auto;
+	/*margin:5px auto;*/
+	margin:10px auto;
 	overflow:auto;
 }
 
 #diptych {
 	width: 940px;
-	margin:20px auto;
-	margin-bottom:0px;
+	/*margin:20px auto;
+	margin-bottom:0px;*/
 	overflow:auto;
 }
 
 #lowerTriptych {
 	width: 940px;
-	margin:20px auto;
-	margin-top:5px;
+	/*margin:20px auto;
+	margin-top:5px;*/
+	margin:0px auto;
 	overflow:auto;
 }
 
@@ -724,28 +726,212 @@ font-weight: bold;
 /* Upper Triptych */
 #upperTriptych h2 {
   /*text-transform:uppercase;*/
-  letter-spacing:2px;
+  letter-spacing:0px;
   font-size:16px;
+  font-weight:lighter;
   margin-top:0;
+  position:relative;
+  top:15px;
 }
-.region-upper-triptych-first,
-.region-upper-triptych-second,
-.region-upper-triptych-third {
-  width:300px;
+
+
+.region-upper-triptych-first a {
+  display: block;
+  text-decoration:none;
+  width:310px;
+  /*height:195px;*/
+  height:130px;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
   float:left;
-  padding:15px;
+  /*padding-top:40px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:30px;*/
+  padding-top:10px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:0px;
   /*padding-left:100px;*/
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
-  border-radius: 5px;
+  border-radius: 0px;
+  margin-right:5px;
+  /*background:#E2E2E2 -10px 0 no-repeat;*/
+  background: #e1e1e1 url('../images/Accellion-Home-Ent-corner-static.png') no-repeat scroll left top; 
+  color:#363636;
+
 }
-.region-upper-triptych-first, .region-upper-triptych-second {
-  margin-right:20px;
+
+.region-upper-triptych-first a:hover {
+  display: block;
+  text-decoration:none;
+  background: #ecc64d url('../images/Accellion-Home-Ent-corner-hover.png') no-repeat scroll left top; 
+  width:310px;
+  /*height:195px;*/
+  height:130px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  float:left;
+  /*padding-top:40px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:30px;*/
+  padding-top:10px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:0px;
+  /*padding-left:100px;*/
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  border-radius: 0px;
+  margin-right:5px;
+  color:#363636;
+
 }
+
+
+
+.region-upper-triptych-second a {
+  display: block;
+  text-decoration:none;
+  width:310px;
+  /*height:195px;*/
+  height:130px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  float:left;
+  /*padding-top:40px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:30px;*/
+  padding-top:10px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:0px;
+  /*padding-left:100px;*/
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  border-radius: 0px;
+  margin-right:5px;
+  /*background:#E2E2E2 -10px 0 no-repeat;*/
+  background: #e1e1e1 url('../images/Accellion-Home-Bus-corner-static.png') no-repeat scroll left top; 
+  color:#363636;
+
+}
+
+
+.region-upper-triptych-second a:hover {
+  display: block;
+  text-decoration:none;
+  background: #ecc64d url('../images/Accellion-Home-Bus-corner-hover.png') no-repeat scroll left top; 
+  width:310px;
+  /*height:195px;*/
+  height:130px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  float:left;
+  /*padding-top:40px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:30px;*/
+  padding-top:10px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:0px;
+  /*padding-left:100px;*/
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  border-radius: 0px;
+  margin-right:5px;
+  color:#363636;
+
+}
+
+
+
+
+.region-upper-triptych-third a
+ {
+  display: block;
+  text-decoration:none;
+  width:310px;
+  /*height:195px;*/
+  height:130px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  float:left;
+  /*padding-top:40px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:30px;*/
+  padding-top:10px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:0px;
+  /*padding-left:100px;*/
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  border-radius: 0px;
+  /*background:#E2E2E2 -10px 0 no-repeat;*/
+  background: #e1e1e1 url('../images/Accellion-Home-Gov-corner-static.png') no-repeat scroll left top; 
+  color:#363636;
+
+}
+
+
+
+.region-upper-triptych-third a:hover {
+  display: block;
+  text-decoration:none;
+  background: #ecc64d url('../images/Accellion-Home-Gov-corner-hover.png') no-repeat scroll left top; 
+  width:310px;
+  /*height:195px;*/
+  height:130px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  float:left;
+  /*padding-top:40px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:30px;*/
+  padding-top:10px;
+  padding-left:55px;
+  padding-right:35px;
+  padding-bottom:0px;
+  /*padding-left:100px;*/
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  border-radius: 0px;
+  color:#363636;
+
+}
+
+.tentop {
+  position:relative;
+  bottom:0px;
+
+}
+
+.bluelink {
+  color:#649CD2;
+  position:relative;
+  top:0px;
+}
+
+
 .region-upper-triptych-first {
   background:#E2E2E2 -10px 0 no-repeat;
 }
@@ -764,6 +950,7 @@ font-weight: bold;
 .region-lower-triptych-third h2 {
   /*background:url(../images/enhancements/resources.png) 0 0 no-repeat;*/
 }
+
 
 /* Diptych */
 .region-diptych-second {
@@ -806,7 +993,8 @@ font-weight: bold;
 /* Lower Triptych */
 #lowerTriptych div.region {
 	/*width:299px;*/
-	width:284px;	
+	/*width:284px;*/
+	width:311px;		
 	/*box-sizing:border-box;*/
 	float:left;
 
@@ -821,25 +1009,28 @@ font-weight: bold;
 }
 .region-lower-triptych-first, .region-lower-triptych-second, .region-lower-triptych-third  {
   /*height:280px;*/
-  height:250px;
+  /*height:250px;*/
+  height:140px;
 }
 .region-lower-triptych-first  {
   /*border-right:1px solid #ccc;*/
-  padding-right:10px;
-  padding-left:13px;
+  /*padding-right:10px;
+  padding-left:13px;*/
+  margin-right:3px;
 }
 
 .region-lower-triptych-second  {
-  padding-right:10px;
-  padding-left:16px;
+  /*padding-right:10px;
+  padding-left:16px;*/
+  margin-right:3px;
 }
 
 .region-lower-triptych-third  {
-  padding-left:29px;
+  /*padding-left:29px;*/
 }
 
 .region-lower-triptych-second  {
-  margin-left:10px;
+  /*margin-left:10px;*/
 }
 
 
@@ -856,7 +1047,7 @@ font-weight: bold;
 }
 
 /* Events, Featured Resources, Latest Blogs */
-#block-views-events-block ul, .view-featured-resources-homepage ul, #block-aggregator-feed-1 ul {
+#block-views-events-block ul, .view-featured-resources-homepage ul, #block-aggregator-feed-1 ul, #block-views-events-block-1 ul {
 	list-style-type:none;
 	margin:0;
 	padding:0;
@@ -865,8 +1056,8 @@ font-weight: bold;
   font-size:80%;
   font-weight:bold;
 }
-#block-views-events-block .views-row, .view-featured-resources-homepage .views-row, #block-aggregator-feed-1 ul li {
-  margin-bottom: 20px;
+#block-views-events-block .views-row, .view-featured-resources-homepage .views-row, #block-aggregator-feed-1 ul li, #block-views-events-block-1 .views-row {
+  margin-bottom: 0px;
   display:block;
   overflow:auto;
 }
@@ -899,4 +1090,5 @@ font-weight: bold;
   left: 74px;
   top: 4px;
 }
+
 

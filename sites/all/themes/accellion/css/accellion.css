@@ -291,6 +291,131 @@ ul.quicktabs-tabs.quicktabs-style-sky li.active a {
 
 
 
+
+
+
+
+/* HOME BOTTOM BLOCKS ROW TWO */
+/* ========================== */
+
+/*.home-bottom-row-two {
+  background-color:green;
+  height:19px;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+  color:#FFFFFF;
+}*/
+
+.home-bottom-row-two a {
+  display: block;
+  text-decoration:none;
+  background-color:#323f53;
+  /*background-color:#1B415C;*/
+  height:19px;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+  color:#FFFFFF;
+}
+
+.home-bottom-row-two a:hover {
+  display: block;
+  text-decoration:none;
+  background-color:#323f53;
+  /*background-color:#1B415C;*/
+  height:19px;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+  color:#FFFFFF;
+}
+
+
+.plus-sign {
+  font-size:23px;
+  font-weight:100;
+  color:#FFFFFF;
+}
+
+.plus-sign-title {
+  position:relative;
+  bottom:3px;
+  color:#FFFFFF;
+}
+
+.bottom-table {
+  width:311px;
+  margin-top:5px;
+}
+
+.bottom-cell-text {
+  font-size:15px;
+  width:240px;
+  vertical-align:top;
+}
+
+.day-size {
+  font-size:40px;
+  position:relative;
+  left:11px;
+  top:4px;
+}
+
+.month-size {
+  font-size:20px;
+  font-weight:bold;
+  text-transform:lowercase;
+  position:relative;
+  bottom:7px;
+  left:18px;
+}
+
+.day-size2 {
+  font-size:40px;
+  position:relative;
+  left:10px;
+}
+
+.month-size2 {
+  font-size:20px;
+  font-weight:bold;
+  text-transform:lowercase;
+  position:relative;
+  bottom:10px;
+  left:14px;
+}
+
+.day-size3 {
+  font-size:40px;
+  position:relative;
+  left:10px;
+  top:4px;
+}
+
+.month-size3 {
+  font-size:20px;
+  font-weight:bold;
+  text-transform:lowercase;
+  position:relative;
+  bottom:7px;
+  left:16px;
+}
+
+
+
+
+
+
+
+
+
 /* GIGAOM MICROSITE */
 /* ================ */
 
@@ -1361,7 +1486,8 @@ ul.mainmega1de {
 }
 
 #mainmega1-link.qtip-hover {
-  color:#1B415C !important;
+  /*color:#1B415C !important;*/
+  color:#323f53 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
@@ -3053,7 +3179,8 @@ ul.welweit {
 }
 
 #worldwide-link {
-  color: #FFFFFF !important;
+  /*color: #FFFFFF !important;*/
+  color: #E6E6E6 !important;
   font-size: 11px;	
   position:relative;
   /*left:651px;*/
@@ -3332,7 +3459,8 @@ sftp://michael.jankowski:@www-drup.accellion.com/%2Fhome/httpd/corp/sites/all/th
 
 }
 #top-links a:link, #top-links a:visited, #top-links a:active {
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #E6E6E6;
     padding: 0 7px;
 }
 #top-links a:hover {
@@ -3626,7 +3754,9 @@ text-decoration: none;
  height: 80px;
  /*margin-bottom:20px;*/
  color: rgb(255, 255, 255);
- background: url("/sites/all/themes/accellion/images/enhancements/bg-pattern-t-acc.png") repeat-x scroll center top rgb(0, 0, 0);
+ /*background: url("/sites/all/themes/accellion/images/enhancements/bg-pattern-t-acc.png") repeat-x scroll center top rgb(0, 0, 0);*/
+
+ background: #323f53 repeat-x scroll center top;
 
 }
 
@@ -3646,4 +3776,5 @@ ul#views-ticker-fade-news_ticker
   z-index:498;
   position:relative;
 }
+
 

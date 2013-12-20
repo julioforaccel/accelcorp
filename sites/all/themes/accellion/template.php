@@ -171,3 +171,19 @@ function accellion_preprocess_search_result(&$variables) {
   $variables['theme_hook_suggestions'][] = 'search_result__' . $variables['module'];
 }
 
+function accellion_aggregator_block_item($variables) {
+
+  // Display the external link to the item.
+  return '<a href="' . check_url($variables['item']->link) . '" target="_blank">' . 
+
+'<table class="bottom-table">
+<tr>
+<td><span class="month-size3">' . format_date($variables['item']->timestamp, 'custom', 'M') . '</span><br/><span class="day-size3">' . format_date($variables['item']->timestamp, 'custom', 'd') . '</span></td>
+<td class="bottom-cell-text">' . check_plain($variables['item']->title) . '</td>
+</tr>
+
+</table>' .
+
+
+"</a>\n";
+}
