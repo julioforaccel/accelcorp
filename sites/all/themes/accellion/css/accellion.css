@@ -381,6 +381,7 @@ ul.quicktabs-tabs.quicktabs-style-sky li.active a {
   font-size:40px;
   position:relative;
   left:10px;
+  top:3px;
 }
 
 .month-size2 {
@@ -388,8 +389,8 @@ ul.quicktabs-tabs.quicktabs-style-sky li.active a {
   font-weight:bold;
   text-transform:lowercase;
   position:relative;
-  bottom:10px;
-  left:14px;
+  bottom:8px;
+  left:18px;
 }
 
 .day-size3 {
