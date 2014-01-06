@@ -1,0 +1,358 @@
+redirect 301 "/legal-infographic" /sites/default/files/Accellion-Law-Firms-Infographic-small.pdf
+redirect 301 "/law-firms" /solutions/industries/secure-client-file-sharing-for-law-firms
+redirect 301 "/company/technology-partners" /company/partners/technology-partners
+redirect 301 "/experience-accellion" /14-day-free-trial
+redirect 301 "/mobileironman" /masters/the-masters/mobileironman
+redirect 301 "/us" /
+redirect 301 "/fr" /
+redirect 301 "/de" /
+redirect 301 "/uk" /
+redirect 301 "/ca_en" /
+redirect 301 "/au" /
+redirect 301 "/hk" /
+redirect 301 "/in" /
+redirect 301 "/sg" /
+redirect 301 "/ca_fr" /
+redirect 301 "/ch_fr" /
+redirect 301 "/ch_de" /
+redirect 301 "/sites/default/files/datasheets/Accellion_kitedrive_datasheet.pdf" /sites/default/files/datasheets/Accellion_file_sync_datasheet.pdf
+redirect 301 "/solutions/mobile-file-sharing" /solutions/mobile-enablement/mobile-file-sharing
+redirect 301 "/solutions/mobile-productivity"  /solutions/mobile-enablement
+redirect 301 "/solutions/mobile-productivity/secure-mobile-printing"  /solutions/mobile-enablement/mobile-printing
+redirect 301 "/solutions/mobilize-enterprise-content" /solutions/mobile-content-management
+redirect 301 "/solutions/cloud-file-sync-and-storage" /solutions/online-file-sharing/file-sync
+redirect 301 "/solutions/project-and-team-collaboration" /solutions/online-file-sharing/online-collaboration
+redirect 301 "/solutions/ftp-replacement" /solutions/online-file-sharing/ftp-replacement
+redirect 301 "/solutions/secure-file-transfer" /solutions/online-file-sharing/secure-file-transfer
+redirect 301 "/trial-free-45-day-hosted" /trial-free-14-day-hosted
+redirect 301 "/trial-free-45-day-hosted-collaboration.html" /trial-free-14-day-hosted
+redirect 301 "/trial-free-45-day-hosted-collaboration" /trial-free-14-day-hosted
+redirect 301 "/trial-free-45-day-collaboration-vm" /trial-free-14-day-hosted
+redirect 301 "/trial-free-45-day-collaboration-vm.html" /trial-free-14-day-hosted
+redirect 301 "/trial-free-14-day-virtual" /14-day-free-trial
+redirect 301 "/solutions/business/advertising-marketing"  /solutions/solutions-overview
+redirect 301 "/solutions/business/aec"  /solutions/solutions-overview
+redirect 301 "/solutions/business/consumer-retail" /solutions/solutions-overview
+redirect 301 "/solutions/business/energy-oil-gas" /solutions/solutions-overview
+redirect 301 "/solutions/business/entertainment-media" /solutions/solutions-overview
+redirect 301 "/solutions/business/financial" /solutions/solutions-overview
+redirect 301 "/solutions/business/healthcare" /solutions/solutions-overview
+redirect 301 "/solutions/business/industrial" /solutions/solutions-overview
+redirect 301 "/solutions/business/legal" /solutions/solutions-overview
+redirect 301 "/solutions/business/pharmaceutical" /solutions/solutions-overview
+redirect 301 "/solutions/solutions/business" /solutions/solutions-overview
+redirect 301 "/solutions/education" /solutions/solutions-overview
+redirect 301 "/solutions/government" /solutions/solutions-overview
+redirect 301 "/solutions/it/email-attachments" /solutions/solutions-overview
+redirect 301 "/solutions/it/email-migration" /solutions/solutions-overview
+redirect 301 "/solutions/it/ftp-replacement" /solutions/ftp-replacement
+redirect 301 "/solutions/it" /solutions/solutions-overview
+redirect 301 "/solutions/mobile-security" /solutions/mobile-file-sharing
+redirect 301 "/solutions/security-compliance/enterprise-data-security" /solutions/solutions-overview
+redirect 301 "/solutions/security-compliance/governance-risk-compliance" /solutions/solutions-overview
+redirect 301 "/solutions/security-compliance" /solutions/solutions-overview
+redirect 301 "/solutions/mobilize-sharepoint" /solutions/mobilize-enterprise-content
+redirect 301 "/us/solutions/mobilize-sharepoint"  /us/solutions/mobilize-enterprise-content
+redirect 301 "/fr/solutions/mobilize-sharepoint"  /fr/solutions/mobilize-enterprise-content
+redirect 301 "/de/solutions/mobilize-sharepoint"  /de/solutions/mobilize-enterprise-content
+redirect 301 "/uk/solutions/mobilize-sharepoint"  /uk/solutions/mobilize-enterprise-content
+redirect 301 "/ca_en/solutions/mobilize-sharepoint"  /ca_en/14-day-free-trial
+redirect 301 "/au/solutions/mobilize-sharepoint"  /au/solutions/mobilize-enterprise-content
+redirect 301 "/hk/solutions/mobilize-sharepoint"  /hk/solutions/mobilize-enterprise-content
+redirect 301 "/in/solutions/mobilize-sharepoint"  /in/solutions/mobilize-enterprise-content
+redirect 301 "/sg/solutions/mobilize-sharepoint"  /sg/solutions/mobilize-enterprise-content
+redirect 301 "/ca_fr/solutions/mobilize-sharepoint"  /ca_fr/solutions/mobilize-enterprise-content
+redirect 301 "/ch_fr/solutions/mobilize-sharepoint"  /ch_fr/solutions/mobilize-enterprise-content
+redirect 301 "/ch_de/solutions/mobilize-sharepoint"  /ch_de/solutions/mobilize-enterprise-content
+redirect 301 "/products-services/accellion-plug-ins/accellion-imanage-plug" /solutions/solutions-overview
+redirect 301 "/products-services/accellion-plug-ins/accellion-microsoft-plug-ins" /solutions/solutions-overview
+redirect 301 "/products-services/bpm-modules/accellion-apis" /solutions/solutions-overview
+redirect 301 "/products-services/bpm-modules/automation-agent" /solutions/solutions-overview
+redirect 301 "/products-services/bpm-modules/envelope-designer" /solutions/solutions-overview
+redirect 301 "/products-services/bpm-modules/smtp-satellite" /solutions/solutions-overview
+redirect 301 "/products-services/bpm-modules/sftp-satellite" /solutions/solutions-overview
+redirect 301 "/products-services/bpm-modules" /solutions/solutions-overview
+redirect 301 "/products-services/deployment-options" /solutions/solutions-overview
+redirect 301 "/products-services/dlp-modules/archival-satellite" /solutions/solutions-overview
+redirect 301 "/products-services/dlp-modules" /solutions/solutions-overview
+redirect 301 "/products-services/enterprise-plug-ins" /solutions/solutions-overview
+redirect 301 "/products-services/mobile-access" /solutions/mobile-file-sharing
+redirect 301 "/products-services/secure-collaboration" /solutions/project-and-team-collaboration
+redirect 301 "/products-services/secure-file-transfer" /solutions/file-transfer
+redirect 301 "/products-services" /solutions/solutions-overview
+redirect 301 "/purchase" /pricing
+redirect 301 "/ms-ebook-2011" http://www.info.accellion.com/mobile-trial.html?sdet=tt-mobile-security-ebook-q411
+redirect 301 "/healthy" http://www.info.accellion.com/mobile-trial.html?sdet=iht2-conf-bh-ad
+redirect 301 "/termsv2.html" /license/termsv2
+redirect 301 "/termsv2" /license/termsv2
+redirect 301 "/termsv1" /license/termsv2
+redirect 301 "/asla" /license/asla
+redirect 301 "/terms/hostingsla.html" /terms/hostingsla
+redirect 301 "/license/termsv1.html" /license/termsv1
+redirect 301 "/license/termsv2.html" /license/termsv2
+redirect 301 "/courier/termsv1.html" /license/termsv1
+redirect 301 "/courier/termsv2.html" /license/termsv2
+redirect 301 "/virtual-greenex.html" /trial-demo
+redirect 301 "/virtual-greenex/virtual-greenex.html" /trial-demo/
+redirect 301 "/supportguidelines/enterprise.html" /supportguidelines/enterprise
+redirect 301 "/supportguidelines/standard.html" /supportguidelines/standard
+redirect 301 "/supportguidelines/business.html" /supportguidelines/business
+redirect 301 "/terms/hostingsla.html" /terms/hostingsla
+redirect 301 "/solutions/problems.html"  /solutions/solutions-overview
+redirect 301 "/solutions/index.html"  /solutions/solutions-overview
+redirect 301 "/solutions/enterprise.html"  /solutions/solutions-overview
+redirect 301 "/solutions/email-file-attachment-limits.html"  /solutions/solutions-overview
+redirect 301 "/solutions/cost-savings.html"  /solutions/solutions-overview
+redirect 301 "/solutions/email-storage-issues.html"  /solutions/solutions-overview
+redirect 301 "/solutions/ftp-support-issues.html"  /solutions/solutions-overview
+redirect 301 "/solutions/ftp-data-security-issues.html"  /solutions/solutions-overview
+redirect 301 "/solutions/ftp-sox-hipaa-compliance.html"  /solutions/solutions-overview
+redirect 301 "/solutions/small-business.html"  /solutions/solutions-overview
+redirect 301 "/customers/hospitals-healthcare.html"  /resources/customers
+redirect 301 "/customers/healthcare-organizations.html"  /resources/customers
+redirect 301 "/customers/medical-research-companies.html"  /resources/customers
+redirect 301 "/customers/pharmaceutical-medical-device-companies.html"  /resources/customers
+redirect 301 "/customers/finance-insurance-companies.html"  /resources/customers
+redirect 301 "/customers/legal-professionals.html"  /resources/customers
+redirect 301 "/customers/advertising-media-agencies.html"  /resources/customers
+redirect 301 "/customers/consumer-retail.html"  /resources/customers
+redirect 301 "/customers/industrial-high-tech-companies.html"  /resources/customers
+redirect 301 "/customers/energy-oil-gas-companies.html"  /resources/customers
+redirect 301 "/customers/arch-eng-construction-companies.html"  /resources/customers
+redirect 301 "/customers/entertainment-media.html"  /resources/customers
+redirect 301 "/customers/government.html"  /resources/customers
+redirect 301 "/customers/education.html"  /resources/customers
+redirect 301 "/products"  /solutions/solutions-overview
+redirect 301 "/products/index.html"  /solutions/solutions-overview
+redirect 301 "/products/managed-service.html"  /solutions/solutions-overview
+redirect 301 "/products/cloud-appliance.html"  /solutions/solutions-overview
+redirect 301 "/products/secure-file-transfer-appliance.html"  /solutions/solutions-overview
+redirect 301 "/products/accellion-virtual.html"  /solutions/solutions-overview
+redirect 301 "/products/accellion-FIPS.html"  /solutions/solutions-overview
+redirect 301 "/products/user-interface.html"  /solutions/solutions-overview
+redirect 301 "/products/web-interface.html"  /solutions/solutions-overview
+redirect 301 "/products/attachments-email-plugin.html"  /solutions/solutions-overview
+redirect 301 "/products/dlp.html"  /solutions/solutions-overview
+redirect 301 "/products/dlp-content-monitoring-filtering.html"  /solutions/solutions-overview
+redirect 301 "/products/archival-satellite.html"  http://www.accellion.com/products-services/dlp-modules/archival-satellite
+redirect 301 "/products/SMTP-satellite.html"  /solutions/solutions-overview
+redirect 301 "/products/bpm.html"  /solutions/solutions-overview
+redirect 301 "/products/automation-agent.html"  /solutions/solutions-overview
+redirect 301 "/products/envelope-designer.html"  /solutions/solutions-overview
+redirect 301 "/solutions/free-user-trial.html"  /trial-demo
+redirect 301 "/support/index.html"  /technical-support
+redirect 301 "/support"  /technical-support
+redirect 301 "/partners/channel.html"  /company/partners/technology-partners
+redirect 301 "/partners/channel-partner-become.html"  /company/partners/technology-partners
+redirect 301 "/partners/technology.html"  /company/partners/technology-partners
+redirect 301 "/contact/contact-us.html"  /contact-us
+redirect 301 "/contact"  /contact-us
+redirect 301 "/company/index.html"  /company
+redirect 301 "/trial"  /14-day-free-trial
+redirect 301 "/trial-demo"  /14-day-free-trial
+redirect 301 "/us/trial-demo"  /us/14-day-free-trial
+redirect 301 "/fr/trial-demo"  /fr/14-day-free-trial
+redirect 301 "/de/trial-demo"  /de/14-day-free-trial
+redirect 301 "/uk/trial-demo"  /uk/14-day-free-trial
+redirect 301 "/ca_en/trial-demo"  /ca_en/14-day-free-trial
+redirect 301 "/au/trial-demo"  /au/14-day-free-trial
+redirect 301 "/hk/trial-demo"  /hk/14-day-free-trial
+redirect 301 "/in/trial-demo"  /in/14-day-free-trial
+redirect 301 "/sg/trial-demo"  /sg/14-day-free-trial
+redirect 301 "/ca_fr/trial-demo"  /ca_fr/14-day-free-trial
+redirect 301 "/ch_fr/trial-demo"  /ch_fr/14-day-free-trial
+redirect 301 "/ch_de/trial-demo"  /ch_de/14-day-free-trial
+redirect 301 "/trial-free-14-day-hosted"  /14-day-free-trial
+redirect 301 "/us/trial-free-14-day-hosted"  /us/14-day-free-trial
+redirect 301 "/fr/trial-free-14-day-hosted"  /fr/14-day-free-trial
+redirect 301 "/de/trial-free-14-day-hosted"  /de/14-day-free-trial
+redirect 301 "/uk/trial-free-14-day-hosted"  /uk/14-day-free-trial
+redirect 301 "/ca_en/trial-free-14-day-hosted"  /ca_en/14-day-free-trial
+redirect 301 "/au/trial-free-14-day-hosted"  /au/14-day-free-trial
+redirect 301 "/hk/trial-free-14-day-hosted"  /hk/14-day-free-trial
+redirect 301 "/in/trial-free-14-day-hosted"  /in/14-day-free-trial
+redirect 301 "/sg/trial-free-14-day-hosted"  /sg/14-day-free-trial
+redirect 301 "/ca_fr/trial-free-14-day-hosted"  /ca_fr/14-day-free-trial
+redirect 301 "/ch_fr/trial-free-14-day-hosted"  /ch_fr/14-day-free-trial
+redirect 301 "/ch_de/trial-free-14-day-hosted"  /ch_de/14-day-free-trial
+redirect 301 "/aberdeen-dropbox"  http://www.info.accellion.com/whitepaper-aberdeen-group-beyond-dropbox.html?sdet=aberdeen-group-beyond-dropbox
+redirect 301 "/company/solutions"  /solutions
+redirect 301 "/news/media-coverage-02"  /news/media-coverage
+redirect 301 "/company/company-overview"  /company
+redirect 301 "/mobile-trial"  /mobile-sign-up
+redirect 301 "/federal-top-10"  /sites/default/files/datasheets/Accellion_Gov_Top_10_List_1.pdf
+redirect 301 "/top-10-reasons-enterprise"  /sites/default/files/datasheets/Accellion_Enterprise_Top_10_List.pdf
+redirect 301 "/sites/default/files/datasheets/Accellion_Cloud_Deployment_datasheet_0.pdf"  /sites/default/files/datasheets/Accellion_Cloud_Deployment_datasheet.pdf
+redirect 301 "/sites/default/files/datasheets/Accellion_Mobile_File_Sharing_Solution_Overview_datasheet_0.pdf"  /sites/default/files/datasheets/Accellion_Mobile_File_Sharing_Solution_Overview_datasheet.pdf
+redirect 301 "/sites/default/files/datasheets/Accellion_Gov_Top_10_List_1.pdf"  /sites/default/files/datasheets/Accellion_Gov_Top_10_List.pdf
+redirect 301 "/sites/default/files/datasheets/SFTP_Satellite_datasheet_0.pdf"  /sites/default/files/datasheets/SFTP_Satellite_datasheet.pdf
+redirect 301 "/sites/default/files/datasheets/Accellion_Mobile_Apps_datasheet_0.pdf"  /sites/default/files/datasheets/Accellion_Mobile_Apps_datasheet.pdf
+redirect 301 "/sites/default/files/datasheets/Accellion_Microsoft_plugins_datasheet.pdf"  /sites/default/files/datasheets/Accellion_Microsoft_Plugins_datasheet.pdf
+redirect 301 "/sites/default/files/datasheets/Accellion_SFTP_Satellite_datasheet.pdf"  /sites/default/files/datasheets/SFTP_Satellite_datasheet.pdf
+redirect 301 "/solutions/solutions-overview/kitedrive-sync"  /solutions/cloud-file-sync-and-storage
+redirect 301 "/content/solutions"  /solutions
+redirect 301 "/content/solutions/it/ftp-replacement" /solutions/ftp-replacement
+redirect 301 "/sites/default/files/datasheets/Accellion_Archival_Satellite_datasheet.pdf"  /sites/default/files/datasheets/Accellion_Archival_Satellite_datasheet_0.pdf
+redirect 301 "/sites/default/files/Accellion_State_and_Local_Gov_Top_10_List.pdf"  /sites/default/files/datasheets/Accellion_State_and_Local_Gov_Top_10_List.pdf
+
+#
+# Apache/PHP/Drupal settings:
+#
+
+# Protect files and directories from prying eyes.
+<FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl)(|~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\..*|Entries.*|Repository|Root|Tag|Template)$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig\.save)$">
+  Order allow,deny
+</FilesMatch>
+
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
+# Make Drupal handle any 404 errors.
+ErrorDocument 404 /index.php
+
+# Set the default handler.
+DirectoryIndex index.php index.html index.htm
+
+# Override PHP settings that cannot be changed at runtime. See
+# sites/default/default.settings.php and drupal_initialize_variables() in
+# includes/bootstrap.inc for settings that can be changed at runtime.
+
+# PHP 5, Apache 1 and 2.
+<IfModule mod_php5.c>
+  php_flag magic_quotes_gpc                 off
+  php_flag magic_quotes_sybase              off
+  php_flag register_globals                 off
+  php_flag session.auto_start               off
+  php_value mbstring.http_input             pass
+  php_value mbstring.http_output            pass
+  php_flag mbstring.encoding_translation    off
+</IfModule>
+
+# Requires mod_expires to be enabled.
+<IfModule mod_expires.c>
+  # Enable expirations.
+  ExpiresActive On
+
+  # Cache all files for 2 weeks after access (A).
+  ExpiresDefault A1209600
+
+  <FilesMatch \.php$>
+    # Do not allow PHP scripts to be cached unless they explicitly send cache
+    # headers themselves. Otherwise all scripts would have to overwrite the
+    # headers set by mod_expires if they want another caching behavior. This may
+    # fail if an error occurs early in the bootstrap process, and it may cause
+    # problems if a non-Drupal PHP file is installed in a subdirectory.
+    ExpiresActive Off
+  </FilesMatch>
+</IfModule>
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  # Set "protossl" to "s" if we were accessed via https://.  This is used later
+  # if you enable "www." stripping or enforcement, in order to ensure that
+  # you don't bounce between http and https.
+  RewriteRule ^ - [E=protossl]
+  RewriteCond %{HTTPS} on
+  RewriteRule ^ - [E=protossl:s]
+
+  # Make sure Authorization HTTP header is available to PHP
+  # even when running as CGI or FastCGI.
+  RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+
+  # Block access to "hidden" directories whose names begin with a period. This
+  # includes directories used by version control systems such as Subversion or
+  # Git to store control files. Files whose names begin with a period, as well
+  # as the control files used by CVS, are protected by the FilesMatch directive
+  # above.
+  #
+  # NOTE: This only works when mod_rewrite is loaded. Without mod_rewrite, it is
+  # not possible to block access to entire directories from .htaccess, because
+  # <DirectoryMatch> is not allowed here.
+  #
+  # If you do not have mod_rewrite installed, you should remove these
+  # directories from your webroot or otherwise protect them from being
+  # downloaded.
+  RewriteRule "(^|/)\." - [F]
+
+  # from http://www.askapache.com/htaccess/http-https-rewriterule-redirect.html	Bruce Barnes 8/22/12
+# RewriteCond %{SERVER_PORT}s ^(443(s)|[0-9]+s)$
+# RewriteRule ^(.+)$ - [env=askapache:%2]
+
+  # If your site can be accessed both with and without the 'www.' prefix, you
+  # can use one of the following settings to redirect users to your preferred
+  # URL, either WITH or WITHOUT the 'www.' prefix. Choose ONLY one option:
+  #
+  # To redirect all users to access the site WITH the 'www.' prefix,
+  # (http://example.com/... will be redirected to http://www.example.com/...)
+  # uncomment the following:
+  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # RewriteCond %{HTTP_HOST} ^accellion\.com [NC]
+  # RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+   RewriteCond %{HTTP_HOST} ^accellion\.com [NC]
+   RewriteRule ^.*$ http%{ENV:askapache}://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+   #RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  #
+  # To redirect all users to access the site WITHOUT the 'www.' prefix,
+  # (http://www.example.com/... will be redirected to http://example.com/...)
+  # uncomment the following:
+  # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  # RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+
+  # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
+  # VirtualDocumentRoot and the rewrite rules are not working properly.
+  # For example if your site is at http://example.com/drupal uncomment and
+  # modify the following line:
+  # RewriteBase /drupal
+  #
+  # If your site is running in a VirtualDocumentRoot at http://example.com/,
+  # uncomment the following line:
+  # RewriteBase /
+
+  # Pass all requests not referring directly to files in the filesystem to
+  # index.php. Clean URLs are handled in drupal_environment_initialize().
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  RewriteRule ^ index.php [L]
+
+## Redirect for kitedrive.net
+
+RewriteCond %{HTTP_HOST} \.net$
+RewriteRule ^(.*)$ http://www.accellion.com/$1 [R=301,L]
+
+  # Rules to correctly serve gzip compressed CSS and JS files.
+  # Requires both mod_rewrite and mod_headers to be enabled.
+  <IfModule mod_headers.c>
+    # Serve gzip compressed CSS files if they exist and the client accepts gzip.
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
+
+    # Serve gzip compressed JS files if they exist and the client accepts gzip.
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.js $1\.js\.gz [QSA]
+
+    # Serve correct content types, and prevent mod_deflate double gzip.
+    RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1]
+    RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1]
+
+    <FilesMatch "(\.js\.gz|\.css\.gz)$">
+      # Serve correct encoding type.
+      Header append Content-Encoding gzip
+      # Force proxies to cache gzipped & non-gzipped css/js files separately.
+      Header append Vary Accept-Encoding
+    </FilesMatch>
+  </IfModule>
+</IfModule>
+
+
+
