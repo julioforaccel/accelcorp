@@ -1,6 +1,426 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* KW FOR YOUR TEAM PAGE */
+/* ===================== */
+
+.ind1
+{
+  list-style-image: url('/sites/default/files/icons/advertising.png');
+}
+
+.ind2
+{
+  list-style-image: url('/sites/default/files/icons/AEC.png');
+}
+
+.ind3
+{
+  list-style-image: url('/sites/default/files/icons/consumer.png');
+}
+
+.ind4
+{
+  list-style-image: url('/sites/default/files/icons/education.png');
+}
+
+.ind5
+{
+  list-style-image: url('/sites/default/files/icons/energy.png');
+}
+
+.ind6
+{
+  list-style-image: url('/sites/default/files/icons/entertainment.png');
+}
+
+.ind7
+{
+  list-style-image: url('/sites/default/files/icons/financial-services.png');
+}
+
+.ind8
+{
+  list-style-image: url('/sites/default/files/icons/government.png');
+}
+
+.ind9
+{
+  list-style-image: url('/sites/default/files/icons/healthcare.png');
+}
+
+.ind10
+{
+  list-style-image: url('/sites/default/files/icons/legal.png');
+}
+
+.ind11
+{
+  list-style-image: url('/sites/default/files/icons/pharmaceutical.png');
+}
+
+.ind12
+{
+  list-style-image: url('/sites/default/files/icons/technology.png');
+}
+
+
+
+
+/* NEW HEADER */
+/* ========== */
+
+#Accellion_Header {
+ height: 80px;
+ /*margin-bottom:20px;*/
+ color: rgb(255, 255, 255);
+ /*background: url("/sites/all/themes/accellion/images/enhancements/bg-pattern-t-acc.png") repeat-x scroll center top rgb(0, 0, 0);*/
+ width:940px;
+ margin:auto;
+ /*background: #323f53 repeat-x scroll center top;*/
+
+ /*background: url('../images/new-top-header.png') no-repeat fixed center;*/
+ background: url("../images/new-top-header.png") repeat-x scroll center top rgb(0, 0, 0);
+ 
+ /*background: #ffffff repeat-x scroll center top;*/
+}
+
+/* background-image-bottom: 940x45 (940x35 top)*/
+
+
+#top-links {
+/*    padding-right: 0px;
+	padding-bottom: 10px;
+	margin-right: -7px;*/
+    /*width: 350px;*/
+    width: 480px;
+    float: right;
+  	position:relative;
+  	/*left:85px;*/
+  	left:5px;
+  	top:2px;
+    color: #777777;
+
+}
+#top-links a:link, #top-links a:visited, #top-links a:active {
+    /*color: #ffffff;*/
+    /*color: #E6E6E6;*/
+    color: #777777;
+    padding: 0 7px;
+}
+#top-links a:hover {
+    color: #FB1;
+    text-decoration: none;
+}
+
+#worldwide-link {
+  /*color: #FFFFFF !important;*/
+  /*color: #E6E6E6 !important;*/
+  color: #777777 !important;
+  font-size: 11px;	
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:74px;
+	bottom:35px;
+}
+
+form#search-block-form .form-text {
+    /*background: none repeat scroll 0 0 #FFFFFF;*/
+    background: none repeat scroll 0 0 #FFFFFF;;
+    /*border: medium none;*/
+border-top:1px solid #777777;
+border-left:1px solid #777777;
+border-bottom:1px solid #777777;
+
+    /*border-radius: 16px 0 0 16px;*/
+    border-radius: 5px 0 0 5px;
+    float: left;
+    height: 16px;
+    padding: 2px 10px;
+    width: 100px;
+    margin-right:0;
+}
+
+form#search-block-form .form-submit {
+    background:url(../images/enhancements/search-icon.png) no-repeat center center #FFFFFF;
+    /*border: medium none;*/
+	border-top:1px solid #777777;
+	border-right:1px solid #777777;
+	border-bottom:1px solid #777777;
+
+    /*border-radius: 0 16px 16px 0;*/
+    border-radius: 0 5px 5px 0;
+    float: left;
+    height: 22px;
+    margin: 0;
+    text-indent: -9999px;
+    width: 30px;
+}
+
+#accellionLogo {
+	position:relative;
+	/*right:20px;
+	top:0px;*/
+	right:20px;
+	top:21px;
+}
+
+form#search-block-form {
+  position:relative;
+  top:0px;
+  left:0px;
+  z-index:999;
+}
+
+form#search-block-form{
+  float:right;
+  overflow:hidden;
+  /*margin:-70px 5px 10px 0px;*/
+  margin:-72px 5px 10px 0px;
+}
+
+
+
+/* NEW KW PAGES */
+/* ============ */
+
+.initial-paragraph {
+  margin-top:10px;
+  margin-left:20px;
+}
+
+.highlighted-video {
+  margin: 20px 20px 0px 20px;
+}
+
+.highlighted-video .first-subtitle {
+	position:relative; 
+	left:0px;
+}
+
+.vimeo-1 {
+  position:relative;
+  bottom:10px;
+}
+
+.text-under-video {
+  margin: 0px 120px 25px 0px;
+  position:relative;
+  bottom:10px;
+}
+
+
+.mega1-in-page {
+  margin: 0 20px 0px 15px;
+  position:relative;
+  bottom:20px;
+}
+
+.mega1-in-page .megamenu_mainmega1_link {
+  margin: 0 20px 0px 20px;
+}
+
+.mega1-in-page #table2kw {
+  height:212px;
+}
+
+
+.mega1-in-page #table2kw td {
+
+}
+
+
+/* NEW KW TRIPTYCH REGIONS */
+/* ======================= */
+
+.kw-box {
+  margin-top:25px;
+  margin-bottom:5px;
+  position:relative;
+  left:10px;
+
+}
+
+.kw-strong {
+  font-size:40px;
+  font-weight:bold;
+
+}
+
+
+
+.kw-soft {
+  font-size:40px;
+  font-weight:lighter;
+
+}
+
+.kw-text {
+  font-size:20px;
+  font-weight:lighter;
+
+}
+
+.kw-minitext {
+  font-size:15px;
+  line-height:15px;
+  text-align:center;
+  position:relative;
+  right:20px;
+  color:#555555;
+}
+
+
+.kw-box2 {
+  margin-top:25px;
+  margin-bottom:5px;
+  position:relative;
+  left:20px;
+}
+
+.kw-strong2 {
+  font-size:40px;
+  font-weight:bold;
+  
+}
+
+.kw-soft2 {
+  font-size:40px;
+  font-weight:lighter;
+}
+
+.kw-text2 {
+  font-size:20px;
+  font-weight:lighter; 
+}
+
+.kw-minitext2 {
+  font-size:15px;
+  line-height:15px;
+  text-align:center;
+  position:relative;
+  right:20px;
+  margin-left:10px;
+  color:#555555;
+}
+
+
+
+
+
+/* MEGAMENU AFTER KW CHANGES */
+/* ========================= */
+
+#table1kw, #table2kw {
+  border:1px solid #A7C942;
+  position:relative;
+  right:5px;
+  height:324px;
+
+}
+
+#table11kw, #table21kw {
+  margin-top:0px !important;
+  margin-bottom:0px !important;
+
+}
+
+
+#table1kw th {
+  border:2px solid #CCCCCC;
+  background-color:#CCCCCC !important;
+  color:#ffffff !important;
+  padding-left:5px;
+  padding-top:5px;
+  height:20px;
+}
+
+#table2kw th {
+  border:2px solid #CCCCCC;
+  background-color:#CCCCCC !important;
+  color:#ffffff !important;
+  padding-left:5px;
+  padding-top:5px;
+  height:20px;
+}
+
+#table1kw td, #table1kw th {
+  border:1px solid #CCCCCC;
+  background-color:#CCCCCC !important;
+  vertical-align:top;
+}
+
+
+#table2kw td, #table2kw th {
+  border:1px solid #CCCCCC;
+  background-color:#CCCCCC !important;
+  vertical-align:top;
+}
+
+
+
+#table11kw td, #table21kw td {
+  border:0px;
+  padding-left:2px;
+}
+
+
+.mega-main-title-kw {
+  color: #1B415C;
+  font-family: Arial,Tahoma,Verdana;
+  font-size: 15px;
+  font-weight:bold;
+  margin-left:10px;
+  margin-top:15px;
+  height:25px;
+}
+
+.mega1-bottom-kw {
+  /*margin-left:20px;*/
+  padding-left:10px;
+  padding-right:0px;
+  margin-bottom:0px;
+  position:relative;
+  bottom:20px;
+}
+
+.mega1-bottom-kw ul {
+  list-style-type:none !important;
+  margin:0 !important;
+  margin-top:0 !important;
+  /*margin-top:40px;*/
+  padding:0;
+  position:relative;
+  bottom:7px;
+
+}
+
+
+.mega1-bottom-kw li {
+  line-height: 15px !important;
+}
+
+
+.mega-sidebar-solutions {
+  color: #1B415C;
+  font-family: Arial,Tahoma,Verdana;
+  padding-left:10px;
+  margin-top:5px;
+  padding-top:10px;
+  background:#CCCCCC;
+  height:314px !important;
+  position:relative;
+  left:5px;
+  top:50px;
+}
+
+.inside.panels-flexible-column-inside.panels-flexible-column-19-main-inside.panels-flexible-column-inside-first {
+  padding-right:0px !important;
+}
+
+
 
 /* SOTG MICROSITE */
 /* ============== */
@@ -3179,17 +3599,7 @@ ul.welweit {
     text-decoration: none;
 }
 
-#worldwide-link {
-  /*color: #FFFFFF !important;*/
-  color: #E6E6E6 !important;
-  font-size: 11px;	
-  position:relative;
-  /*left:651px;*/
-  /*bottom:17px;*/
-  /*bottom:25px;*/
-	left:74px;
-	bottom:35px;
-}
+
 
 .megamenu_worldwide {
 
@@ -3329,11 +3739,7 @@ line-height: 19px;
   bottom:30px;
 }*/
 
-#accellionLogo {
-	position:relative;
-	right:20px;
-	top:0px;
-}
+
 
 #acchead {
 	/*height: 30px;*/
@@ -3445,29 +3851,7 @@ sftp://michael.jankowski:@www-drup.accellion.com/%2Fhome/httpd/corp/sites/all/th
     height: 10px;
 }
 
-#top-links {
-/*    padding-right: 0px;
-	padding-bottom: 10px;
-	margin-right: -7px;*/
-    /*width: 350px;*/
-    width: 480px;
-    float: right;
-  	position:relative;
-  	/*left:85px;*/
-  	left:5px;
-  	top:2px;
 
-
-}
-#top-links a:link, #top-links a:visited, #top-links a:active {
-    /*color: #ffffff;*/
-    color: #E6E6E6;
-    padding: 0 7px;
-}
-#top-links a:hover {
-    color: #FB1;
-    text-decoration: none;
-}
 
 
 /* Translated Topnav Positioning */
@@ -3520,36 +3904,43 @@ padding-bottom: 5px;
   color: #777;
   font-weight: bold;
 }
+
+#sidebar-next-step ul li a:hover {
+  padding: 10px 0 10px 32px;
+  color: #649CD2;
+  font-weight: bold;
+}
+
 #sidebar-signup-li{
-  background:url('/sites/default/files/get-started/get-started-gs.png') no-repeat left transparent;
+  background:url('/sites/default/files/get-started/get-started-icon-free-trial.png') no-repeat left transparent;
 }
 #sidebar-signup-li:hover{
-  background:url('/sites/default/files/get-started/get-started-gs-h.png') no-repeat left transparent;
+  background:url('/sites/default/files/get-started/get-started-icon-free-trial.png') no-repeat left transparent;
     text-decoration: none;
 }
 
 #sidebar-moreinfo-li{
-  background:url('/sites/default/files/get-started/get-started-cu.png') no-repeat left transparent; 
+  background:url('/sites/default/files/get-started/get-started-icon-contact-us.png') no-repeat left transparent; 
 }
 #sidebar-moreinfo-li:hover{
-  background:url('/sites/default/files/get-started/get-started-cu-h.png') no-repeat left transparent;
+  background:url('/sites/default/files/get-started/get-started-icon-contact-us.png') no-repeat left transparent;
     text-decoration: none;
 }
 #sidebar-demo-li{
-  background:url('/sites/default/files/get-started/get-started-wd.png') no-repeat left transparent; 
+  background:url('/sites/default/files/get-started/get-started-icon-view-demos.png') no-repeat left transparent; 
 }
 #sidebar-demo-li:hover{
-  background:url('/sites/default/files/get-started/get-started-wd-h.png') no-repeat left transparent; 
+  background:url('/sites/default/files/get-started/get-started-icon-view-demos.png') no-repeat left transparent; 
     text-decoration: none;
 }
 #sidebar-callus-li{
-  background:url('/sites/default/files/get-started/get-started-ca.png') no-repeat left transparent;
+  background:url('/sites/default/files/get-started/get-started-icon-call.png') no-repeat left transparent;
 color: #777777;
 font-weight: bold;
 padding: 0px 0px 0px 32px;
 }
 #sidebar-callus-li:hover{
- background:url('/sites/default/files/get-started/get-started-ca-h.png') no-repeat left transparent; 
+ background:url('/sites/default/files/get-started/get-started-icon-call.png') no-repeat left transparent; 
     text-decoration: none;
 }
 
@@ -3751,15 +4142,7 @@ text-decoration: none;
     margin-left: 520px;
 }
 
-#Accellion_Header {
- height: 80px;
- /*margin-bottom:20px;*/
- color: rgb(255, 255, 255);
- /*background: url("/sites/all/themes/accellion/images/enhancements/bg-pattern-t-acc.png") repeat-x scroll center top rgb(0, 0, 0);*/
 
- background: #323f53 repeat-x scroll center top;
-
-}
 
 ul#views-ticker-fade-news_ticker
 {
@@ -3777,5 +4160,7 @@ ul#views-ticker-fade-news_ticker
   z-index:498;
   position:relative;
 }
+
+
 
 

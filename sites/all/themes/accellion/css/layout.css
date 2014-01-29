@@ -158,11 +158,11 @@ filter: progid:DXImageTransform.Microsoft.dropShadow(color=#bababa, offX=-7, off
   background: url("../images/shadow-logos.png") no-repeat scroll center bottom transparent;
   margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   position: relative;
   width: 940px;
   height:357px;
-  top: 0px;
+  top:0px;
 }
 
 #banner-SB {
@@ -218,7 +218,8 @@ z-index: -99;
 }
 
 #slider {
-  height:312px;
+  /*height:312px;*/
+  height:257px;
   width:940px;
 }
 
@@ -255,6 +256,7 @@ height: 40px;
   font-size: 30px;
   font-weight: normal;
   padding: 0px 0;
+  /*margin:60px auto 10px;*/
   margin:60px auto 10px;
   text-align: center;
 }
@@ -738,7 +740,7 @@ font-weight: bold;
 .region-upper-triptych-first a {
   display: block;
   text-decoration:none;
-  width:310px;
+  width:467.5px;
   /*height:195px;*/
   height:130px;
   -moz-box-sizing:border-box;
@@ -760,16 +762,20 @@ font-weight: bold;
   border-radius: 0px;
   margin-right:5px;
   /*background:#E2E2E2 -10px 0 no-repeat;*/
-  background: #e1e1e1 url('../images/Accellion-Home-Ent-corner-static.png') no-repeat scroll left top; 
-  color:#363636;
+  /*background: #649CD2 url('../images/Accellion-Home-Ent-corner-static.png') no-repeat scroll left top;*/
+  background: #e2e2e2 url('../images/kiteworks-for-enterprise-box-icon.png') no-repeat scroll left top;
+  color:#285580;
 
 }
+
+
+
 
 .region-upper-triptych-first a:hover {
   display: block;
   text-decoration:none;
-  background: #ecc64d url('../images/Accellion-Home-Ent-corner-hover.png') no-repeat scroll left top; 
-  width:310px;
+  background: #a9b7c4 url('../images/kiteworks-for-enterprise-box-icon.png') no-repeat scroll left top; 
+  width:467.5px;
   /*height:195px;*/
   height:130px;
   -moz-box-sizing:border-box;
@@ -790,16 +796,18 @@ font-weight: bold;
   box-sizing:border-box;
   border-radius: 0px;
   margin-right:5px;
-  color:#363636;
+  color:#ffffff;
 
 }
+
+
 
 
 
 .region-upper-triptych-second a {
   display: block;
   text-decoration:none;
-  width:310px;
+  width:467.5px;
   /*height:195px;*/
   height:130px;
   -moz-box-sizing:border-box;
@@ -819,10 +827,10 @@ font-weight: bold;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
   border-radius: 0px;
-  margin-right:5px;
+  margin-right:0px;
   /*background:#E2E2E2 -10px 0 no-repeat;*/
-  background: #e1e1e1 url('../images/Accellion-Home-Bus-corner-static.png') no-repeat scroll left top; 
-  color:#363636;
+  background: #e2e2e2 url('../images/kiteworks-for-team-box-icon.png') no-repeat scroll left top; 
+  color:#70a2d6;
 
 }
 
@@ -830,8 +838,8 @@ font-weight: bold;
 .region-upper-triptych-second a:hover {
   display: block;
   text-decoration:none;
-  background: #ecc64d url('../images/Accellion-Home-Bus-corner-hover.png') no-repeat scroll left top; 
-  width:310px;
+  background: #bfcede url('../images/kiteworks-for-team-box-icon.png') no-repeat scroll left top; 
+  width:467.5px;
   /*height:195px;*/
   height:130px;
   -moz-box-sizing:border-box;
@@ -851,8 +859,8 @@ font-weight: bold;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
   border-radius: 0px;
-  margin-right:5px;
-  color:#363636;
+  margin-right:0px;
+  color:#ffffff;
 
 }
 
@@ -863,7 +871,7 @@ font-weight: bold;
  {
   display: block;
   text-decoration:none;
-  width:310px;
+  width:0px;
   /*height:195px;*/
   height:130px;
   -moz-box-sizing:border-box;
@@ -895,7 +903,7 @@ font-weight: bold;
   display: block;
   text-decoration:none;
   background: #ecc64d url('../images/Accellion-Home-Gov-corner-hover.png') no-repeat scroll left top; 
-  width:310px;
+  width:0px;
   /*height:195px;*/
   height:130px;
   -moz-box-sizing:border-box;
@@ -1090,5 +1098,6 @@ font-weight: bold;
   left: 74px;
   top: 4px;
 }
+
 
 
