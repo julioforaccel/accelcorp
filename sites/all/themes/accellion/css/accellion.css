@@ -1,6 +1,89 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* BLOG */
+/* ==== */
+
+.social-shares-wrapper {
+  height:50px;
+}
+
+.blog-up {
+  position:relative;
+  bottom:5px;
+}
+
+.blog-title {
+  position:relative;
+  top:20px;
+}
+
+.blog-title a {
+  color:#FFBB11;
+  font-weight: normal;
+}
+
+.blog-title h2 {
+  line-height:20px;
+}
+
+.blog-post .node .submitted {
+  background-color:#f8f8f8;
+  color:#363636;
+}
+
+.blog-post .node-blog ul.links {
+  padding:2px 0 0 0;
+  position:relative;
+  right:2px;
+  background-color:#f8f8f8;
+}
+
+.blog-post .content {
+  position:relative;
+  right:20px;
+}
+
+.blog-post .node-blog .field-type-image {
+  height:200px;
+  position:relative;
+  bottom:5px;
+}
+
+.blog-post .node-blog .content{
+  background-color:#f8f8f8;
+}
+
+.blog-post .submitted {
+  position: relative;
+  bottom:0px;
+  right:10px;
+}
+
+.blog-post .node ul.links li a{
+  color:#649cd2;	
+}
+
+.views-slideshow-controls-bottom .views-slideshow-pager-field-item { 
+	float: left; 
+	margin: 0px 2px 2px 0px; 
+} 
+
+#views_slideshow_pager_field_item_bottom_blog_slider-block_3 { 
+	float: left; 
+	margin: 0px 0px 2px 2px; 
+}
+
+
+.node .submitted {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #999999;
+    padding: 5px 10px;
+}
+
+
+
+
 /* KW FOR YOUR TEAM PAGE */
 /* ===================== */
 

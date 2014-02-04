@@ -9,3 +9,4 @@ scp settings.php-db root@www6:/home/httpd/corp/sites/default/settings.php
 scp settings.php-db root@www7:/home/httpd/corp/sites/default/settings.php
 scp settings.php-db root@www8:/home/httpd/corp/sites/default/settings.php
 scp settings.php-db root@www9:/home/httpd/corp/sites/default/settings.php
+scp settings.php-db root@www10:/home/httpd/corp/sites/default/settings.php
