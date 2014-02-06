@@ -1,6 +1,30 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* POSITIONING RESOURCES PAGE */
+/* ========================== */
+
+
+#block-views-whitepapers-block-3,
+#block-views-datasheets-block-3,
+#block-views-case-studies-block-3,
+#block-views-videos-block-3,
+#block-views-webcasts-block-3
+ {
+  position:relative;
+  bottom:40px;	
+}
+
+
+.view-id-whitepapers.view-display-id-block_3, .view-id-datasheets.view-display-id-block_3,
+.view-id-case_studies.view-display-id-block_3,
+.view-id-demos.view-display-id-block_2,
+.view-id-videos.view-display-id-block_3,
+.view-id-webcasts.view-display-id-block_3 {
+  position:relative;
+  top:40px;
+}
+
 /* BLOG */
 /* ==== */
 
