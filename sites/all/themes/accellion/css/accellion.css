@@ -4045,6 +4045,8 @@ padding-bottom: 5px;
 color: #777777;
 font-weight: bold;
 padding: 0px 0px 0px 32px;
+position:relative;
+bottom:5px;
 }
 #sidebar-callus-li:hover{
  background:url('/sites/default/files/get-started/get-started-icon-call.png') no-repeat left transparent; 
