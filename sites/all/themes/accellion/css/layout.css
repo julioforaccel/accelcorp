@@ -89,7 +89,7 @@ margin-top:20px;
 
 #site-sales-number {
   font-weight:bold;
-  color: #FFBB11;
+  color: #e7bb34;
   padding: 7px;
 }
 
@@ -1055,7 +1055,7 @@ font-weight: bold;
 }
 
 /* Events, Featured Resources, Latest Blogs */
-#block-views-events-block ul, .view-featured-resources-homepage ul, #block-aggregator-feed-1 ul, #block-views-events-block-1 ul {
+#block-views-events-block ul, .view-featured-resources-homepage ul, #block-aggregator-feed-1 ul, #block-views-events-block-1 ul, #block-views-events-block-2 ul {
 	list-style-type:none;
 	margin:0;
 	padding:0;
@@ -1064,7 +1064,7 @@ font-weight: bold;
   font-size:80%;
   font-weight:bold;
 }
-#block-views-events-block .views-row, .view-featured-resources-homepage .views-row, #block-aggregator-feed-1 ul li, #block-views-events-block-1 .views-row {
+#block-views-events-block .views-row, .view-featured-resources-homepage .views-row, #block-aggregator-feed-1 ul li, #block-views-events-block-1 .views-row, #block-views-events-block-2 .views-row {
   margin-bottom: 0px;
   display:block;
   overflow:auto;

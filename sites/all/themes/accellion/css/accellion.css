@@ -43,7 +43,7 @@
 }
 
 .blog-title a {
-  color:#FFBB11;
+  color:#e7bb34;
   font-weight: normal;
 }
 
@@ -216,7 +216,7 @@
     padding: 0 7px;
 }
 #top-links a:hover {
-    color: #FB1;
+    color: #e7bb34;
     text-decoration: none;
 }
 
@@ -919,6 +919,28 @@ ul.quicktabs-tabs.quicktabs-style-sky li.active a {
   bottom:8px;
   left:18px;
 }
+
+.day-size4 {
+  font-size:40px;
+  position:relative;
+  /*left:10px;
+  top:3px;*/
+  left:8px;
+  top:4px;
+}
+
+.month-size4 {
+  font-size:20px;
+  font-weight:bold;
+  text-transform:lowercase;
+  position:relative;
+  /*bottom:8px;
+  left:18px;*/
+  bottom:7px;
+  left:16px;
+}
+
+
 
 .day-size3 {
   font-size:40px;
