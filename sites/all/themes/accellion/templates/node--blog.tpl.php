@@ -119,44 +119,65 @@ print $submitted;
 <?php endif; ?>
 
 
-
-<!-- Starts ShareThis -->      
-<?php
-  // Only display the wrapper div if there are links.
-  $links1 = render($content['links']['sharethis']);
-  if ($links1):
-?>
-  <div class="social-shares-wrapper">
-    <?php print $links1; ?>
-  </div>
-<?php endif; ?>
-
-<!-- Ends ShareThis -->
-
-
 <div class="blog-up">
 
-<!-- Starts: Taxonomy Terms -->
 
-<?php if($content['field_taxonomy_system']): ?>
-<div class = "top_tag">
+<table class="table-top-blog">
+	
+<tr>
+<td class="row-top-blog">
 
-<?php print render($content['field_taxonomy_system']); ?>
+	<!-- Starts: Taxonomy Terms -->
 
-<br/>
-</div>
-<?php endif;?>
+	<?php if($content['field_taxonomy_system_tags']): ?>
+	<div class = "top_tag">
 
+	<?php print render($content['field_taxonomy_system_tags']); ?>
 
-<!-- Ends: Taxonomy Terms -->
-
-
-
-
-
+	<br/>
+	</div>
+	<?php endif;?>
 
 
-<div class="content"<?php print $content_attributes; ?>>
+	<!-- Ends: Taxonomy Terms -->
+	
+</td>
+</tr>
+
+<tr>
+<td class="row-down-blog">
+
+	<!-- Starts ShareThis -->      
+	<?php
+	  // Only display the wrapper div if there are links.
+	  $links1 = render($content['links']['sharethis']);
+	  if ($links1):
+	?>
+	  <div class="social-shares-wrapper">
+	    <?php print $links1; ?>
+	  </div>
+	<?php endif; ?>
+
+	<!-- Ends ShareThis -->
+	
+</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content"<?php print $content_attributes; ?> style="position:relative; bottom:40px;">
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
@@ -183,7 +204,7 @@ print render($content['links']);
 
 if (!$teaser) {
 
- print "<a href='/blog' style='position:relative; right:2px;'>Back to Blog</a>"; 
+ print "<a href='/mobile-talk-blog' style='position:relative; right:2px;'>Back to Blog</a>"; 
 
 }
 

@@ -25,15 +25,14 @@ else {
      
 	$company = $_POST["Company"];
 	if (in_array(strtolower(trim($company)), array_map('strtolower', $arrCompetitors)))
-		{}//return 0;
+	{ }//return 0;
 	else {
-		echo "Call post function<br>";
 		curl_request_async($url,$_POST);	//Create license and hosted appid
 	}
 	//Register with Marketo
-    if (!On_Stage_server()){
+	if (!On_Stage_server()){
 		register_mkto($_POST, $referer);
-    }
+	}
 }
 
 function register_mkto ($info, $referer) {
@@ -52,7 +51,8 @@ function register_mkto ($info, $referer) {
 	$filtered = preg_replace("/.*<html>/s", "<html>", $contents );
 	if ($response) {
 		echo $filtered;
-	} else {
+	}
+	else {
 		echo $contents.'\r\nError in marketo response: '.$response;
 		error_log($contents.'\r\nError in marketo response: '.$response);
 	}
@@ -60,61 +60,42 @@ function register_mkto ($info, $referer) {
 }
 
 function curl_request_async($url, $params) {
-    if (!On_Stage_server()){
+	if (!On_Stage_server()){
 		$out="";
 		foreach ($params as $key => &$val) {
 			if (is_array($val)) $val = implode(',', $val);
 			$post_params[] = $key.'='.urlencode($val);
-      	}
-      	$post_string = implode('&', $post_params);
-
-      	$parts=parse_url($url);
+		}
+		$post_string = implode('&', $post_params);
+		
+		$parts=parse_url($url);
 		$fp = fsockopen ($url,443, $errno, $errstr, 15);
-		$out ="POST /pdns/eval/trial_ng.php HTTP/1.1\r\n";
-      	$out.= "Host: ".$parts['host']."\r\n";
-      	$out.= "Content-Type: application/x-www-form-urlencoded\r\n";
-      	$out.= "Content-Length: ".strlen($post_string)."\r\n";
-      	$out.= "Connection: Close\r\n\r\n";
-      	$out .= $post_string;
-      	fwrite($fp, $out);
-      	fclose($fp);
+		$out ="POST ssl://proserv.accellion.net/pdns/eval/trial_ng.php HTTP/1.1\r\n";
+		$out.= "Host: ".$parts['host']."\r\n";
+		$out.= "Content-Type: application/x-www-form-urlencoded\r\n";
+		$out.= "Content-Length: ".strlen($post_string)."\r\n";
+		$out.= "Connection: Close\r\n\r\n";
+		$out .= $post_string;
+		fwrite($fp, $out);
+		fclose($fp);
 	}
 	else {
-
-		$out="";
-		foreach ($params as $key => &$val) {
-			if (is_array($val)) $val = implode(',', $val);
-			$post_params[] = $key.'='.urlencode($val);
-      	}
-      	$post_string = implode('&', $post_params);
-
-      	$parts=parse_url($url);
-		$fp = fsockopen ($url,443, $errno, $errstr, 15);
-		$out ="POST /pdns/eval/trial_ng.php HTTP/1.1\r\n";
-      	$out.= "Host: ".$parts['host']."\r\n";
-      	$out.= "Content-Type: application/x-www-form-urlencoded\r\n";
-      	$out.= "Content-Length: ".strlen($post_string)."\r\n";
-      	$out.= "Connection: Close\r\n\r\n";
-      	$out .= $post_string;
-      	fwrite($fp, $out);
-      	fclose($fp);
-
-
-
-
-
-		/*
 		// On Stage - do syncronous request
 		$ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'http://10.41.1.113/pdns/eval/trial_ng.php');
-        curl_setopt($ch, CURLOPT_HEADER, 1);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        $response = curl_exec($ch);
-        curl_close($ch);
-		echo $response
-		*/
+		curl_setopt($ch, CURLOPT_URL, 'https://proserv-stage.accellion.net/pdns/eval/trial_ng.php');
+		//curl_setopt($ch, CURLOPT_HEADER, 1);
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		$response = curl_exec($ch);
+		$error = curl_error($ch);
+		curl_close($ch);
+		if($error) {
+			echo $error;
+		}
+		else {
+			echo $response;
+		}
 	}
 }
 

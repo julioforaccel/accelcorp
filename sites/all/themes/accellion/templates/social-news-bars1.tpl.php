@@ -17,21 +17,21 @@
 
 <div class="grid-child new-grid-30 ">
 
-<a href="http://www.info.accellion.com/gartner-marketscope-enterprise-file-synchronization-sharing-report.html?ms=bottombanner"><img src="/sites/default/files/Accellion-Gartner-Marketscope.jpg" alt="Test Your Mobile IQ"></a>
+<a href="http://www.info.accellion.com/forrester-market-trends-report.html?ms=bottombanner" target="_blank"><img src="/sites/default/files/Accellion-Forrester-Market-Trends-bottom.png" alt="Forrester Report"></a>
 
 </div>
 
 
 <div class="grid-child new-grid-30 ">
 
-<a href="http://www.info.accellion.com/mobile-content-security-and-productivity-whitepaper.html?ms=bottombanner"><img src="/sites/default/files/Accellion-AIIM-Research.jpg" alt="Test Your Mobile IQ"></a>
+<a href="http://www.info.accellion.com/mobile-content-security-and-productivity-whitepaper.html?ms=bottombanner" target="_blank"><img src="/sites/default/files/Accellion-AIIM-Research.jpg" alt="AIIM Research"></a>
 
 </div>
 
 
 <div class="grid-child new-grid-10 ">
 	
-<a href="http://www.info.accellion.com/ismg-mobile-security-strategies-2013-survey-results.html?ms=bottombanner"><img src="/sites/default/files/Accellion-ISMG-Survey.jpg" alt="Test Your Mobile IQ"></a>
+<a href="http://www.info.accellion.com/ismg-mobile-security-strategies-2013-survey-results.html?ms=bottombanner" target="_blank"><img src="/sites/default/files/Accellion-ISMG-Survey.jpg" alt="ISMG Survey"></a>
 
 </div>
 
@@ -40,6 +40,7 @@
 
 
 <?php endif; ?>
+
 
 
 <!--US English -->

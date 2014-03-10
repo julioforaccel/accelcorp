@@ -1,6 +1,493 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* FORMAT TAXTERMPAGES */
+/* =================== */
+
+.field-name-field-taxonomy-system-tags .field-items {
+  color:#649CD2;
+}
+
+.table-taxonomy-term .pager {
+  position:relative;
+  left:-10px;
+  top:25px;
+}
+
+.table-taxonomy-term {
+  position:relative;
+  bottom:10px;
+}
+
+.table-taxonomy-term .view-content {
+  height:135px;
+}
+
+.taxtermpage-row2 {
+  background-color:#E3E3E3;
+  padding-right:20px; 
+  vertical-align:top;
+  position:relative;
+  bottom:12px;
+  padding-top:20px;
+  padding-left:10px;
+  padding-bottom:1px;
+  margin-right:5px;
+  height:205px;
+}
+
+.taxtermpage-row a {
+  display: block;
+  text-decoration:none;
+  background-color:#323f53;
+  /*background-color:#1B415C;*/
+  height:19px;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-right:5px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+  color:#FFFFFF;
+}
+
+.taxtermpage-row a:hover {
+  display: block;
+  text-decoration:none;
+  background-color:#323f53;
+  /*background-color:#1B415C;*/
+  height:19px;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-right:5px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+  color:#FFFFFF;
+}
+
+
+.plus-sign {
+  font-size:23px;
+  font-weight:100;
+  color:#FFFFFF;
+}
+
+.plus-sign-title {
+  position:relative;
+  bottom:3px;
+  color:#FFFFFF;
+}
+
+
+
+/* BLOG POSITIONING  */
+/* ================= */
+.view-featured-blog-post {
+  position:relative;
+  bottom:15px;
+  border-bottom:1px solid #939598;
+}
+
+.panels-flexible-row .panels-flexible-row-31-1 {
+  position:relative;
+  bottom:15px;
+}
+
+
+/* BLOG NAVIGATION */
+/* =============== */
+#views-exposed-form-search-blog-by-word-page .form-text, #views-exposed-form-search-blog-by-word-page .form-textarea {
+  border:1px solid #F0F0F0;
+  height:15px !important;
+  padding:0px 5px;
+  border-radius:5px;
+  font-family:Arial,Tahoma,Verdana;
+  font-size:11px;
+  position:relative;
+  bottom:7px;
+}
+
+
+.blog-navigation {
+  background-color:#575859;
+  height:25px;
+  width:930px;
+  padding-top:5px;
+  padding-left:10px;
+  position:relative;
+  bottom:20px;
+}
+
+.blog-navigation a {
+  color:#FFFFFF;
+}
+
+.bv2-canvas {
+  background-color:#323F53;
+  height:30px;
+  width:930px;
+  padding-top:10px;
+  padding-left:10px;
+  position:relative;
+  bottom:10px;
+  color:#FFFFFF;
+}
+
+.bv2-canvas a {
+  color:#FFFFFF;
+}
+
+.bv2-canvas a:hover {
+  color:#E7BB34;
+}
+
+.bv2-links {
+  float:right;	
+}
+
+
+
+
+/* BLOG SLIDER */
+/* =========== */
+
+.views-slideshow-controls-bottom {
+  position:relative;
+  bottom:5px;
+  padding-left:3px;
+  padding-top:7px;
+  background-color:#FFFFFF;
+}
+
+.small-image {
+  position:relative;
+  border: 1px solid #CCCCCC;
+}
+
+.small-image img:hover {
+  filter: alpha(opacity=50);
+  opacity:0.5;
+  -moz-opacity:0.5px;
+}
+
+#block-views-blog-slider-block-1 {
+  position:relative;
+  bottom:15px;
+}
+
+#views_slideshow_cycle_div_blog_slider-block_1_1 {
+  position:relative;
+}
+
+#transparence {
+  position:absolute;
+  bottom:5px;
+  left:0px;
+  background-color:#FFFFFF;
+  width:940px;
+  height:50px;
+  filter: alpha(opacity=80);
+  opacity:0.8;
+  -moz-opacity:0.8px;
+}
+
+#slider-text {
+  position:absolute;
+  bottom:0px;
+  left:10px;
+}
+
+
+#slider-text h2 {
+  color:#000000;
+  font-weight: normal;
+  font-size:13px;
+  position:relative;
+  top:20px;
+}
+
+#slider-text a {
+  color:#000000;
+  position:relative;
+  top:5px;
+  font-size:15px;
+}
+
+#s-transparence {
+  position:absolute;
+  bottom:5px;
+  left:0px;
+  background-color:#FFFFFF;
+  width:230px;
+  height:40px;
+  filter: alpha(opacity=100);
+  opacity:1;
+  -moz-opacity:1px;
+}
+
+#s-slider-text {
+  position:absolute;
+  bottom:0px;
+  left:10px;
+}
+
+
+#s-slider-text a {
+  color:#000000;
+  position:relative;
+  top:12px;
+  font-size:13px;
+
+}
+
+
+
+/* BLOG-HIGHLIGHTS PAGE */
+/* ==================== */
+
+#mini-panel-blog_magazine {
+  position:relative;
+  bottom:15px;
+}
+
+#block-views-featured-blog-post-block {
+  position:relative;
+  bottom:15px;
+}
+
+#block-views-last-posts-grid-v1-block-2 {
+  position:relative;
+  bottom:60px;
+}
+
+
+.view-featured-blog-post .views-field-title {
+  position:relative;
+  left:0px;
+}
+
+.view-featured-blog-post .views-field-title a {
+  color:#E7BB34;
+  font-weight: normal;
+}
+
+.view-featured-blog-post .views-field-title h2 {
+  line-height:0px;
+  font-weight: normal !important;
+}
+
+
+.view-featured-blog-post .views-field-created {
+  position:relative;
+  left:0px;
+  bottom:10px;
+}
+
+.view-featured-blog-post .views-field-field-blog-image {
+  position:relative;
+  bottom:5px;
+}
+
+
+.view-featured-blog-post .views-field-body {
+  padding:0;
+}
+
+.last-posts-grid-v1 tr{
+  vertical-align:bottom;
+  height:50px;
+}
+
+.last-posts-grid-v1 td.col-1 . col-first{
+  float:left;
+}
+
+.last-posts-grid-v1, .featured-blog-post {
+  margin:0 10px 0 10px;
+}
+
+.last-posts-grid-v1 td {
+  vertical-align:top;
+}
+
+
+.lb-celda11 a {
+  color:#E7BB34;
+  font-weight: normal !important;
+}
+
+.lb-celda11 {
+}
+
+.pos-title {
+  height:60px;
+  vertical-align:top;
+}
+
+.pos-title h2 {
+  color:#E7BB34;
+  font-weight: normal !important;
+}
+
+.pos-title a {
+  color:#E7BB34;
+  font-weight: normal !important;
+}
+
+
+.pos1-title {
+  height:39px;
+  vertical-align:top;
+}
+
+
+.pos1-title h2 {
+  color:#E7BB34;
+  font-weight: normal !important;
+}
+
+.pos1-title a {
+  color:#E7BB34;
+  font-weight: normal !important;
+}
+
+
+
+.pos-created {
+  position:relative;
+  bottom:20px;
+}
+
+.pos1-created {
+  position:relative;
+  bottom:20px;
+}
+
+
+
+.pos-created2 {
+  position:relative;
+  top:20px;
+}
+
+.pos1-created2 {
+  position:relative;
+  top:19px;
+}
+
+
+
+.pos-image {
+  position:relative;
+  bottom:20px;
+}
+
+.pos1-image {
+  position:relative;
+  bottom:20px;
+}
+
+.pos1-body {
+  position:relative;
+  bottom:30px;
+}
+
+
+.lb-row2 td{
+  vertical-align:bottom;
+}
+
+
+
+#block-views-last-posts-grid-block-1 {
+  position:relative;
+  bottom:20px;
+}
+
+
+
+
+
+/* DYNAMIC CONTENT - SIDEBAR BLOCKS */
+/* ================================ */
+
+.view-display-id-related_blog a{
+  color: #000;
+}
+
+.view-display-id-related_blog  h3{
+  font-size: 12px;
+  margin: 10px 0 0px 0;
+  color: #3a536e;
+}
+
+
+/* TAXONOMY TAGS IN BLOG POSTS  */
+/* ============================ */
+
+
+.table-top-blog {
+  border:0px;
+  margin-top:5px !important;
+  position:relative;
+  right:1px;
+}
+
+.row-top-blog {
+  height:15px;
+  line-height:5px !important;
+}
+
+.row-down-blog {
+  height:15px;
+  line-height:0px !important;
+}
+
+.social-shares-wrapper {
+  height:25px;
+}
+
+.top_tag {
+
+}
+
+
+/* TAXONOMY TERM PAGE - BLOCKS */
+/* =========================== */
+.view-display-id-taxtermpage_web a, .view-display-id-taxtermpage_wp a, .view-display-id-taxtermpage_ds a, .view-display-id-taxtermpage_cs a, .view-display-id-taxtermpage_vid a, .view-display-id-taxtermpage_blog a {
+  /*color: #000;*/
+}
+
+.item-list-taxtermpage ul /* Drupal override */ {
+  /*margin: 1.5em 0;*/
+  margin: 0;
+  padding: 0 0 0 1em; /* LTR */
+  position:relative;
+  bottom:10px;
+}
+
+.item-list-taxtermpage ul ul, .item-list-taxtermpage ul ol,
+.item-list-taxtermpage ol ol, .item-list-taxtermpage ol ul {
+  margin: 0;
+}
+
+.item-list-taxtermpage ul li /* Drupal override */ {
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.table-taxonomy-term .pager {
+  position:relative;
+  right:40px;
+}
+
+.table-taxonomy-term .view-content {
+  height:135px;
+}
+
+
+
 /* POSITIONING RESOURCES PAGE */
 /* ========================== */
 
@@ -80,12 +567,15 @@
 
 .blog-post .submitted {
   position: relative;
-  bottom:0px;
+  top:1px;
   right:10px;
 }
 
 .blog-post .node ul.links li a{
   color:#649cd2;	
+  position:relative;
+  bottom:40px;
+
 }
 
 .views-slideshow-controls-bottom .views-slideshow-pager-field-item { 
@@ -179,21 +669,23 @@
 
 #Accellion_Header {
  height: 80px;
- /*margin-bottom:20px;*/
  color: rgb(255, 255, 255);
- /*background: url("/sites/all/themes/accellion/images/enhancements/bg-pattern-t-acc.png") repeat-x scroll center top rgb(0, 0, 0);*/
  width:940px;
  margin:auto;
- /*background: #323f53 repeat-x scroll center top;*/
-
- /*background: url('../images/new-top-header.png') no-repeat fixed center;*/
  background: url("../images/new-top-header.png") repeat-x scroll center top rgb(0, 0, 0);
- 
- /*background: #ffffff repeat-x scroll center top;*/
+  z-index:498;
+  position:relative;
 }
 
-/* background-image-bottom: 940x45 (940x35 top)*/
-
+#Accellion_Header_Blog {
+ height: 80px;
+ color: rgb(255, 255, 255);
+ width:940px;
+ margin:auto;
+ background: url("../images/new-top-blog-header-v6.png") repeat-x scroll center top rgb(0, 0, 0);
+  z-index:498;
+  position:relative;
+}
 
 #top-links {
 /*    padding-right: 0px;

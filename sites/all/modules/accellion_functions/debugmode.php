@@ -7,7 +7,8 @@ global $email_prefix;
 if (On_Stage_server()){
 	//	echo "on www-stage<br>";
 	$provision_server = "https://10.41.1.113/pdns/step2.php";	//opal test provisioning server
-	$url = 'ssl://10.41.1.113';
+	$url = 'ssl://10.41.1.113';	
+	$url = 'ssl://64.95.71.150';	
 	$email_prefix = "";
 } else {
 	//	echo "On production";
