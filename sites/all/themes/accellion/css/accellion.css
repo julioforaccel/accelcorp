@@ -1,6 +1,89 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* BLOG NAV AS TABLE */
+/* ================= */
+
+/* blog nav as table */
+
+#mini-panel-blog_magazine_v2 {
+  position:relative;
+  bottom:20px;
+
+}
+
+.bv2-table {
+  border:0px;
+  height:40px;
+  width:940px;
+  color:#FFFFFF;	
+  font-weight:normal !important;
+  position:relative;
+  bottom:20px;
+}
+
+.bv2-table a {
+  font-weight:normal !important;
+  color:#FFFFFF;
+}
+
+.bv2-table a:hover {
+  color:#E7BB34;
+}
+
+.bv2-table-links {
+  float:right;	
+}
+
+.bv2-table-one {
+  width:130px;
+  padding-left:10px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+.bv2-table-two {
+  width:235px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+
+.bv2-table-three {
+  width:55px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+.bv2-table-four {
+  width:170px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+.bv2-table-five {
+  width:110px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+.bv2-table-six {
+  width:115px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+.bv2-table-seven {
+  width:125px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+/* end blog nav as table */
+
+
+
+
 /* FORMAT TAXTERMPAGES */
 /* =================== */
 
@@ -173,7 +256,8 @@
 
 #block-views-blog-slider-block-1 {
   position:relative;
-  bottom:15px;
+  bottom:12px;
+  left:20px;
 }
 
 #views_slideshow_cycle_div_blog_slider-block_1_1 {
@@ -185,7 +269,7 @@
   bottom:5px;
   left:0px;
   background-color:#FFFFFF;
-  width:940px;
+  width:900px;
   height:50px;
   filter: alpha(opacity=80);
   opacity:0.8;
@@ -219,7 +303,7 @@
   bottom:5px;
   left:0px;
   background-color:#FFFFFF;
-  width:230px;
+  width:220px;
   height:40px;
   filter: alpha(opacity=100);
   opacity:1;
@@ -303,9 +387,31 @@
   float:left;
 }
 
-.last-posts-grid-v1, .featured-blog-post {
-  margin:0 10px 0 10px;
+
+/* changes width bottom area */
+
+#mini-panel-blog_magazine_v2 {
+  width:900px;
+  margin:0 0px 0 20px;
 }
+
+.panels-flexible-region-31-center {
+    width:900px;
+}
+
+.panels-flexible-region-31-r12 {
+  position:relative;
+  left:10px;	
+}
+
+.panels-flexible-region-31-r13 {
+  position:relative;
+  left:20px;	
+}
+
+/* end changes width bottom area */
+
+
 
 .last-posts-grid-v1 td {
   vertical-align:top;
