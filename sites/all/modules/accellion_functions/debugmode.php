@@ -24,8 +24,7 @@ function On_Stage_Server(){
 		return false;
     }
 	else {
-		//return false;
-		return true;
+		return false;
     }
 }
 
