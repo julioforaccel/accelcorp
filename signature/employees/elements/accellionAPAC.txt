@@ -1,0 +1,6 @@
+<hr style="border:none; background-color:#ccc; color:#ccc; height:1px; border: none;margin-bottom:8px;"><p style="font-size: 12px; line-height: 100%; margin-top:8px;"><span STYLE="font-family: helvetica; color: rgb(0%, 0%, 0%); font-size: 12px; font-weight: bold; line-height: 100%;">Accellion Technology & Engineering Center</span><br>
+<span STYLE="font-family: helvetica; color: rgb(0%, 0%, 0%); font-size: 12px; font-weight: normal; line-height: 100%;">Office: +44.203.295.2020</span><br>
+<span STYLE="font-family: helvetica; color: rgb(0%, 0%, 0%); font-size: 12px; font-weight: normal; line-height: 100%;">Blk 750A Chai Chee Rd #08-01B</span><br>
+<span STYLE="font-family: helvetica; color: rgb(0%, 0%, 0%); font-size: 12px; font-weight: normal; line-height: 100%;">Technopark @ Chai Chee</span><br>
+<span STYLE="font-family: helvetica; color: rgb(0%, 0%, 0%); font-size: 12px; font-weight: normal; line-height: 100%;">Singapore 469001</span><br>
+<span STYLE="font-family: helvetica; color: rgb(0%, 0%, 0%); font-size: 12px; font-weight: bold; line-height: 100%;">http://www.accellion.com</span><br><ul style="list-style-type: none; visibility:hidden;"></ul></p>

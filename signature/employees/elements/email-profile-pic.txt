@@ -1,0 +1,65 @@
+<table border="0" cellpadding="0" cellspacing="0" margin="0" width="600">
+<tr style="vertical-align: bottom;">
+<td width="80">
+<img alt="Accellion" src="http://www1.accellion.com/signature/employees/upload-crop/upload_pic/<?php print "" . $line[1] . ""; ?>" width="65px" height="65px" style="margin-top:5px;"><img src="http://www1.accellion.com/signature/employees/images/spacer.gif" width="15px" height="15px">
+</td>
+
+<td style="vertical-align: text-bottom;" width="520">
+
+
+
+<?php 
+if($line[0] == "N") {
+    // do this
+include('employees/elements/no-email-logo.txt');
+}
+else {
+    // do this
+include('employees/elements/email-logo.txt');
+}
+?>
+
+
+
+<p style="font-size: 12px; line-height: 100%; margin-bottom:0px;"><span STYLE="font-family: helvetica; color: rgb(0%, 0%, 0%); font-size: 12px; font-weight: bold;"><?php print "" . $line[2] . ""; ?> <?php print "" . $line[3] . ""; ?> <?php print "" . $line[4] . ""; ?>
+ &#124;
+<?php print "" . $line[5] . ""; ?></span><br>
+<span STYLE="font-family: helvetica; color: rgb(0%, 0%, 0%); font-size: 12px; font-weight: normal;">
+
+<?php 
+if($line[6] == "") {
+    // do this
+include('employees/elements/blank.txt');
+}
+else {
+    // do this
+include('employees/elements/office-phone.txt');
+}
+?>
+
+<?php 
+if($line[7] == "") {
+    // do this
+include('employees/elements/blank.txt');
+}
+else {
+    // do this
+include('employees/elements/mobile-phone.txt');
+}
+?>
+
+<?php 
+if($line[8] == "") {
+    // do this
+include('employees/elements/blank.txt');
+}
+else {
+    // do this
+include('employees/elements/email.txt');
+}
+?>
+
+</span></p></td>
+</tr>
+
+</table>

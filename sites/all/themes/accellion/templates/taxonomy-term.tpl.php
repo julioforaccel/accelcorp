@@ -377,6 +377,97 @@ print render($block['content']);
 
 
 
+<!-- fourth row -->
+
+
+<tr>
+
+
+<td style="width:33%;">
+
+<div class="taxtermpage-row">
+
+<a href="/resources/infographics">
+<span class="plus-sign">+</span><span class="plus-sign-title">&nbsp;Infographics</span>
+</a>
+
+</div>
+
+</td>
+
+
+<td style="width:33%;">
+
+&nbsp;
+
+</td>
+
+
+
+<td style="width:33%;">
+
+&nbsp;
+
+</td>
+
+
+
+
+
+
+
+</tr>
+
+
+
+<tr>
+
+
+<!-- blog block -->
+
+<td>
+
+<div class="taxtermpage-row2">
+
+<?php
+$block = module_invoke('views', 'block_view', 'taxtermpage_web-taxtermpage_infog');
+print render($block['content']);
+?>
+
+</div>
+
+</td>
+
+<!-- end blog -->
+
+	
+<td style="width:33%;">
+
+&nbsp;
+
+</td>
+
+
+
+<td style="width:33%;">
+
+&nbsp;
+
+</td>
+
+
+
+
+
+
+</tr>
+
+
+
+<!-- end fourth row -->
+
+
+
 
 	</table>
 

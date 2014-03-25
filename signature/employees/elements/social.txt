@@ -1,0 +1,14 @@
+<a href="http://twitter.com/Accellion" style="display:block-inline;width:20px;height:20px;" target="_blank">
+<img alt="Twitter" height="20" src="http://www1.accellion.com/signature/employees/images/social/twitter.jpg" width="20"></a><img src="http://www1.accellion.com/signature/employees/images/spacer3px.gif" width="3px" height="3px">
+
+<a href="http://www.facebook.com/Accellion/" style="display:block-inline;width:20px;height:20px;" target="_blank">
+<img alt="Facebook" height="20" src="http://www1.accellion.com/signature/employees/images/social/facebook.jpg" width="20"></a><img src="http://www1.accellion.com/signature/employees/images/spacer3px.gif" width="3px" height="3px">
+
+<a href="http://www.linkedin.com/companies/accellion" style="display:block-inline;width:20px;height:20px;" target="_blank">
+<img alt="LinkedIn" height="20" src="http://www1.accellion.com/signature/employees/images/social/linkedin.jpg" width="20"></a><img src="http://www1.accellion.com/signature/employees/images/spacer3px.gif" width="3px" height="3px">
+
+<a href="http://www.youtube.com/Accellion" style="display:block-inline;width:20px;height:20px;" target="_blank">
+<img alt="YouTube" height="20" src="http://www1.accellion.com/signature/employees/images/social/youtube.jpg" width="20"></a><img src="http://www1.accellion.com/signature/employees/images/spacer3px.gif" width="3px" height="3px">
+
+<a href="https://www.accellion.com/blog" target="_blank">
+<img alt="Blog" height="20" src="http://www1.accellion.com/signature/employees/images/social/rss.jpg" width="20"></a>
