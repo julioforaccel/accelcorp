@@ -204,7 +204,7 @@ print render($content['links']);
 
 if (!$teaser) {
 
- print "<a href='/mobile-talk-blog' style='position:relative; right:2px;'>Back to Blog</a>"; 
+ print "<a href='/mobile-talk-blog' style='position:relative; right:2px;'>See All Blog Posts &gt;&gt;</a>"; 
 
 }
 

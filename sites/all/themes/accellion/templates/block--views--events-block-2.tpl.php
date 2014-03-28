@@ -51,7 +51,7 @@
 <?php if ($block->subject): ?>
 
 <div class="home-bottom-row-two">
-<a href="/blog">
+<a href="/mobile-talk-blog">
 <span class="plus-sign">+</span><span class="plus-sign-title">&nbsp;Latest Blog Posts</span>
 </a>
 </div>
