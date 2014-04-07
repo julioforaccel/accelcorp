@@ -20,7 +20,17 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
+
+<?php if (arg(1) != '2208') : ?>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
+<?php endif; ?>
+
+
+<?php if (arg(0) == 'node' && arg(1) == '2208') : ?>
+<body class="<?php print $classes; ?>" <?php print $attributes;?> style="background-color:#7CA6CF !important;">
+<?php endif; ?>
+
+
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>

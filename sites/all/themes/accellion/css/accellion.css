@@ -1,6 +1,69 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* KITEWORKS LEARN MORE PAGE */
+/* ========================= */
+
+a.learn:link {color:#000000; text-decoration:underline !important;}      /* unvisited link */
+a.learn:visited {color:#000000;}  /* visited link */
+a.learn:hover {color:#000000;}  /* mouse over link */
+a.learn:active {color:#000000;}  /* selected link */
+
+#kite-learn-logo {
+  position:relative;
+  left:100px;
+  top:50px;
+}
+
+#kite-learn-text {
+  position:relative;
+  left:100px;
+  top:100px;
+  margin-right:175px;
+}
+
+.kite-size1 {
+  font-size:60px;
+  font-weight:bold;
+  color:#FFFFFF;
+}
+
+.kite-size2 {
+  font-size:40px;
+  font-weight:bold;
+  color:#FFFFFF;
+}
+
+.kite-size3 {
+  font-size:35px;
+  color:#FFFFFF;
+  line-height:40px;
+}
+
+.btn-yellow-kite {
+	/*text-align:center !important;*/
+	padding-top:10px;
+
+	}
+
+.btn-yellow-kite a {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align:center;
+	width:130px;
+	background:#ecb80f;
+	font-weight:bold;
+	font-size:40px;
+	padding:10px;
+	color:#000;
+	text-decoration:none;
+}
+
+
+
+
+
+
 /* BLOG NAV AS TABLE */
 /* ================= */
 
