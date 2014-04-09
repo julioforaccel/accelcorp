@@ -1,6 +1,41 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* BOTTOM BLOG AS TABLE */
+/* ==================== */
+
+#mini-panel-blog_magazine_v3 {
+  margin-left:20px;
+  margin-right:10px;
+}
+
+.bottomblog-table {
+  border:0px;
+  width:920px;
+  position:relative;
+  bottom:30px;
+}
+
+.bottomblog-table-one {
+  width:33%;
+  font-weight:normal;
+  padding-right:10px;
+}
+
+.bottomblog-table-two {
+  width:33%;
+  font-weight:normal;
+  padding-right:10px;
+}
+
+.bottomblog-table-three {
+  width:33%;
+  font-weight:normal;
+  padding-right:10px;
+}
+
+
+
 /* KITEWORKS LEARN MORE PAGE */
 /* ========================= */
 
@@ -4681,6 +4716,14 @@ sftp://michael.jankowski:@www-drup.accellion.com/%2Fhome/httpd/corp/sites/all/th
   border: 0px solid red;
   height: 28px;
 }
+
+@-moz-document url-prefix() { 
+	#sidebar #sidebar-next-step ul li{
+	  margin-left:-1px;
+	}
+}
+
+
 
 #sidebar #sidebar-next-step h3{
   font-family: Arial,Tahoma,Verdana;
