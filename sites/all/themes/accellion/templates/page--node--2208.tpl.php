@@ -81,7 +81,7 @@
 
 <!-- div id="page-wrapper" style="	background-image:url('/sites/default/files/kiteworks-give-share-bg.png') !important; background-repeat:no-repeat;" -->
 	
-<div id="page-wrapper" style="background-color:#7CA6CF !important; box-shadow:0px 0px 0px 0px !important;">	
+<div id="page-wrapper" style="background-color:#7CA6CF !important; box-shadow:none !important;">	
 
 <!--div id="page-wrapper" style="background-image:url('/sites/default/files/Learn-More-960.jpg') !important; box-shadow:0px 0px 0px 0px !important;"-->
 

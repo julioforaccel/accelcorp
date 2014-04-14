@@ -70,12 +70,7 @@ function curl_request_async($url, $params) {
 		
 		$parts=parse_url($url);
 		$fp = fsockopen ($url,443, $errno, $errstr, 15);
-		if($params['evaltype'] == 'TSH-E'){
-			$out ="POST ssl://proserv.accellion.net/pdns/eval/ts_trial_ng.php HTTP/1.1\r\n";
-		}
-		else{
-			$out ="POST ssl://proserv.accellion.net/pdns/eval/trial_ng.php HTTP/1.1\r\n";
-		}
+		$out ="POST ssl://proserv.accellion.net/pdns/eval/trial_ng.php HTTP/1.1\r\n";
 		$out.= "Host: ".$parts['host']."\r\n";
 		$out.= "Content-Type: application/x-www-form-urlencoded\r\n";
 		$out.= "Content-Length: ".strlen($post_string)."\r\n";
@@ -87,12 +82,7 @@ function curl_request_async($url, $params) {
 	else {
 		// On Stage - do syncronous request
 		$ch = curl_init();
-		if($params['evaltype'] == 'TSH-E'){
-			curl_setopt($ch, CURLOPT_URL, 'https://proserv-stage.accellion.net/pdns/eval/ts_trial_ng.php');
-		}
-		else{
-			curl_setopt($ch, CURLOPT_URL, 'https://proserv-stage.accellion.net/pdns/eval/trial_ng.php');
-		}
+		curl_setopt($ch, CURLOPT_URL, 'https://proserv-stage.accellion.net/pdns/eval/trial_ng.php');
 		//curl_setopt($ch, CURLOPT_HEADER, 1);
 		curl_setopt($ch, CURLOPT_POST, 1);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
