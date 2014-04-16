@@ -159,10 +159,9 @@ window.open('employees/upload-crop/upload_crop_v3-n.php','mywin','left=20,top=20
     <option value="addressHQ">Headquarters</option>
 	<option value="addressEMEA">EMEA</option>
 	<option value="addressAPAC">APAC</option>
+	<option value="addressSupport">Support Team Info</option>
 	</select>
 </td>
-
-</tr>
 
 
 <tr>
