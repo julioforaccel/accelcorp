@@ -1,6 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/* POSITION FB LIKE ICON */
+/* ===================== */
+
+.st_fblike_hcount {
+  position:relative;
+  right:15px;
+  bottom:1px;
+}
+
+
 /* BOTTOM BLOG AS TABLE */
 /* ==================== */
 
