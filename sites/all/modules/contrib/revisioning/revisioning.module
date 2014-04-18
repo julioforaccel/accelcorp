@@ -952,7 +952,7 @@ function revisioning_node_access($node, $node_op, $account) {
   // allow all users to view published nodes, so reflect that here,
   // augmented for the 'view revisions' family of permissions, which apply to
   // both published and unpublished nodes.
-  if ($node_op == 'view' /* && !module_implements('node_grants' [#2191527]) */) {
+  if ($node_op == 'view' && !module_implements('node_grants')) {
     if ($node->status == NODE_PUBLISHED || (!empty($node->revision_moderation) && revisioning_user_node_access('view revisions', $node, $account))) {
       return NODE_ACCESS_ALLOW;
     }
