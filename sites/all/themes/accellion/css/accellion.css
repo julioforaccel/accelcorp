@@ -2,6 +2,70 @@
 /* CSS Document */
 
 
+/* POP-UP ON TRIAL PAGE */
+/* ==================== */
+
+.pop-top {
+  background-color:#CCCCCC;
+  height:85px;
+  padding-left:15px;
+  padding-top:25px;
+}
+
+
+.pop-middle {
+  background-color:#FFFFFF;
+  height:220px;	
+}
+
+.pop-table-top {
+  margin-left:15px;
+  width:680px;
+}
+
+
+.pop-bottom {
+  background-color:#CCCCCC;
+  height:90px;
+  padding-left:15px;
+  padding-top:10px;
+}
+
+.pop-table-bottom {
+  width:680px;
+}
+
+
+.pop-bottom-text {
+}
+
+
+.pop-bottom-button {
+  position:relative;
+  right:40px;
+
+}
+
+
+.pop-title1 {
+  font-size:40px;
+}
+
+
+.pop-size1 {
+  font-size:18px;
+}
+
+
+.pop-size2 {
+  font-size:15px;	
+}
+
+
+
+
+
+
 /* POSITION FB LIKE ICON */
 /* ===================== */
 
