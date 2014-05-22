@@ -1,0 +1,340 @@
+
+
+/* CSS DE MEGAMENUS */
+/* ================ */
+
+ul.mainmega1-deu {
+  list-style-type:none;
+}
+
+ul.mainmega2-deu {
+  list-style-type:none;
+}
+
+
+.mainmega1-deu a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega1-deu a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#mainmega1-deu-link {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:300px;
+	
+	bottom:30px;
+
+}
+
+#mainmega1-deu-link:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:300px;
+	bottom:30px;
+
+}
+
+#mainmega1-deu-link:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:300px;
+	bottom:30px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega1-deu-link.qtip-hover {
+  /*color:#1B415C !important;*/
+  color:#323f53 !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:300px;
+	bottom:30px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+.mainmega2-deu a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega2-deu a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#mainmega2-deu-link {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:178px;
+	bottom:67px;
+
+}
+
+#mainmega2-deu-link:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:178px;
+	bottom:67px;
+
+}
+
+#mainmega2-deu-link:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:178px;
+	bottom:67px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega2-deu-link.qtip-hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:178px;
+	bottom:67px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+.mainmega3-deu a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega3-deu a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+ul.links.mainmega3-deu {
+  list-style-type:none !important;
+}
+
+#mainmega3-deu-link {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:46px;
+	bottom:104px;
+
+}
+
+#mainmega3-deu-link:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:46px;
+	bottom:104px;
+
+}
+
+#mainmega3-deu-link:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:46px;
+	bottom:104px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega3-deu-link.qtip-hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:46px;
+	bottom:104px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* POSITION de MEGAMENUS */
+/* ===================== */
+
+/*position intnal megamenu */
+.qtip.qtip-light[qtip="0"] {
+  top:35px !important;
+  margin-left:14px !important;
+}
+
+
+
+/* position megamenu-1-deu */
+.qtip.qtip-light[qtip="1"] {
+  top:80px !important;
+  /*left:243px !important;*/
+  /*margin-left:-7px;*/
+
+  /*margin-left:-9px;*/
+  margin-left:125px !important;
+
+  box-shadow: 10px 10px 5px #444444;
+}
+
+/* position megamenu-2-deu */
+.qtip.qtip-light[qtip="2"] {
+  top:80px !important;
+  /*left:243px !important;*/
+
+  /*margin-left:-118px;*/
+  margin-left:5px !important;
+
+  box-shadow: 10px 10px 5px #444444;
+}
+
+/* position megamenu-3-deu */
+.qtip.qtip-light[qtip="3"] {
+  top:80px !important;
+  /*left:243px !important;*/
+  margin-left:-133.5px !important;
+  box-shadow: 10px 10px 5px #444444;
+}
+
+
+/* HEIGHT FOOTER: PREVIOUSLY LN 1081 LAYOUT.CSS */
+/* ==================================================== */
+
+#footer{
+  height:395px !important;
+}
+
+#footer .section {
+  height:380px !important;
+}
+
+
+
+
+/* WIDTH FOOTER: PREVIOUSLY LN 2562 ACCELLION.CSS */
+/* ============================================== */
+
+#block-panels-mini-footer-090613de {
+  width:940px;
+}
+
+
+/* NEW KW TRIPTYCH REGIONS */
+/* ======================= */
+
+.kw-box {
+  margin-top:25px;
+  margin-bottom:5px;
+  position:relative;
+  left:-10px !important;
+
+}
+
+.kw-box2 {
+  margin-top:25px;
+  margin-bottom:5px;
+  position:relative;
+  left:20px;
+}
+
+.kw-minitext {
+  font-size:15px;
+  line-height:15px;
+  text-align:center;
+  position:relative;
+  right:20px;
+  color:#555555;
+}
+
+.kw-minitext2 {
+  font-size:15px;
+  line-height:15px;
+  text-align:center;
+  position:relative;
+  right:20px;
+  margin-left:10px;
+  color:#555555;
+}
+
+.region-upper-triptych-first a {
+  padding-left:45px !important;
+  padding-right:25px !important;
+}

@@ -135,6 +135,18 @@ if (isset($vars['node'])) {
     );
   }
   $variables['user_links'] = theme('links', $user_links);
+
+global $language ;
+$lang_name = $language->language ;
+if ($lang_name=='fr')
+drupal_add_css(path_to_theme(). '/css/international-fr.css');
+if ($lang_name=='de')
+drupal_add_css(path_to_theme(). '/css/international-de.css');
+else
+drupal_add_css(path_to_theme(). '/css/international-en.css');
+$vars['styles'] = drupal_get_css(); //  use drupal_get_css() to add new css
+
+
 }
 
 function mymodule_preproces_page(&$vars) {

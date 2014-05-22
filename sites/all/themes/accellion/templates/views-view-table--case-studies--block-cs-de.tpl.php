@@ -18,13 +18,15 @@
  */
 ?>
 
-<div style="position:relative; bottom:80px;">
+<!-- added to DE version -->
+
+<h3>In Deutsch:</h3>
+
+<!-- End added to DE version -->
 
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?>>
   <?php if (!empty($title)) : ?>
-	
-    <caption><?php print $title; ?></caption>
-
+    <h2><?php print $title; ?></h2>
   <?php endif; ?>
   <?php if (!empty($header)) : ?>
     <thead>
@@ -45,20 +47,21 @@
 <!-- description row -->
 <tr>
 
-<!-- video screengrab -->
-<td rowspan="3" class="cq-logo-td"><?php print $row['field_wecast_screentgrab']; ?></td>
+<!-- logo -->
+<td rowspan="4" class="cs-logo-td"><?php print $row['field_case_study_logo']; ?></td>
 
 <!-- description additional info and link row -->
-<td class="cq-desc-fst-td"><b><?php print $row['title']; ?></b>
+<td class="cs-desc-fst-td"><b><?php print $row['title']; ?></b>
 
 <tr>
-<td class="cq-desc-hgt-td"><?php print $row['body']; ?>
+<td class="cs-desc-hgt-td"><?php print $row['field_case_study_description']; ?>
 </tr>
-
 <tr>
-<td class="cq-desc-lst-td"><?php print $row['field_marketo_link']; ?>
+<td class="cs-desc-hgt-td"><?php print $row['field_related_info']; ?></td>
 </tr>
-
+<tr>
+<td class="cs-desc-hgt-td"><?php print $row['field_marketo_link']; ?></td>
+</tr>
 
 
 </td>
@@ -73,41 +76,40 @@
 
 
 
+<!-- added to DE version -->
+
+<p>&nbsp;</p>
+<h3>In English:</h3>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- End added to DE version -->
+
+
 
 <style>
 
-.cq-logo-td{
+.cs-logo-td{
   vertical-align:top;
 width: 125px;
 height: auto;
 padding-top: 30px;
 }
 
-.cq-desc-hgt-td{
+.cs-desc-hgt-td{
   vertical-align:top;
-padding-top: 5px;
+padding-top: 10px;
 padding-left: 10px;
 font-size: 12px;
-margin-top: 10px;
-margin-right: 0px;
-margin-bottom: 15px;
-margin-left: 0px;
-line-height: 21px; 
 }
 
-.cq-desc-fst-td{
+.cs-desc-fst-td{
   vertical-align:top;
 padding-top: 30px;
 padding-left: 10px;
 }
 
-.cq-desc-lst-td{
-  vertical-align:top;
-padding-top: 0px;
-padding-left: 10px;
-font-size: 12px;
-}
-
 </style>
 
-</div>
+

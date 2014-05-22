@@ -77,6 +77,9 @@
 
 <p>&nbsp;</p>
 <h3>In English:</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
 
 <!-- End added to French version -->
 

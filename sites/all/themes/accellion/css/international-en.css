@@ -1,0 +1,593 @@
+
+/* POSITION MEGAMENUS: PREVIOUSLY LN 4508 ACCELLION.CSS */
+/* ==================================================== */
+
+/*position intnal megamenu */
+.qtip.qtip-light[qtip="0"] {
+  top:35px !important;
+  margin-left:14px;
+}
+
+
+
+/* position megamenu-1 */
+.qtip.qtip-light[qtip="1"] {
+  top:80px !important;
+  /*left:243px !important;*/
+  /*margin-left:-7px;*/
+  margin-left:-9px;
+  box-shadow: 10px 10px 5px #444444;
+}
+
+/* position megamenu-2 */
+.qtip.qtip-light[qtip="2"] {
+  top:80px !important;
+  /*left:243px !important;*/
+  margin-left:-118px;
+  box-shadow: 10px 10px 5px #444444;
+}
+
+/* position megamenu-3 */
+.qtip.qtip-light[qtip="3"] {
+  top:80px !important;
+  /*left:243px !important;*/
+  margin-left:-227px;
+  box-shadow: 10px 10px 5px #444444;
+}
+
+
+/* CSS AU MEGAMENUS */
+/* ================ */
+
+ul.mainmega1au {
+  list-style-type:none;
+}
+
+ul.mainmega2au {
+  list-style-type:none;
+}
+
+
+.mainmega1au a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega1au a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#mainmega1-linkau {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	
+	bottom:30px;
+
+}
+
+#mainmega1-linkau:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+
+}
+
+#mainmega1-linkau:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega1-linkau.qtip-hover {
+  /*color:#1B415C !important;*/
+  color:#323f53 !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+.mainmega2au a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega2au a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#mainmega2-linkau {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+
+}
+
+#mainmega2-linkau:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+
+}
+
+#mainmega2-linkau:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega2-linkau.qtip-hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+.mainmega3au a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega3au a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+ul.links.mainmega3au {
+  list-style-type:none !important;
+}
+
+#mainmega3-linkau {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+
+}
+
+#mainmega3-linkau:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+
+}
+
+#mainmega3-linkau:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega3-linkau.qtip-hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+
+
+/* CSS UK MEGAMENUS */
+/* ================ */
+
+ul.mainmega1uk {
+  list-style-type:none;
+}
+
+ul.mainmega2uk {
+  list-style-type:none;
+}
+
+
+.mainmega1uk a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega1uk a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#mainmega1-linkuk {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	
+	bottom:30px;
+
+}
+
+#mainmega1-linkuk:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+
+}
+
+#mainmega1-linkuk:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega1-linkuk.qtip-hover {
+  /*color:#1B415C !important;*/
+  color:#323f53 !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+.mainmega2uk a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega2uk a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#mainmega2-linkuk {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+
+}
+
+#mainmega2-linkuk:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+
+}
+
+#mainmega2-linkuk:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega2-linkuk.qtip-hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+.mainmega3uk a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega3uk a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+ul.links.mainmega3uk {
+  list-style-type:none !important;
+}
+
+#mainmega3-linkuk {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+
+}
+
+#mainmega3-linkuk:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+
+}
+
+#mainmega3-linkuk:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega3-linkuk.qtip-hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+
+
+
+/* HEIGHT FOOTER: PREVIOUSLY LN 1081 LAYOUT.CSS */
+/* ==================================================== */
+
+#footer{
+  height:345px;
+}
+
+#footer .section {
+  height:320px;
+}
+
+
+
+/* WIDTH FOOTER: PREVIOUSLY LN 2562 ACCELLION.CSS */
+/* =========================================== */
+
+#block-panels-mini-footer-090613  {
+  width:940px;
+}
+
+#block-panels-mini-footer-090613uk  {
+  width:940px;
+}
+
+#block-panels-mini-footer-090613au  {
+  width:940px;
+}
+
+
+/* NEW KW TRIPTYCH REGIONS */
+/* ======================= */
+
+.kw-box {
+  margin-top:25px;
+  margin-bottom:5px;
+  position:relative;
+  left:10px;
+
+}
+
+.kw-strong {
+  font-size:40px;
+  font-weight:bold;
+
+}
+
+
+
+.kw-soft {
+  font-size:40px;
+  font-weight:lighter;
+
+}
+
+.kw-text {
+  font-size:20px;
+  font-weight:lighter;
+
+}
+
+.kw-minitext {
+  font-size:15px;
+  line-height:15px;
+  text-align:center;
+  position:relative;
+  right:20px;
+  color:#555555;
+}
+
+
+.kw-box2 {
+  margin-top:25px;
+  margin-bottom:5px;
+  position:relative;
+  left:20px;
+}
+
+.kw-strong2 {
+  font-size:40px;
+  font-weight:bold;
+  
+}
+
+.kw-soft2 {
+  font-size:40px;
+  font-weight:lighter;
+}
+
+.kw-text2 {
+  font-size:20px;
+  font-weight:lighter; 
+}
+
+.kw-minitext2 {
+  font-size:15px;
+  line-height:15px;
+  text-align:center;
+  position:relative;
+  right:20px;
+  margin-left:10px;
+  color:#555555;
+}
+
+

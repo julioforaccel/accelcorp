@@ -1,0 +1,232 @@
+/* CSS AU MEGAMENUS */
+/* ================ */
+
+/*position intnal megamenu */
+.qtip.qtip-light[qtip="0"] {
+  top:35px !important;
+  margin-left:80px !important;
+}
+
+
+
+
+ul.mainmega1au {
+  list-style-type:none;
+}
+
+ul.mainmega2au {
+  list-style-type:none;
+}
+
+
+.mainmega1au a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega1au a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#mainmega1-linkau {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	
+	bottom:30px;
+
+}
+
+#mainmega1-linkau:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+
+}
+
+#mainmega1-linkau:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega1-linkau.qtip-hover {
+  /*color:#1B415C !important;*/
+  color:#323f53 !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+.mainmega2au a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega2au a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#mainmega2-linkau {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+
+}
+
+#mainmega2-linkau:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+
+}
+
+#mainmega2-linkau:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega2-linkau.qtip-hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+.mainmega3au a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega3au a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+ul.links.mainmega3au {
+  list-style-type:none !important;
+}
+
+#mainmega3-linkau {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+
+}
+
+#mainmega3-linkau:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+
+}
+
+#mainmega3-linkau:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega3-linkau.qtip-hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+

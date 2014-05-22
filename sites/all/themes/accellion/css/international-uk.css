@@ -1,0 +1,231 @@
+/* CSS UK MEGAMENUS */
+/* ================ */
+
+/*position intnal megamenu */
+.qtip.qtip-light[qtip="0"] {
+  top:35px !important;
+  margin-left:-10px !important;
+}
+
+
+ul.mainmega1uk {
+  list-style-type:none;
+}
+
+ul.mainmega2uk {
+  list-style-type:none;
+}
+
+
+.mainmega1uk a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega1uk a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#mainmega1-linkuk {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	
+	bottom:30px;
+
+}
+
+#mainmega1-linkuk:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+
+}
+
+#mainmega1-linkuk:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega1-linkuk.qtip-hover {
+  /*color:#1B415C !important;*/
+  color:#323f53 !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	/*right:168px;*/
+	right:167px;
+	bottom:30px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+.mainmega2uk a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega2uk a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+#mainmega2-linkuk {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+
+}
+
+#mainmega2-linkuk:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+
+}
+
+#mainmega2-linkuk:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega2-linkuk.qtip-hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	right:54px;
+	bottom:67px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+.mainmega3uk a:link {
+    color: #FFFFFF !important;
+  font-size: 11px;	
+    padding: 0 7px;
+}
+
+.mainmega3uk a:hover {
+    color: #FB1;
+  font-size: 11px;	
+    text-decoration: none;
+}
+
+ul.links.mainmega3uk {
+  list-style-type:none !important;
+}
+
+#mainmega3-linkuk {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+
+}
+
+#mainmega3-linkuk:link {
+  color:#FFFFFF !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+
+}
+
+#mainmega3-linkuk:hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+	background:#FFFFFF;
+	padding:9px 15px 11px 15px;
+
+}
+
+#mainmega3-linkuk.qtip-hover {
+  color:#1B415C !important;
+  font-size: 15px;
+  font-weight:bold;
+  position:relative;
+  /*left:651px;*/
+  /*bottom:17px;*/
+  /*bottom:25px;*/
+	left:51px;
+	bottom:104px;
+	background:#FFFFFF;
+	padding:9px 15px 12px 15px;
+}
+
+

@@ -44,19 +44,23 @@
  * @ingroup themeable
  */
 ?>
+
+
+
+
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
 
-<?php if ($block->subject): ?>
+	<?php if ($block->subject): ?>
 
-<div class="home-bottom-row-two">
-<a href="/company/events">
-<span class="plus-sign">+</span><span class="plus-sign-title">&nbsp;Events</span>
-</a>
-</div>
+	<div class="home-bottom-row-two">
+	<a href="/company/events">
+	<span class="plus-sign">+</span><span class="plus-sign-title">&nbsp;Events</span>
+	</a>
+	</div>
 
-<?php endif;?>
+	<?php endif;?>
 
   <?php print render($title_suffix); ?>
 
@@ -68,3 +72,6 @@
   </div>
 
 </div>
+
+
+

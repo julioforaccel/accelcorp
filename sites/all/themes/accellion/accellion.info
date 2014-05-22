@@ -17,6 +17,7 @@ stylesheets[all][] = css/view.css
 stylesheets[all][] = css/nivo-slider.css
 stylesheets[all][] = css/accellion.css
 stylesheets[all][] = css/accellion.menu.css
+stylesheets[all][] = css/international-en.css
 
 scripts[] = js/jquery.nivo.slider.pack.js
 scripts[] = js/jquery.dropdown.js

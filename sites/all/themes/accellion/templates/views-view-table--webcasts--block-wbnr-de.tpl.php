@@ -18,13 +18,15 @@
  */
 ?>
 
-<div style="position:relative; bottom:80px;">
+<!-- added to DE version -->
+
+<h3>In Deutsch:</h3>
+
+<!-- End added to DE version -->
 
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?>>
   <?php if (!empty($title)) : ?>
-	
     <caption><?php print $title; ?></caption>
-
   <?php endif; ?>
   <?php if (!empty($header)) : ?>
     <thead>
@@ -73,6 +75,17 @@
 
 
 
+<!-- added to DE version -->
+
+<p>&nbsp;</p>
+<h3>In English:</h3>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- End added to DE version -->
+
+
 
 <style>
 
@@ -109,5 +122,3 @@ font-size: 12px;
 }
 
 </style>
-
-</div>

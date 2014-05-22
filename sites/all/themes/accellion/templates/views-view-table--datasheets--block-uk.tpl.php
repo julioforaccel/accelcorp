@@ -18,13 +18,15 @@
  */
 ?>
 
-<div style="position:relative; bottom:80px;">
+<!-- added to UK version -->
+
+<h3>UK Content:</h3>
+
+<!-- End added to French version -->
 
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?>>
   <?php if (!empty($title)) : ?>
-	
-    <caption><?php print $title; ?></caption>
-
+    <h2><?php print $title; ?></h2>
   <?php endif; ?>
   <?php if (!empty($header)) : ?>
     <thead>
@@ -41,12 +43,11 @@
     <?php foreach ($rows as $row_count => $row): ?>
       <tr class="<?php print implode(' ', $row_classes[$row_count]); ?>">
 
-
-<!-- description row -->
+<!-- description rows -->
 <tr>
 
 <!-- video screengrab -->
-<td rowspan="3" class="cq-logo-td"><?php print $row['field_wecast_screentgrab']; ?></td>
+<td rowspan="4" class="cq-logo-td"><?php print $row['field_datasheet_screengrab']; ?></td>
 
 <!-- description additional info and link row -->
 <td class="cq-desc-fst-td"><b><?php print $row['title']; ?></b>
@@ -56,7 +57,7 @@
 </tr>
 
 <tr>
-<td class="cq-desc-lst-td"><?php print $row['field_marketo_link']; ?>
+<td class="cq-desc-hgt-td"><?php print $row['field_datasheet_pdf']; ?>
 </tr>
 
 
@@ -71,6 +72,16 @@
   </tbody>
 </table>
 
+
+<!-- added to French version -->
+
+<p>&nbsp;</p>
+<h3>Global Content:</h3>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- End added to French version -->
 
 
 
@@ -88,11 +99,6 @@ padding-top: 30px;
 padding-top: 5px;
 padding-left: 10px;
 font-size: 12px;
-margin-top: 10px;
-margin-right: 0px;
-margin-bottom: 15px;
-margin-left: 0px;
-line-height: 21px; 
 }
 
 .cq-desc-fst-td{
@@ -101,13 +107,5 @@ padding-top: 30px;
 padding-left: 10px;
 }
 
-.cq-desc-lst-td{
-  vertical-align:top;
-padding-top: 0px;
-padding-left: 10px;
-font-size: 12px;
-}
-
 </style>
 
-</div>
