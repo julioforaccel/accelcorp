@@ -4513,6 +4513,12 @@ ul.worldwide {
   list-style-type:none;
 }
 
+ul.united-kingdom, ul.australia {
+  list-style-type:none;
+}
+
+
+
 ul.monde {
   list-style-type:none;
 }
