@@ -1,6 +1,167 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* TEAM STARTER TEMPLATE */
+/* ===================== */
+
+
+.ts-cell-title {
+	font-size:22px; 
+	font-weight:bold;  
+	position:relative; 
+	bottom:10px;
+	text-align:center;
+	color:#363636;
+	
+  padding:5px 5px 5px 5px; 
+  background-color:#F8F8F8;
+  filter: alpha(opacity=80);
+  opacity:0.8;
+  -moz-opacity:0.8px;
+
+}
+
+.ts-cell-subtitle {
+	font-size:22px; 
+	text-align:center;
+	line-height:22px; 
+	font-weight:bold; 
+	position:relative; 
+	top:5px;
+	color:#363636;
+}
+
+.ts-cell-text {
+	font-size:17px; 	
+	text-align:left !important; 
+	padding-right:5px; 
+	padding-left:10px; 
+	line-height:17px; 
+	position:relative; 
+	bottom:5px;
+	color:#363636;
+}
+
+
+.ts-box {
+  padding:0px 5px 5px 5px; 
+  background-color:#F8F8F8;
+  filter: alpha(opacity=80);
+  opacity:0.8;
+  -moz-opacity:0.8px;
+}
+
+
+
+.tsblock1 {
+  margin:0px 0px 0px 0px;
+  padding:30px 40px 10px 40px;
+  background-image: url("/sites/default/files/team/kiteworks-marketing.png");
+  width:860px;
+  position:relative;
+  bottom:30px;
+}
+
+.tsblock1-legal {
+  margin:0px 0px 0px 0px;
+  padding:30px 40px 10px 40px;
+  background-image: url("/sites/default/files/team/kiteworks-legal.png");
+  width:860px;
+  position:relative;
+  bottom:30px;
+}
+
+.tsblock1-medical {
+  margin:0px 0px 0px 0px;
+  padding:30px 40px 10px 40px;
+  background-image: url("/sites/default/files/team/kiteworks-medical.png");
+  width:860px;
+  position:relative;
+  bottom:30px;
+}
+
+.tsblock1-field {
+  margin:0px 0px 0px 0px;
+  padding:30px 40px 10px 40px;
+  background-image: url("/sites/default/files/team/kiteworks-field-ops.png");
+  width:860px;
+  position:relative;
+  bottom:30px;
+}
+
+.tsblock1-sales {
+  margin:0px 0px 0px 0px;
+  padding:30px 40px 10px 40px;
+  background-image: url("/sites/default/files/team/kiteworks-sales.png");
+  width:860px;
+  position:relative;
+  bottom:30px;
+}
+
+
+
+
+.tstitle {
+  font-size:40px;	
+}
+
+
+.tstext1 {
+  font-size:20px;
+  line-height:22px;
+  margin:-20px 300px 20px 0px;
+}
+
+
+.tstext {
+  font-size:20px;
+  line-height:22px;
+  margin:-20px 0px 0px 0px;
+}
+
+.tsquote {
+  font-size:20px;
+  line-height:22px;
+  margin:0px 0px 0px 0px;
+  font-style:italic;
+}
+
+.tsquote1 {
+  font-size:20px;
+  line-height:22px;
+  margin:0px 0px 0px 0px;
+  font-style:italic;
+}
+
+
+.tsblock11 {
+  margin:0px 20px 0px 20px;
+  padding:0px 20px 10px 20px;
+  background-color:#F8F8F8;
+  width:860px;
+  position:relative;
+  bottom:30px;
+  border-bottom: 1px solid #999999;
+}
+
+.tsblock2, .tsblock4, .tsblock3, .tsblock5 {
+  margin:0px 20px 0px 20px;
+  padding:30px 20px 10px 20px;
+  background-color:#F8F8F8;
+  width:860px;
+  position:relative;
+  bottom:30px;
+  border-bottom: 1px solid #999999;
+}
+
+.panels-flexible-33 .panels-flexible-row {
+  padding: 0px !important;
+}
+
+
+
+
+
 
 /* POP-UP ON TRIAL PAGE */
 /* ==================== */
