@@ -11,7 +11,7 @@
 	position:relative; 
 	bottom:10px;
 	text-align:center;
-	color:#363636;
+	color:#333F53 !important;
 	
   padding:5px 5px 5px 5px; 
   background-color:#F8F8F8;
@@ -28,7 +28,7 @@
 	font-weight:bold; 
 	position:relative; 
 	top:5px;
-	color:#363636;
+	color:#333F53 !important;
 }
 
 .ts-cell-text {
@@ -39,7 +39,7 @@
 	line-height:17px; 
 	position:relative; 
 	bottom:5px;
-	color:#363636;
+	color:#333F53 !important;
 }
 
 
@@ -65,7 +65,7 @@
 .tsblock1-legal {
   margin:0px 0px 0px 0px;
   padding:30px 40px 10px 40px;
-  background-image: url("/sites/default/files/team/kiteworks-legal.png");
+  background-image: url("/sites/default/files/team/kiteworks-legal-v2.png");
   width:860px;
   position:relative;
   bottom:30px;
@@ -102,7 +102,8 @@
 
 
 .tstitle {
-  font-size:40px;	
+  font-size:40px;
+  color:#333F53 !important;
 }
 
 
@@ -110,10 +111,18 @@
   font-size:20px;
   line-height:22px;
   margin:-20px 300px 20px 0px;
+  color:#333F53 !important;
 }
 
 
 .tstext {
+  font-size:20px;
+  line-height:22px;
+  margin:-20px 0px 0px 0px;
+  color:#333F53 !important;
+}
+
+.tstext-a {
   font-size:20px;
   line-height:22px;
   margin:-20px 0px 0px 0px;
@@ -124,6 +133,7 @@
   line-height:22px;
   margin:0px 0px 0px 0px;
   font-style:italic;
+  color:#333F53 !important;
 }
 
 .tsquote1 {
@@ -131,6 +141,7 @@
   line-height:22px;
   margin:0px 0px 0px 0px;
   font-style:italic;
+  color:#333F53 !important;
 }
 
 
