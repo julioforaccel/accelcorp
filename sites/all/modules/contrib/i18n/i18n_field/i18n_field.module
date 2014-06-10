@@ -273,7 +273,7 @@ function i18n_field_field_widget_form_alter(&$element, &$form_state, $context) {
     $alter_element['#options'] = $translate($field, $i18n_langcode);
     if (isset($alter_element['#properties']) && !empty($alter_element['#properties']['empty_option'])) {
       $label = theme('options_none', array('instance' => $instance, 'option' => $alter_element['#properties']['empty_option']));
-      //$alter_element['#options'] = array('_none' => $label) + $alter_element['#options'];
+      $alter_element['#options'] = array('_none' => $label) + $alter_element['#options'];
     }
     // Translate list_boolean fields using the checkboxes widget.
     if (!empty($alter_element['#title']) && $field['type'] == 'list_boolean' && !empty($alter_element['#on_value'])) {
