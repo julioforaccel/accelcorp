@@ -1,0 +1,7 @@
+name = Kapost Byline
+description = Kapost Byline
+package = Kapost
+version = 1.4.0
+core = 7.x
+dependencies[] = blogapi
+configure = admin/config/kapost/settings

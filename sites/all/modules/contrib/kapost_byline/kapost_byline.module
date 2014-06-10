@@ -1,0 +1,478 @@
+<?php
+define('KAPOST_BYLINE_VERSION', '1.4.0');
+
+function kapost_byline_variable_get($name, $default = NULL)
+{
+	$value = variable_get($name, $default);
+	if($value !== $default && !empty($value))
+		return $value;
+
+	return $default;
+}
+
+// FIXME: find a better way to do this
+function kapost_byline_get_image_by_url($url)
+{
+	$query = db_select('file_managed', 'f');
+	$query->condition('f.filename', basename($url), '=')->fields('f')->range(0, 1);
+	return $query->execute()->fetchObject();
+}
+
+function kapost_byline_admin_paths()
+{
+	return array('kapost/*' => TRUE);
+}
+
+function kapost_byline_menu()
+{
+	$items = array();
+	$items['admin/config/kapost/settings'] = array(
+		'title' => 'Kapost Settings',
+		'description' =>  'Kapost Settings',
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('kapost_byline_admin_settings'),
+		'file' => 'kapost_byline.admin.inc',
+		'access arguments' => array('administer site configuration'),
+	);
+	$items['kapost/preview/%'] = array(
+		'title' => 'Kapost Preview',
+		'description' => 'Menu callback for rendering a full-page preview.',
+		'page callback' => 'kapost_byline_preview_render_page',
+		'page arguments' => array(1, 2),
+		'access arguments' => array('access content'),
+		'type' => MENU_CALLBACK
+	);
+
+	return $items;
+}
+
+function kapost_byline_xmlrpc() 
+{
+	$methods = array(array('kapost.version', 'kapost_byline_version', array('string'), t('kapost.version')));
+	
+	if(kapost_byline_variable_get('kapost_preview', false))
+	{
+		$methods[] = array('kapost.getPreview', 'kapost_byline_get_preview',
+					 array('struct', 'string', 'string', 'string', 'struct', 'string'),
+					 t('kapost.getPreview'));
+	}
+
+	return $methods;
+}
+
+function kapost_byline_version()
+{
+	return KAPOST_BYLINE_VERSION;
+}
+
+function kapost_byline_nonce_tick()
+{
+	return ceil(REQUEST_TIME / ( 43200 / 2 ));
+}
+
+function kapost_byline_create_nonce($id)
+{
+	return user_pass_rehash('kapost_byline_preview', kapost_byline_nonce_tick(), $id);
+}
+
+function kapost_byline_preview_render_page($path, $id, $nonce)
+{
+	global $user;
+
+	if($nonce != kapost_byline_create_nonce($id))
+		drupal_exit();
+
+	$node = node_load(intval($id));
+	if(!$node)
+		drupal_exit();
+
+	$_GET['q'] = 'node/' . $node->nid;
+
+	$node->status = NODE_PUBLISHED;
+	$node->changed = REQUEST_TIME;
+	$node->timestamp = REQUEST_TIME;
+
+	drupal_save_session(FALSE);
+	$user = user_load(0);
+	user_login_finalize();
+
+	module_invoke_all('suppress');
+
+	if(isset($_SESSION))
+		unset($_SESSION['messages']);
+
+	$content = node_view($node, 'full');
+	drupal_deliver_page($content);
+}
+
+function kapost_byline_get_preview_link($node)
+{
+	global $base_url;
+	$preview_link = $base_url . '/kapost/preview/' . $node->nid . '/' . kapost_byline_create_nonce($node->nid);
+	drupal_alter('kapost_byline_preview_link', $preview_link);
+	return array('url' => $preview_link, 'id' => strval($node->nid));
+}
+
+function kapost_byline_get_preview($blog_id, $username, $password, $content, $node_id)
+{
+	$GLOBALS['KAPOST_BYLINE_PREVIEW'] = 1;
+
+	$uid = user_authenticate($username, $password); # blogapi_validate_user($username, $password);
+	if(!is_numeric($uid))
+		return services_error('Invalid username or password', 403);
+
+	$node = null;
+	$nid = intval($node_id);
+
+	if($nid)
+	{
+		$node = node_load($nid);
+		if($node)
+		{
+			if(!node_access('update', $node, user_load($uid)))
+				return services_error(t('You do not have permission to update this post.', 403));
+
+			if($node->status == NODE_PUBLISHED)
+				return kapost_byline_get_preview_link($node);
+	
+			$status = blogapi_metaweblog_edit_post($nid, $username, $password, $content, 0);
+			if($status !== TRUE)
+				return $status;
+
+			$node = node_load($nid, NULL, TRUE); // reload the node ignoring the "static cache"
+		}
+		else
+		{
+			$node = null;
+		}
+	}
+
+	if($node == null)
+	{
+		$status = blogapi_metaweblog_new_post($blog_id, $username, $password, $content, 0);
+		if(!is_string($status))
+			return $status;
+
+		$nid = intval($status);
+		$node = node_load($nid);
+	}
+
+	return kapost_byline_get_preview_link($node);
+}
+
+function kapost_byline_xmlrpc_content()
+{
+	if(!function_exists("xmlrpc_message"))
+		include_once DRUPAL_ROOT . '/includes/xmlrpc.inc';
+
+	$message = trim(file_get_contents('php://input'));
+	if(!strlen($message)) return false;
+
+	$message = xmlrpc_message($message);
+	if(!xmlrpc_message_parse($message)) return false;
+
+	if($message->methodname != 'metaWeblog.newPost' && 
+	   $message->methodname != 'metaWeblog.editPost')
+		return false;
+
+	if(!is_array($message->params)					||
+	   !isset($message->params[3])					||
+	   !is_array($message->params[3])				||
+	   !isset($message->params[3]['custom_fields']) ||
+	   !is_array($message->params[3]['custom_fields']))
+	   return false;
+
+	$custom_fields = array();
+	foreach($message->params[3]['custom_fields'] as $k=>$v)
+	{
+		if(is_array($v) && isset($v['key']) && isset($v['value']))
+			$custom_fields[$v['key']] = $v['value'];
+	}
+
+	if(module_exists('metatag'))
+	{   
+		$metatags = array(); $metatags_deleted = array();
+		foreach($custom_fields as $k => $v) 
+		{   
+			if(strpos($k, '_metatag_') === 0) // starts with and not empty
+			{   
+				$metatags_deleted[] = $k; 
+
+				if(!empty($v))
+				{
+					$kk = str_replace('_metatag_', '', $k);
+					$metatags[$kk] = $v;
+				}
+			}	
+		}   
+
+		if(count($metatags) > 0)
+			$message->params[3]['metatags'] = $metatags;
+
+		foreach($metatags_deleted as $k) 
+			unset($custom_fields[$k]);
+	}
+
+	$message->params[3]['custom_fields'] = $custom_fields;
+	return $message->params[3];
+}
+
+function kapost_byline_form_alter(&$form, &$form_state, $form_id)
+{
+	if(isset($form['field_kapost_custom_fields'])) unset($form['field_kapost_custom_fields']);
+}
+
+function kapost_byline_load_custom_fields($node)
+{
+	if($node !== false && !empty($node->field_kapost_custom_fields[LANGUAGE_NONE][0]['value']))
+		return unserialize(base64_decode($node->field_kapost_custom_fields[LANGUAGE_NONE][0]['value']));
+
+	return array();
+}
+
+function kapost_byline_get_terms_by_name($categories, $vocabulary = NULL)
+{
+	$terms = array();
+
+	if(module_exists("taxonomy"))
+	{
+		foreach($categories as $name)
+		{
+			$term = array_shift(taxonomy_get_term_by_name($name, $vocabulary));
+			if($term != NULL) $terms[] = $term;
+		}
+	}
+
+	return $terms;
+}
+
+function kapost_byline_create_user($name, $email)
+{
+	$user = NULL;
+
+	try
+	{ 
+		$user = user_save(array(), array("name" => $name, "mail" => $email, "status"=>1));
+	}
+	catch(Exception $e) 
+	{
+		// ignore any exceptions
+	}
+
+	return $user;
+}
+
+function kapost_byline_node_presave($node)
+{	
+	$content = kapost_byline_xmlrpc_content();
+	if($content === false) return;
+
+	if(module_exists('metatag'))
+	{   
+		if(isset($content['metatags']) && is_array($content['metatags']) && count($content['metatags']) > 0)
+		{   
+			foreach($content['metatags'] as $k => $v) 
+				$node->metatags[LANGUAGE_NONE][$k]['value'] = $v; 
+		}
+	}
+
+	$custom_fields = $content['custom_fields'];
+	if(count($custom_fields) == 0) return;
+
+	if(module_exists('pathauto') && kapost_byline_variable_get('kapost_path_auto', false))
+	{   
+		if(empty($node->path))
+		{   
+			$node->language = LANGUAGE_NONE; // this is required for now!
+			$node->path['pathauto'] = TRUE;
+//			$node->path['alias'] = '';
+		}
+
+		if(!empty($custom_fields['kapost_pathauto_alias']))
+		{
+			$node->path['pathauto'] = FALSE;
+			$node->path['alias'] = $custom_fields['kapost_pathauto_alias'];
+		}	
+	}
+
+	$node->field_kapost_custom_fields[LANGUAGE_NONE] = array();
+	$node->field_kapost_custom_fields[LANGUAGE_NONE][0]['value'] = base64_encode(serialize($custom_fields));
+
+	$fields = field_info_fields();
+
+	// categories and tags
+	if(module_exists("taxonomy"))
+	{
+		if(isset($content['categories']) && is_array($content['categories']) && count($content['categories']))
+		{
+			$field_name = kapost_byline_variable_get('kapost_category_field', 'field_tags');
+			$custom_fields[$field_name] = implode(',', $content['categories']);
+		}
+
+		if(!empty($content['mt_keywords']))
+		{
+			$field_name = kapost_byline_variable_get('kapost_tag_field', 'field_tags');
+			$custom_fields[$field_name] = $content['mt_keywords'];
+		}
+	}
+
+	// featured image
+	if(isset($custom_fields['kapost_featured_image']))
+	{
+		$field_name = kapost_byline_variable_get('kapost_featured_image_field', 'field_image');
+		$custom_fields[$field_name] = $custom_fields['kapost_featured_image'];
+	}
+
+	// set the non-kapost 1:1 custom fields
+	foreach($custom_fields as $k => $v)
+	{
+		if(strpos($k, 'kapost_') === false && isset($fields[$k]))
+		{
+			switch($fields[$k]['type'])
+			{
+				case 'image':
+				case 'media': // support for the deprecated 'Multimedia Type'
+				{
+					$image = kapost_byline_get_image_by_url($v);
+					if(is_object($image) && isset($image->fid))
+						$node->{$k}[LANGUAGE_NONE][0]['fid'] = $image->fid;
+				}
+				break;
+
+				case 'taxonomy_term_reference':
+				{
+					$categories = array_unique(explode(',', $v));
+					$vocabulary = $fields[$k]['settings']['allowed_values'][0]['vocabulary'];
+
+					// clear old terms before setting any new ones
+					unset($node->{$k});
+
+					// TODO: validate terms and make sure they are coming from this vocabulary
+					$terms = kapost_byline_get_terms_by_name($categories, $vocabulary);
+					if(count($terms) > 0)
+					{
+						foreach($terms as $i => $term)
+							$node->{$k}[LANGUAGE_NONE][$i]['tid'] = $term->tid;
+					}
+				}
+				break;
+
+				case 'node_reference':
+				{
+					$nr = node_load($v);
+					if(is_object($nr) && !empty($nr->nid))
+						$node->{$k}[LANGUAGE_NONE][0]['nid'] = $nr->nid;
+				} 
+				break;
+
+				case 'user_reference':
+				{
+					$ur = user_load($v);
+					if(is_object($ur) && !empty($ur->uid))
+						$node->{$k}[LANGUAGE_NONE][0]['uid'] = $ur->uid;
+				} 
+				break;
+
+				case 'text_long':
+				{
+					// try to set the full or filtered html format for 
+					// text_long fields if possible and available to the 
+					// currently logged in user; this is a safe assumption 
+					// and it will fallback on its own if for some reason
+					// is not valid for the current field in question
+
+					global $user;
+
+					$format = filter_formats($user);
+					if(is_array($format) && is_object($format['full_html']))
+						$node->{$k}[LANGUAGE_NONE][0]['format'] = $format['full_html']->format;
+					elseif(is_array($format) && is_object($format['filtered_html']))
+						$node->{$k}[LANGUAGE_NONE][0]['format'] = $format['filtered_html']->format;
+
+					$node->{$k}[LANGUAGE_NONE][0]['value'] = $v; 
+				}
+				break;
+
+				default:
+				{
+					// assume it's some sort of a text or numeric field
+					$node->{$k}[LANGUAGE_NONE][0]['value'] = $v;
+				}
+				break;
+			}
+		}
+	}
+	
+	// exit early in preview mode because we don't want to create the user just yet
+	if(isset($GLOBALS['KAPOST_BYLINE_PREVIEW'])) return;
+
+	if(!isset($custom_fields['kapost_author']) ||
+	   !isset($custom_fields['kapost_author_email'])) return;
+
+	$create_user = (kapost_byline_variable_get('kapost_create_user', false) != false);
+	$use_existing_user = (kapost_byline_variable_get('kapost_use_existing_user', false) != false);
+
+	if(!$create_user && !$use_existing_user) return;
+
+	$kapost_author = $custom_fields['kapost_author'];
+	$kapost_author_email = $custom_fields['kapost_author_email'];
+
+	$account = user_load_by_mail($kapost_author_email);
+
+	if(!$account) // user not found by email
+		$account = user_load_by_name($kapost_author);
+
+	if(!$account && $create_user && !$use_existing_user) // user not found by email or name attempt to create it
+	{  
+		$account = kapost_byline_create_user($kapost_author, $kapost_author_email);
+
+		// FIXME: find a better way to do this :)
+		$i = 0;
+		while(!$account && ++$i<1000)
+			$account = kapost_byline_create_user("${kapost_author} ${i}", $kapost_author_email);
+	}   
+
+	if($account)
+	{
+		$node->uid = $account->uid;
+		$node->name = $account->name;
+	}	
+}
+
+function kapost_byline_analytics($id)
+{	
+	$node = node_load($id);
+	if($node === false || $node->status == 0)
+		return '';
+
+	$custom_fields = kapost_byline_load_custom_fields($node);
+	if(empty($custom_fields) || !isset($custom_fields['_kapost_analytics_post_id']) || !isset($custom_fields['_kapost_analytics_url']))
+		return '';
+
+	$_kapost_analytics_post_id = $custom_fields['_kapost_analytics_post_id'];
+	$_kapost_analytics_url = $custom_fields['_kapost_analytics_url'];
+
+	if(isset($custom_fields['_kapost_analytics_site_id']))
+		$_kapost_analytics_site_id = $custom_fields['_kapost_analytics_site_id'];
+	else
+		$_kapost_analytics_site_id = '';
+
+	return "var _kaq = _kaq || [];
+_kaq.push([2, '$_kapost_analytics_post_id', '$_kapost_analytics_site_id']);
+(function(){
+var ka = document.createElement('script'); ka.async=true; ka.id='ka_tracker'; ka.src='$_kapost_analytics_url/ka.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ka, s);
+})();";
+}
+
+function kapost_byline_page_alter(&$page)
+{
+	// q = internal path and will never change under normal conditions :D
+	$matches = array();
+	if(preg_match('/^node\/([0-9]+)$/', $_GET['q'], $matches))
+	{
+		$js_inline = kapost_byline_analytics($matches[1]);
+		if(!empty($js_inline))
+			drupal_add_js($js_inline, array('type' => 'inline', 'scope' => 'footer', 'weight' => 999));
+	}
+}

@@ -1,0 +1,628 @@
+<?php
+/**
+ * @file
+ * Enable users to post using applications that support BlogAPIs.
+ */
+
+// Hack so we don't have to 'patch' the 'stable'
+// services module :)                                                                                                     
+if(!function_exists("services_get_server_info"))
+	module_load_include('runtime.inc', 'services');
+
+/**
+ * Implements hook_permission().
+ */
+function blogapi_permission() {
+  return array(
+    'manage content with blogapi' => array(
+      'title' => t('Manage content with BlogAPI'),
+    ),
+    'administer blogapi' => array(
+      'title' => t('Administer BlogAPI settings'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function blogapi_menu() {
+  $items = array();
+
+  $items['blogapi/rsd'] = array(
+    'title' => 'RSD',
+    'page callback' => 'blogapi_rsd',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+
+  $items['admin/config/services/blogapi'] = array(
+    'title' => 'BlogAPI',
+    'description' => 'Configure content types and file settings for external blogging clients.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('blogapi_admin_settings_form'),
+    'access arguments' => array('administer blogapi'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_init().
+ */
+function blogapi_init() {
+  if (drupal_is_front_page()) {
+    drupal_add_html_head_link(
+      array(
+        'rel' => 'EditURI',
+        'type' => 'application/rsd+xml',
+        'title' => t('RSD'),
+        'href' => url('blogapi/rsd', array('absolute' => TRUE)),
+      ),
+      TRUE
+    );
+  }
+}
+
+/**
+ * Ensure that a given user has permission to use BlogAPI
+ */
+function blogapi_validate_user($username, $password) {
+  global $user;
+
+  // Check the username and password.
+  $uid = user_authenticate($username, $password);
+
+  if (is_numeric($uid)) {
+    $user = user_load($uid);
+    if ($user->uid) {
+      user_login_finalize();
+
+      services_remove_user_data($user);
+
+      if (user_access('manage content with blogapi', $user)) {
+        // User has appropriate permissions.
+        return $user;
+      }
+      else {
+        $error_data = array(
+          'message' => t('You do not have permission to edit this blog'),
+          'error_code' => 405,
+        );
+        return $error_data;
+      }
+    }
+  }
+  watchdog('user', 'Invalid login attempt for %username.', array('%username' => $username));
+  $error_data = array(
+    'message' => t('Invalid username or password'),
+    'error_code' => 401,
+  );
+  return $error_data;
+}
+
+/**
+ * Return a BlogAPI RSD for XML-RPC APIs
+ *
+ * @todo: Implement apiLink correctly using service endpoint URL
+ * @todo: Implement multi-user blogs
+ */
+function blogapi_rsd() {
+  global $base_url;
+
+  $base = url('', array('absolute' => TRUE));
+  $xmlrpc_apis = blogapi_get_info('xmlrpc');
+  $default_xmlrpc_api = variable_get('blogapi_xmlrpc_default_provider', NULL);
+  // Until we figure out how to handle multiple bloggers, we'll just use a
+  // hardcoded blogid.
+  $blogid = 1;
+
+  drupal_add_http_header('Content-Type', 'application/rsd+xml; charset=utf-8');
+
+  // The extra whitespace in this function is to preserve code alignment in
+  // the output.
+  print <<<__RSD__
+<?xml version="1.0"?>
+<rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
+  <service>
+    <engineName>Drupal</engineName>
+    <engineLink>http://drupal.org/</engineLink>
+    <homePageLink>{$base}</homePageLink>
+    <apis>
+__RSD__;
+
+  foreach ($xmlrpc_apis as $module => $info) {
+    $default = 'false';
+    if ($module == $default_xmlrpc_api) {
+      $default = 'true';
+    }
+    $endpoint = "{$base_url}/blogapi/{$info['type']}";
+    print "\n      <api name='{$info['name']}' preferred='{$default}' apiLink='{$endpoint}' blogID='{$blogid}' />";
+  }
+
+  print <<<__RSD__
+
+    </apis>
+  </service>
+</rsd>
+
+__RSD__;
+
+}
+
+/**
+ * BlogAPI admin settings form
+ */
+function blogapi_admin_settings_form() {
+  $form = array();
+
+  $form['settings_apis'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('API configuration'),
+    '#collapsible' => FALSE,
+    '#collapsed' => FALSE,
+  );
+
+  // Default provider for each API.
+  foreach (blogapi_get_api_types() as $type) {
+    $providers = blogapi_get_info($type);
+    $provider_options = array();
+    foreach ($providers as $name => $provider) {
+      $provider_options[$name] = $provider['name'];
+    }
+
+    $form['settings_apis']['blogapi_' . $type . '_default_provider'] = array(
+      '#type' => 'radios',
+      '#title' => t('Default provider for %type APIs', array('%type' => $type)),
+      '#required' => TRUE,
+      '#options' => $provider_options,
+      '#default_value' => variable_get('blogapi_' . $type . '_default_provider', NULL),
+      '#description' => t('Select the default provider for %type API clients. This may affect client configuration.', array('%type' => $type)),
+    );
+  }
+
+  $form['settings_node_types'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Node types'),
+    '#collapsible' => FALSE,
+    '#collapsed' => FALSE,
+  );
+
+  // Set up BlogAPI node types.
+  $node_types = array_map('check_plain', node_type_get_names());
+  $defaults = isset($node_types['article']) ? array('article' => 'article'): array();
+  $form['settings_node_types']['blogapi_node_types'] = array(
+    '#type' => 'checkboxes',
+    '#title' => t('Enable for external blogging clients'),
+    '#required' => TRUE,
+    '#default_value' => variable_get('blogapi_node_types', $defaults),
+    '#options' => $node_types,
+    '#description' => t('Select the content types available to external blogging clients via Blog API. If supported, each enabled content type will be displayed as a separate "blog" by the external client.'),
+  );
+
+  if(module_exists("taxonomy"))
+  {
+	  $form['settings_taxonomy'] = array(
+		  '#type' => 'fieldset',
+		  '#title' => t('Taxonomy'),
+		  '#collapsible' => FALSE,
+		  '#collapsed' => FALSE,
+		  '#description' => t('Select the vocabularies for each content type available to external blogging clients via Blog API. 
+		  If not enabled, all vocabularies will be available.')
+		  );  
+
+	  foreach($node_types as $k => $v) 
+	  {   
+		  $vocabularies = array();
+		  foreach(module_invoke('taxonomy', 'get_vocabularies', $k, 'vid') as $vocabulary)
+			  $vocabularies[$vocabulary->vid] = $vocabulary->name;
+
+		  $form['settings_taxonomy']['blogapi_' . $k . '_vocabularies'] = array(
+			  '#type' => 'checkboxes',
+			  '#title' => t('Vocabularies for ' . $k),
+			  '#default_value' => variable_get('blogapi_' . $k . '_vocabularies', array()),
+			  '#options' => $vocabularies
+		  );  
+	  }   
+  }
+
+  $file_handling = FALSE;
+  foreach (blogapi_get_api_types() as $type) {
+    $providers = blogapi_get_info($type);
+
+    foreach ($providers as $provider) {
+      if (isset($provider['provides_file_handling']) && $provider['provides_file_handling'] === TRUE) {
+        $file_handling = TRUE;
+        break;
+      }
+    }
+    if ($file_handling == TRUE) {
+      break;
+    }
+  }
+
+  // Only display the file options if we have a module that provides file
+  // handling.
+  if ($file_handling) {
+    $form['settings_files'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('File settings'),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+    );
+
+    $blogapi_extensions_default = variable_get('blogapi_extensions_default', 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp');
+    $blogapi_uploadsize_default = variable_get('blogapi_uploadsize_default', 1);
+	$blogapi_usersize_default = variable_get('blogapi_usersize_default', 1);
+
+    $form['settings_files']['blogapi_extensions_default'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Default permitted file extensions'),
+      '#default_value' => $blogapi_extensions_default,
+      '#maxlength' => 255,
+      '#description' => t('Default extensions that users can upload. Separate extensions with a space and do not include the leading dot.'),
+    );
+
+    $form['settings_files']['blogapi_uploadsize_default'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Default maximum file size per upload'),
+      '#default_value' => $blogapi_uploadsize_default,
+      '#size' => 5,
+      '#maxlength' => 5,
+      '#description' => t('The default maximum file size a user can upload.'),
+      '#field_suffix' => t('MB'),
+    );
+
+    $form['settings_files']['blogapi_usersize_default'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Default total file size per user'),
+      '#default_value' => $blogapi_usersize_default,
+      '#size' => 5,
+      '#maxlength' => 5,
+      '#description' => t('The default maximum size of all files a user can have on the site.'),
+      '#field_suffix' => t('MB'),
+    );
+
+    $form['settings_files']['upload_max_size'] = array(
+      '#prefix' => '<p>',
+      '#value' => t('Your PHP settings limit the maximum file size per upload to %size.', array('%size' => format_size(file_upload_max_size()))),
+      '#suffix' => '</p>',
+    );
+
+	$form['settings_files']['blogapi_relative_urls'] = array(
+		'#type'				=> 'checkbox',
+		'#title'			=> t('Relative URLs'),
+		'#default_value'	=> variable_get('blogapi_relative_urls', FALSE),
+		'#description'		=> t('Return relative URLs for uploaded files.')
+	);
+
+    $roles = user_roles(FALSE, 'manage content with blogapi');
+    foreach ($roles as $rid => $role) {
+      $form['settings_files']['settings_role_' . $rid] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Settings for @role role', array('@role' => $role)),
+        '#collapsible' => TRUE,
+        '#collapsed' => TRUE,
+      );
+      $form['settings_files']['settings_role_' . $rid]['blogapi_extensions_' . $rid] = array(
+        '#type' => 'textfield',
+        '#title' => t('Permitted file extensions'),
+        '#default_value' => variable_get('blogapi_extensions_' . $rid, $blogapi_extensions_default),
+        '#maxlength' => 255,
+        '#description' => t('Extensions that users in this role can upload. Separate extensions with a space and do not include the leading dot.'),
+      );
+      $form['settings_files']['settings_role_' . $rid]['blogapi_uploadsize_' . $rid] = array(
+        '#type' => 'textfield',
+        '#title' => t('Maximum file size per upload'),
+        '#default_value' => variable_get('blogapi_uploadsize_' . $rid, $blogapi_uploadsize_default),
+        '#size' => 5,
+        '#maxlength' => 5,
+        '#description' => t('The maximum size of a file a user can upload (in megabytes).'),
+        '#field_suffix' => t('MB'),
+      );
+      $form['settings_files']['settings_role_' . $rid]['blogapi_usersize_' . $rid] = array(
+        '#type' => 'textfield',
+        '#title' => t('Total file size per user'),
+        '#default_value' => variable_get('blogapi_usersize_' . $rid, $blogapi_usersize_default),
+        '#size' => 5,
+        '#maxlength' => 5,
+        '#description' => t('The maximum size of all files a user can have on the site (in megabytes).'),
+        '#field_suffix' => t('MB'),
+      );
+    }
+  }
+
+  return system_settings_form($form);
+}
+
+/**
+ * Get all BlogAPI information, optionally filtered by API type
+ */
+function blogapi_get_info($api_type = NULL) {
+  // Invoke hook_blogapi_info().
+  foreach (module_implements('blogapi_info') as $k => $module) {
+    $info = module_invoke($module, 'blogapi_info');
+    if ($info['api_version'] == 2) {
+      $api_information[$module] = $info;
+    }
+  }
+
+  // If we don't have an API type filter, then allow the info to be altered
+  // and return it.
+  if (is_null($api_type)) {
+    drupal_alter('blogapi_info', $api_information);
+    return $api_information;
+  }
+
+  // If we have a filter parameter, return filtered information instead.
+  $filtered_api_info = array();
+  foreach ($api_information as $name => $info) {
+    if ($info['type'] == $api_type) {
+      $filtered_api_info[$name] = $info;
+    }
+  }
+  drupal_alter('blogapi_info', $filtered_api_info);
+  return $filtered_api_info;
+}
+
+/**
+ * Get a list of API types currently available to BlogAPI.
+ */
+function blogapi_get_api_types() {
+  $apis = blogapi_get_info();
+  $api_types = array();
+  foreach ($apis as $info) {
+    // Only include API types using the correct API version.
+    if ($info['api_version'] == 2) {
+      $api_types[$info['type']] = $info['type'];
+    }
+  }
+  return $api_types;
+}
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+function blogapi_ctools_plugin_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "services" && $api == "services") {
+    return array("version" => "3");
+  }
+}
+
+/**
+ * Implements hook_default_services_endpoint().
+ *
+ * This function is enabling all resources by default, but that behavior
+ * can be overridden via hook_blogapi_default_services_alter().
+ */
+function blogapi_default_services_endpoint() {
+  $export = array();
+
+  $api_types = blogapi_get_api_types();
+  foreach ($api_types as $type) {
+    $endpoint = new stdClass();
+    $endpoint->disabled = FALSE;
+    $endpoint->api_version = 3;
+    $endpoint->name = 'blogapi_' . $type;
+    $endpoint->server = $type . '_server';
+    $endpoint->path = 'blogapi/' . $type;
+    $endpoint->authentication = array();
+    $endpoint->server_settings = '';
+
+    // Get all resources for $type APIs.
+    $info = blogapi_get_info($type);
+    $resources = array();
+    foreach ($info as $module => $api_info) {
+      $resources += module_invoke($module, 'services_resources');
+    }
+
+    $endpoint->resources = $resources;
+    $endpoint->debug = 0;
+    $export['blogapi_' . $type] = $endpoint;
+  }
+
+  drupal_alter('blogapi_default_services', $export);
+
+  return $export;
+}
+
+/**
+ * Helper function. Returns the latest few nodes created by a given user.
+ */
+function blogapi_get_recent_posts($content_type, $user, $number_of_posts = NULL) {
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', $content_type)
+    ->propertyCondition('uid', $user->uid)
+    ->propertyOrderBy('created', 'DESC');
+
+  $result = $query->execute();
+
+  $blogs = array();
+  $blog_nids = array_keys($result);
+
+  if (!is_null($number_of_posts)) {
+    $i = 0;
+    $filtered_blog_nids = array();
+    foreach ($blog_nids as $blog_nid) {
+      $filtered_blog_nids[] = $blog_nid;
+      $i++;
+      if ($i == $number_of_posts) {
+        $blogs = $filtered_blog_nids;
+        break;
+      }
+    }
+  }
+
+  $blogs = entity_load('node', $blogs);
+  return $blogs;
+}
+
+/**
+ * Validate that a content type is configured to work with BlogAPI
+ *
+ * @param string $content_type
+ *   The machine name of the content type to validate
+ *
+ * @return TRUE|array
+ *   TRUE if the content type is configured for use with BlogAPI or
+ *   an error array if not.
+ */
+function blogapi_validate_content_type($content_type) {
+  $types = blogapi_get_node_types();
+  if (in_array($content_type, $types, TRUE)) {
+    return TRUE;
+  }
+
+  $error_data = array(
+    'message' => t('BlogAPI is not configured to support the %type content type.', array('%type' => $content_type)),
+    'error_code' => 403,
+  );
+  return $error_data;
+}
+
+/**
+ * Helper function. Adds appropriate metadata to the XML-RPC return values.
+ */
+function blogapi_format_post_for_xmlrpc($node, $bodies = TRUE) {
+  $xmlrpcval = array(
+    'userid' => $node->name,
+    'dateCreated' => xmlrpc_date($node->created),
+    'title' => $node->title,
+    'postid' => $node->nid,
+    'link' => url('node/' . $node->nid, array('absolute' => TRUE)),
+    'permaLink' => url('node/' . $node->nid, array('absolute' => TRUE)),
+  );
+
+  if ($bodies) {
+	$comment = 0;
+    $body = $node->body[LANGUAGE_NONE][0]['value'];
+    $format = $node->body[LANGUAGE_NONE][0]['format'];
+    if ($node->comment == 1) {
+      $comment = 2;
+    }
+    elseif ($node->comment == 2) {
+      $comment = 1;
+    }
+    $xmlrpcval['content'] = "<title>$node->title</title>$body";
+    $xmlrpcval['description'] = $body;
+
+    // Add MT specific fields.
+    $xmlrpcval['mt_allow_comments'] = (int) $comment;
+    $xmlrpcval['mt_convert_breaks'] = $format;
+  }
+
+  // Allow altering the XML-RPC response.
+  drupal_alter('blogapi_xmlrpc_response', $xmlrpcval);
+
+  return $xmlrpcval;
+}
+
+/**
+ * Helper function. Find allowed taxonomy terms for a node type.
+ */
+function blogapi_validate_terms($node) {
+  // We do a lot of heavy lifting here since taxonomy module doesn't have a
+  // stand-alone validation function.
+  if (module_exists('taxonomy')) {
+    $found_terms = array();
+    if (!empty($node->taxonomy)) {
+      $term_list = array_unique($node->taxonomy);
+      $terms = taxonomy_term_load_multiple($term_list);
+      $found_terms = array();
+      $found_count = 0;
+      foreach ($terms as $term) {
+        $found_terms[$term->vid][$term->tid] = $term->tid;
+        $found_count++;
+      }
+      // If the counts don't match, some terms are invalid or not accessible to
+      // this user.
+      if (count($term_list) != $found_count) {
+        $error_data = array(
+          'message' => t('Invalid categories were submitted.'),
+          'error_code' => 405,
+        );
+        return $error_data;
+	  }
+    }
+    // Look up all the vocabularies for this node type.
+    $vocabularies = taxonomy_vocabulary_load_multiple(FALSE);
+    // Check each vocabulary associated with this node type.
+    foreach ($vocabularies as $vocabulary) {
+      // Required vocabularies must have at least one term.
+      if ($vocabulary->required && empty($found_terms[$vocabulary->vid])) {
+        $error_data = array(
+          'message' => t('A category from the @vocabulary_name vocabulary is required.', array('@vocabulary_name' => $vocabulary->name)),
+          'error_code' => 403,
+        );
+        return $error_data;
+      }
+      // Vocabularies that don't allow multiple terms may have at most one.
+      if (!($vocabulary->multiple) && (isset($found_terms[$vocabulary->vid]) && count($found_terms[$vocabulary->vid]) > 1)) {
+        $error_data = array(
+          'message' => t('You may only choose one category from the @vocabulary_name vocabulary.', array('@vocabulary_name' => $vocabulary->name)),
+          'error_code' => 403,
+        );
+        return $error_data;
+      }
+    }
+  }
+  elseif (!empty($node->taxonomy)) {
+    $error_data = array(
+      'message' => t('Error saving categories. This feature is not available.'),
+      'error_code' => 405,
+    );
+    return $error_data;
+  }
+
+  return TRUE;
+}
+
+/**
+ * Helper function. Get BlogAPI node types.
+ */
+function blogapi_get_node_types() {
+  $node_types = array_map('check_plain', node_type_get_names());
+  $defaults = isset($node_types['article']) ? array('article' => 'article'): array();
+  $node_types = variable_get('blogapi_node_types', $defaults);
+  return $node_types;
+}
+
+/**
+ * Check that the user has permission to save the node with the chosen status.
+ */
+function blogapi_status_error_check($node, $original_status) {
+
+  $node = (object) $node;
+  $node_type_default = variable_get('node_options_' . $node->type, array('status', 'promote'));
+
+  // If we don't have the 'administer nodes' permission and the status is
+  // changing or for a new node the status is not the content type's default,
+  // then return an error.
+  if (!user_access('administer nodes') && (($node->status != $original_status) || (empty($node->nid) && $node->status != in_array('status', $node_type_default)))) {
+    if ($node->status) {
+      $error = array(
+        'message' => t('You do not have permission to publish this type of post. Please save it as a draft instead.'),
+        'error_code' => 403,
+      );
+      return $error;
+    }
+    else {
+      $error = array(
+        'message' => t('You do not have permission to save this post as a draft. Please publish it instead.'),
+        'error_code' => 403,
+      );
+      return $error;
+    }
+  }
+  return TRUE;
+}
+
+/**
+ * Helper function. Return the amount of space used by a given user.
+ */
+function blogapi_space_used($uid) {
+  return db_query('SELECT SUM(filesize) FROM {blogapi_files} f WHERE f.uid = :uid', array(':uid' => $uid))->fetchField();
+}

@@ -1,0 +1,35 @@
+<?php
+function kapost_byline_install()
+{
+	field_create_field(array(
+  		'field_name' => 'field_kapost_custom_fields',
+		'type' => 'text_long',
+		'settings' => array(),
+		'entity_types' => array('node')
+	));
+
+	field_create_instance(array(
+	  	'field_name' => 'field_kapost_custom_fields',
+	  	'entity_type' => 'node',
+	  	'bundle' => 'article',
+  		'label' => t('Kapost Custom Fields'),
+		'description' => t('Serialized Kapost Custom Fields'),
+		'display' => array(
+			'default' => array('label' => 'hidden', 'type' => 'hidden', 'weight' => 0, 'settings' => array())
+		)
+	));
+}
+
+function kapost_byline_uninstall() 
+{
+	$field = field_info_instance('node', 'field_kapost_custom_fields', 'article');
+	field_delete_instance($field);
+	
+	$field = field_info_field('field_kapost_custom_fields');
+	field_delete_field($field);
+
+	variable_del('kapost_create_user');
+	variable_del('kapost_path_auto');
+	variable_del('kapost_category_field');
+	variable_del('kapost_featured_image_field');
+}

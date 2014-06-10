@@ -1,6 +1,202 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/* NEW MEGAMENU1 TS*/
+/* ================*/
+
+/* tables */
+
+.mega1ts-headline {
+  color:#2d5b86;
+}
+
+#mega1ts-side2 {
+  /*border:1px solid #A7C942;*/
+  position:relative;
+  right:5px;
+  bottom:20px;
+  /*height:324px;*/
+  background-color:#CCCCCC;
+}
+
+
+#mega1ts-side2 td {
+  /*border:1px solid #CCCCCC;*/
+  vertical-align:top;
+}
+
+
+
+.mega1ts-sidebar-solutions2 {
+  background:#CCCCCC;
+  position:relative;
+  left:5px;
+  top:46px;
+  height:444px !important;
+  padding-top:10px;
+  padding-left:10px;
+  margin-top:5px;
+}
+
+
+
+
+
+#mega1ts-main {
+  /*border:1px solid #A7C942;*/
+  position:relative;
+  right:5px;
+  /*height:324px;*/
+  /*height:402px;*/
+  height:452px;
+  background-color:#CCCCCC;
+}
+
+
+#mega1ts-main th {
+  padding-left:5px;
+  padding-top:5px;
+  height:20px;
+
+}
+
+
+#mega1ts-main td, #mega1ts-main th {
+  /*border:1px solid #CCCCCC;*/
+  vertical-align:top;
+}
+
+
+#mega1ts-solutions {
+  margin-top:0px !important;
+  margin-bottom:0px !important;
+  border:0px;
+
+}
+
+#mega1ts-solutions td {
+  /*border:1px solid #CCCCCC;*/
+  padding-left:2px;
+}
+
+
+#mega1ts-text {
+  margin-top:0px !important;
+  margin-bottom:0px !important;
+  /*border:1px solid #CCCCCC;*/
+
+}
+
+#mega1ts-text td {
+  /*border:1px solid #CCCCCC;*/
+
+}
+
+
+/* lists */
+
+
+
+.megats_link a:link,
+.megats_link a:visited {
+  /*color:#333333;
+  font-family:Helvetica;
+  font-size:14px;*/
+  color: #1B415C;
+  text-decoration:none;
+  font-family: Arial,Tahoma,Verdana;
+  font-size: 13px;
+  line-height:20px;
+  /*position:relative;
+  left:10px;*/
+  visibility:visible !important;
+}
+
+.megats_link a:hover,
+.megats_link a:active {
+  /*color:#00467F;
+  font-family:Helvetica;
+  font-size:14px;*/
+  color: #649cd2;
+  font-family: Arial,Tahoma,Verdana;
+  font-size: 13px;
+  line-height:20px;
+  /*position:relative;
+  left:10px;*/
+  visibility:visible !important;
+}
+
+
+
+.megats2_link a:link,
+.megats2_link a:visited {
+  color:#595959;
+  /*font-family:Helvetica;
+  font-size:14px;*/
+  color: #1B415C;
+  text-decoration:none;
+  font-family: Arial,Tahoma,Verdana;
+  font-size: 13px;
+  /*position:relative;
+  left:10px;*/
+  visibility:visible !important;
+  position:relative; 
+  top:8px;
+}
+
+.megats2_link a:hover,
+.megats2_link a:active {
+  /*color:#00467F;
+  font-family:Helvetica;
+  font-size:14px;*/
+  color: #649cd2;
+  font-family: Arial,Tahoma,Verdana;
+  font-size: 13px;
+  /*position:relative;
+  left:10px;*/
+  visibility:visible !important;
+  position:relative; 
+  top:8px;
+}
+
+
+
+.mega1ts-title a:link,
+.mega1ts-title a:visited {
+  /*color:#333333;
+  font-family:Helvetica;
+  font-size:14px;*/
+  color: #1B415C;
+  text-decoration:none;
+  font-family: Arial,Tahoma,Verdana;
+  font-size: 13px;
+  /*position:relative;
+  left:10px;*/
+  visibility:visible !important;
+
+}
+
+.mega1ts-title a:hover,
+.mega1ts-title a:active {
+  /*color:#00467F;
+  font-family:Helvetica;
+  font-size:14px;*/
+  color: #649cd2;
+  font-family: Arial,Tahoma,Verdana;
+  font-size: 13px;
+  /*position:relative;
+  left:10px;*/
+  visibility:visible !important;
+
+}
+
+
+
+
+
+
+
 /* TEAM STARTER TEMPLATE */
 /* ===================== */
 
