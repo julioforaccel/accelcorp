@@ -2,6 +2,37 @@
 /* CSS Document */
 
 
+/* NEW FOOTER AND SITEMAP TS */
+/* ========================= */
+
+/* international css file */
+
+#block-panels-mini-footer-090613-new {
+  width:940px;
+}
+
+#block-panels-mini-footer-090613-newau {
+  width:940px;
+}
+
+#block-panels-mini-footer-090613-newuk {
+  width:940px;
+}
+
+
+
+.footer-resources {
+  position:relative;
+  top:2px;
+}
+
+.footer-resources-links {
+  position:relative;
+  bottom:5px;	
+}
+
+
+
 /* NEW MEGAMENU1 TS*/
 /* ================*/
 
