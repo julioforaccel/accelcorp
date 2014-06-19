@@ -21,9 +21,16 @@
 <div style="position:relative; bottom:80px;">
 
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?>>
+
+
   <?php if (!empty($title)) : ?>
-    <caption><?php print $title; ?></caption>
+    <!-- Test -->
+	<p>&nbsp;</p>
+    <!-- Test -->
+    <h2><?php print $title; ?></h2>
   <?php endif; ?>
+
+
   <?php if (!empty($header)) : ?>
     <thead>
       <tr>
