@@ -15,6 +15,7 @@
   top:80px !important;
   /*left:243px !important;*/
   /*margin-left:-7px;*/
+  /*margin-left:-9px;*/
   margin-left:-9px;
   box-shadow: 10px 10px 5px #444444;
 }
@@ -34,6 +35,36 @@
   margin-left:-227px;
   box-shadow: 10px 10px 5px #444444;
 }
+
+
+@-moz-document url-prefix() {
+/* position megamenu-1 */
+.qtip.qtip-light[qtip="1"] {
+  top:80px !important;
+  /*left:243px !important;*/
+  /*margin-left:-7px;*/
+  margin-left:-9px;
+  box-shadow: 10px 10px 5px #444444;
+}
+
+/* position megamenu-2 */
+.qtip.qtip-light[qtip="2"] {
+  top:80px !important;
+  /*left:243px !important;*/
+  margin-left:-118px;
+  box-shadow: 10px 10px 5px #444444;
+}
+
+/* position megamenu-3 */
+.qtip.qtip-light[qtip="3"] {
+  top:80px !important;
+  /*left:243px !important;*/
+  margin-left:-227px;
+  box-shadow: 10px 10px 5px #444444;
+}
+
+}
+
 
 
 /* CSS AU MEGAMENUS */
@@ -69,7 +100,7 @@ ul.mainmega2au {
   /*bottom:17px;*/
   /*bottom:25px;*/
 	/*right:168px;*/
-	right:167px;
+	right:168px;
 	
 	bottom:30px;
 
@@ -84,13 +115,13 @@ ul.mainmega2au {
   /*bottom:17px;*/
   /*bottom:25px;*/
 	/*right:168px;*/
-	right:167px;
+	right:168px;
 	bottom:30px;
 
 }
 
 #mainmega1-linkau:hover {
-  color:#1B415C !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
@@ -98,16 +129,16 @@ ul.mainmega2au {
   /*bottom:17px;*/
   /*bottom:25px;*/
 	/*right:168px;*/
-	right:167px;
+	right:161px;
 	bottom:30px;
-	background:#FFFFFF;
+	background:#323f53;
 	padding:9px 15px 11px 15px;
 
 }
 
 #mainmega1-linkau.qtip-hover {
   /*color:#1B415C !important;*/
-  color:#323f53 !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
@@ -115,9 +146,9 @@ ul.mainmega2au {
   /*bottom:17px;*/
   /*bottom:25px;*/
 	/*right:168px;*/
-	right:167px;
+	right:161px;
 	bottom:30px;
-	background:#FFFFFF;
+	background:#323f53;
 	padding:9px 15px 12px 15px;
 }
 
@@ -141,7 +172,7 @@ ul.mainmega2au {
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	right:54px;
+	right:55px;
 	bottom:67px;
 
 }
@@ -154,38 +185,38 @@ ul.mainmega2au {
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	right:54px;
+	right:55px;
 	bottom:67px;
 
 }
 
 #mainmega2-linkau:hover {
-  color:#1B415C !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	right:54px;
+	right:55px;
 	bottom:67px;
-	background:#FFFFFF;
-	padding:9px 15px 11px 15px;
+	background:#323f53;
+	padding:9px 15px 11px 27px;
 
 }
 
 #mainmega2-linkau.qtip-hover {
-  color:#1B415C !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	right:54px;
+	right:55px;
 	bottom:67px;
-	background:#FFFFFF;
-	padding:9px 15px 12px 15px;
+	background:#323f53;
+	padding:9px 15px 11px 27px;
 }
 
 .mainmega3au a:link {
@@ -212,7 +243,7 @@ ul.links.mainmega3au {
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	left:51px;
+	left:50px;
 	bottom:104px;
 
 }
@@ -225,38 +256,38 @@ ul.links.mainmega3au {
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	left:51px;
+	left:50px;
 	bottom:104px;
 
 }
 
 #mainmega3-linkau:hover {
-  color:#1B415C !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	left:51px;
+	left:57px;
 	bottom:104px;
-	background:#FFFFFF;
+	background:#323f53;
 	padding:9px 15px 11px 15px;
 
 }
 
 #mainmega3-linkau.qtip-hover {
-  color:#1B415C !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	left:51px;
+	left:57px;
 	bottom:104px;
-	background:#FFFFFF;
-	padding:9px 15px 12px 15px;
+	background:#323f53;
+	padding:9px 15px 11px 15px;
 }
 
 
@@ -294,7 +325,7 @@ ul.mainmega2uk {
   /*bottom:17px;*/
   /*bottom:25px;*/
 	/*right:168px;*/
-	right:167px;
+	right:168px;
 	
 	bottom:30px;
 
@@ -309,13 +340,13 @@ ul.mainmega2uk {
   /*bottom:17px;*/
   /*bottom:25px;*/
 	/*right:168px;*/
-	right:167px;
+	right:168px;
 	bottom:30px;
 
 }
 
 #mainmega1-linkuk:hover {
-  color:#1B415C !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
@@ -323,16 +354,16 @@ ul.mainmega2uk {
   /*bottom:17px;*/
   /*bottom:25px;*/
 	/*right:168px;*/
-	right:167px;
+	right:161px;
 	bottom:30px;
-	background:#FFFFFF;
+	background:#323f53;
 	padding:9px 15px 11px 15px;
 
 }
 
 #mainmega1-linkuk.qtip-hover {
   /*color:#1B415C !important;*/
-  color:#323f53 !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
@@ -340,9 +371,9 @@ ul.mainmega2uk {
   /*bottom:17px;*/
   /*bottom:25px;*/
 	/*right:168px;*/
-	right:167px;
+	right:161px;
 	bottom:30px;
-	background:#FFFFFF;
+	background:#323f53;
 	padding:9px 15px 12px 15px;
 }
 
@@ -366,7 +397,7 @@ ul.mainmega2uk {
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	right:54px;
+	right:55px;
 	bottom:67px;
 
 }
@@ -379,38 +410,38 @@ ul.mainmega2uk {
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	right:54px;
+	right:55px;
 	bottom:67px;
 
 }
 
 #mainmega2-linkuk:hover {
-  color:#1B415C !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	right:54px;
+	right:55px;
 	bottom:67px;
-	background:#FFFFFF;
-	padding:9px 15px 11px 15px;
+	background:#323f53;
+	padding:9px 15px 11px 27px;
 
 }
 
 #mainmega2-linkuk.qtip-hover {
-  color:#1B415C !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	right:54px;
+	right:55px;
 	bottom:67px;
-	background:#FFFFFF;
-	padding:9px 15px 12px 15px;
+	background:#323f53;
+	padding:9px 15px 11px 27px;
 }
 
 .mainmega3uk a:link {
@@ -437,7 +468,7 @@ ul.links.mainmega3uk {
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	left:51px;
+	left:50px;
 	bottom:104px;
 
 }
@@ -450,38 +481,38 @@ ul.links.mainmega3uk {
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	left:51px;
+	left:50px;
 	bottom:104px;
 
 }
 
 #mainmega3-linkuk:hover {
-  color:#1B415C !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	left:51px;
+	left:57px;
 	bottom:104px;
-	background:#FFFFFF;
+	background:#323f53;
 	padding:9px 15px 11px 15px;
 
 }
 
 #mainmega3-linkuk.qtip-hover {
-  color:#1B415C !important;
+  color:#e5ba50 !important;
   font-size: 15px;
   font-weight:bold;
   position:relative;
   /*left:651px;*/
   /*bottom:17px;*/
   /*bottom:25px;*/
-	left:51px;
+	left:57px;
 	bottom:104px;
-	background:#FFFFFF;
-	padding:9px 15px 12px 15px;
+	background:#323f53;
+	padding:9px 15px 11px 15px;
 }
 
 

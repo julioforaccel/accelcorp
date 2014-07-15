@@ -56,7 +56,7 @@ ul.dropdown li.hover,
 ul.dropdown li:hover  { 
   /*color: #1B415C; */
   position: relative;
-   background: url(/sites/all/themes/accellion/images/main-nav-bg-fd.png) center top no-repeat; 
+   /*background: url(/sites/all/themes/accellion/images/main-nav-bg-fd.png) center top no-repeat;*/
 }
 
 ul.dropdown li.hover,
@@ -68,7 +68,7 @@ ul.dropdown li:hover  {
 }
 
 ul.dropdown li.hover a { 
- color: #1B415C;
+ color: #E5BA50;
 /*background: #b4d9ef;*/
 }
 
