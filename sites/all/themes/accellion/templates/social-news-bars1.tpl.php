@@ -17,7 +17,7 @@
 
 <div class="grid-child new-grid-30 ">
 
-<a href="http://www.info.accellion.com/gartner-magic-quadrant.html?ms=bottombanner" target="_blank"><img src="/sites/default/files/Accellion-Footer-Gartner-Quadrant-v2.jpg" alt="Gartner Magic Quadrant"></a>
+<a href="http://www.info.accellion.com/gartner-magic-quadrant.html?ms=bottombanner" target="_blank"><img src="/sites/default/files/Accellion-Footer-Gartner-Quadrant-Fireworks-v2.jpg" alt="Gartner Magic Quadrant"></a>
 
 </div>
 
