@@ -1,6 +1,92 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* BLOG NAV FOR BLOG POST PAGES */
+/* ============================ */
+
+/* blog nav as table */
+
+#mini-panel-blog_magazine_v2 {
+  position:relative;
+  bottom:20px;
+
+}
+
+.bv3-table {
+  border:0px;
+  height:40px;
+  width:940px;
+  color:#FFFFFF;	
+  font-weight:normal !important;
+  position:relative;
+  bottom:21px;
+  right:20px;
+}
+
+.bv3-table a {
+  font-weight:normal !important;
+  color:#FFFFFF;
+}
+
+.bv3-table a:hover {
+  color:#E7BB34;
+}
+
+.bv3-table-links {
+  float:right;	
+}
+
+.bv3-table-one {
+  width:285px;
+  background-color:#323F53;
+  font-weight:normal !important;
+  padding-left:10px;
+
+}
+
+.bv3-table-two {
+  width:180px;
+
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+
+.bv3-table-three {
+  width:245px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+.bv3-table-four {
+  width:55px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+.bv3-table-five {
+  width:100px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+.bv3-table-six {
+  width:60px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+.bv3-table-seven {
+  width:15px;
+  background-color:#323F53;
+  font-weight:normal !important;
+}
+
+/* end blog nav as table */
+
+
+
+
 /* NEW KW TRIPTYCH REGIONS (BEFORE IN LN. 940..)*/
 /* ============================================ */
 
